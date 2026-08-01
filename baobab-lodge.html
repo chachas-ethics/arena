@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+    
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ARENA AFRICA SAFARIS</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="icon" href="thumbnails/ArenaLogoNew.png" type="image/x-icon">
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            neutral: {
+              950: '#0a0a0a',
+            }
+          }
+        }
+      }
+    }
+  </script>
+</head>
+<body class="bg-neutral-950 text-neutral-400 font-light selection:bg-blue-900 selection:text-white min-h-screen">
+
+  <!-- Top Navigation Bar -->
+  <nav class="border-b border-neutral-900 bg-neutral-950/80 backdrop-blur-md sticky top-0 z-50 px-4 lg:px-8 py-4">
+    <div class="max-w-7xl mx-auto flex justify-between items-center">
+      <a href="#" class="text-white font-bold uppercase tracking-widest text-sm hover:text-blue-400 transition-colors">
+        Baobab Luxury <span class="text-blue-400">Collection</span>
+      </a>
+      <button class="border border-neutral-800 hover:border-blue-900/60 text-[11px] font-bold tracking-widest uppercase px-4 py-2 rounded-sm text-white hover:text-blue-400 bg-neutral-900 transition-all duration-300">
+        Back to Explorer
+      </button>
+    </div>
+  </nav>
+
+  <!-- Main Content Container -->
+  <main class="max-w-7xl mx-auto px-4 lg:px-8 py-8 lg:py-16">
+    <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-start">
+      
+      <!-- LEFT COLUMN: Immersive Media Section -->
+      <section class="lg:col-span-7 space-y-6">
+        <div class="group relative bg-neutral-900 border border-neutral-800/80 rounded-sm overflow-hidden shadow-2xl transition-all duration-300 hover:border-blue-900/60">
+          <div class="aspect-[16/10] w-full overflow-hidden bg-neutral-800 relative">
+            <!-- Custom dramatic dark tint matching map/wilderness theme -->
+            <div class="absolute inset-0 bg-neutral-950/20 z-10 mix-blend-multiply"></div>
+            <img src="images/baobabLodge.webp" alt="Baobab Migration Luxury Camp Hero View" class="w-full h-full object-cover opacity-80 contrast-[1.1] saturate-[0.8] group-hover:opacity-100 group-hover:scale-102 transition-all duration-700" />
+            
+            <span class="absolute top-6 left-6 z-20 bg-blue-950/90 text-blue-400 text-[10px] font-bold tracking-widest uppercase px-4 py-1.5 border border-blue-900/50 rounded-sm">
+              Luxury Lodge & Camp
+            </span>
+          </div>
+        </div>
+
+        <!-- Ambient Feature Callouts inspired by card details -->
+        <div class="grid grid-cols-2 sm:grid-cols-4 gap-4">
+          <div class="bg-neutral-900 border border-neutral-900 p-4 text-center rounded-sm">
+            <span class="block text-white text-xs font-bold uppercase tracking-widest mb-1">Acacia Views</span>
+            <p class="text-[10px] text-blue-400/70 uppercase tracking-wider">Scenic Plains</p>
+          </div>
+          <div class="bg-neutral-900 border border-neutral-900 p-4 text-center rounded-sm">
+            <span class="block text-white text-xs font-bold uppercase tracking-widest mb-1">Fine Dining</span>
+            <p class="text-[10px] text-blue-400/70 uppercase tracking-wider">Chef Curated</p>
+          </div>
+          <div class="bg-neutral-900 border border-neutral-900 p-4 text-center rounded-sm">
+            <span class="block text-white text-xs font-bold uppercase tracking-widest mb-1">Expert Guides</span>
+            <p class="text-[10px] text-blue-400/70 uppercase tracking-wider">Great Migration</p>
+          </div>
+          <div class="bg-neutral-900 border border-neutral-900 p-4 text-center rounded-sm">
+            <span class="block text-white text-xs font-bold uppercase tracking-widest mb-1">Private Veranda</span>
+            <p class="text-[10px] text-blue-400/70 uppercase tracking-wider">Sunrise Decks</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- RIGHT COLUMN: Detail Typography & Booking Call-to-Action -->
+      <section class="lg:col-span-5 space-y-8">
+        
+        <!-- Header Hierarchy Info block -->
+        <div class="border-b border-neutral-900 pb-6">
+          <h1 class="text-3xl sm:text-4xl font-bold uppercase tracking-tight mb-3 text-white transition-colors">
+            Baobab Migration Luxury Camp
+          </h1>
+
+          <!-- Geolocation Badge Line -->
+          <p class="text-xs text-blue-400/80 font-bold uppercase tracking-widest mb-4 flex items-center gap-2">
+            <svg class="w-4 h-4 fill-current text-blue-400" viewBox="0 0 24 24">
+              <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/>
+            </svg>
+            Mbalibali, Serengeti National Park, Tanzania
+          </p>
+
+          <!-- Standardized Star Rating Block from inspiration -->
+          <div class="flex items-center gap-1 pl-0.5">
+            <svg class="w-4 h-4 text-blue-400 fill-current" viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+            <svg class="w-4 h-4 text-blue-400 fill-current" viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+            <svg class="w-4 h-4 text-blue-400 fill-current" viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+            <svg class="w-4 h-4 text-blue-400 fill-current" viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+            <svg class="w-4 h-4 text-blue-400 fill-current" viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+            <span class="text-xs text-neutral-500 uppercase tracking-widest ml-2">(5.0 Wilderness Rating)</span>
+          </div>
+        </div>
+
+        <!-- Comprehensive Property Copy -->
+        <div class="space-y-6 text-sm leading-relaxed tracking-wide font-light">
+          <p>
+            Our camp offers a remarkable safari experience where you can immerse yourself in nature and see amazing wildlife. The stunning scenery will captivate you completely, as Baobab Migration Luxury Camp is surrounded by ancient acacia trees and looks directly over the sweeping plains.
+          </p>
+          
+          <p>
+            Our large, custom-engineered tents provide a truly luxurious safari experience. Imagine waking up to a breathtaking African sunrise enjoyed directly from your private veranda. 
+          </p>
+
+          <p>
+            The camp’s cuisine serves as a definitive culinary highlight. Our professional chefs create a memorable experience by beautifully combining refined international flavors with organic local ingredients. Our dining pavilion will satisfy your palate, whether you’re sharing a hearty breakfast before a thrilling early morning excursion or enjoying a romantic candlelit dinner underneath the bright African stars.
+          </p>
+
+          <p>
+            Expect an unforgettable journey. Our expert guides will accompany you on thrilling Serengeti expeditions to track and view the world-renowned Great Migration. Witness millions of wildebeest and other fascinating animals roaming across the endless plains in search of fresh grazing—a sight engineered to amaze and leave lasting lifetime memories.
+          </p>
+        </div>
+
+        <!-- Action Box matching base card UI theme -->
+        <div class="bg-neutral-900 border border-neutral-800/80 p-6 rounded-sm space-y-4 shadow-xl">
+          <div class="flex justify-between items-baseline">
+            <span class="text-xs text-neutral-400 font-bold uppercase tracking-widest">All-Inclusive Luxury</span>
+            <span class="text-white font-bold uppercase tracking-tight text-lg">Rates on Request</span>
+          </div>
+          
+          <button class="w-full text-center bg-neutral-800 hover:bg-blue-950 border border-neutral-700 hover:border-blue-900 text-white hover:text-blue-400 text-[11px] font-bold tracking-widest uppercase py-3.5 rounded-sm transition-all duration-300 shadow-md">
+            Check Seasonal Availability
+          </button>
+        </div>
+
+      </section>
+    </div>
+  </main>
+
+  <!-- Fine Print Footer -->
+  <footer class="border-t border-neutral-900 mt-16 py-8 px-4 text-center">
+    <p class="text-[10px] text-neutral-600 uppercase tracking-widest">
+      &copy; 2026 Baobab Migration Luxury Camp. All rights reserved. Mbalibali, Serengeti.
+    </p>
+  </footer>
+
+</body>
+</html>

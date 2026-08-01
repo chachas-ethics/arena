@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+    
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ARENA AFRICA SAFARIS</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="icon" href="thumbnails/ArenaLogoNew.png" type="image/x-icon">
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            neutral: {
+              950: '#0a0a0a',
+            }
+          }
+        }
+      }
+    }
+  </script>
+</head>
+<body class="bg-neutral-950 text-neutral-400 min-h-screen antialiased flex items-center justify-center p-4">
+
+  <nav id="master-navigation" class="fixed top-6 inset-x-0 z-50 max-w-6xl mx-auto px-4 transition-all duration-500 ease-out">
+  <!-- Container with Floating Capsule Design -->
+  <div class="relative bg-neutral-950/40 backdrop-blur-xl border border-neutral-800/40 rounded-full px-6 py-3.5 flex items-center justify-between transition-all duration-500 shadow-[0_20px_50px_rgba(0,0,0,0.5)] group/nav hover:border-neutral-700/60 hover:bg-neutral-950/60">
+    
+    <!-- Fine glow line underneath capsule -->
+    <div class="absolute inset-x-12 bottom-0 h-px bg-gradient-to-r from-transparent via-blue-900/30 to-transparent"></div>
+
+    
+    <a href="#" class="flex items-center space-x-3 shrink-0 relative group/logo">
+      <div class="relative w-9 h-9 bg-neutral-900 border border-neutral-800/80 rounded-full flex items-center justify-center p-1 overflow-hidden transition-all duration-300 group-hover/logo:border-blue-950 group-hover/logo:scale-105">
+        <img src="thumbnails/ArenaLogoNew.png" alt="Arena Africa Safaris Logo" class="w-full h-full object-cover">
+      </div>
+      <div class="flex flex-col">
+        <span class="text-[11px] font-black tracking-[0.1em] uppercase text-white leading-none">
+          ARENA AFRICA SAFARIS
+        </span>
+       
+      </div>
+    </a>
+
+    <!-- Center: Premium Minimalistic Menu Matrix (Desktop) -->
+    <div class="hidden md:flex items-center space-x-1 relative bg-neutral-950/60 border border-neutral-900/80 px-2 py-1.5 rounded-full">
+      <a href="#home" class="relative text-[10px] font-bold tracking-widest uppercase px-4 py-2 text-white hover:text-blue-400 transition-colors duration-300">
+        HOME
+      </a>
+
+       <a href="#sanctuaries" class="relative text-[10px] font-bold tracking-widest uppercase px-4 py-2 text-neutral-400 hover:text-white transition-colors duration-300">
+        SANCTUARIES
+      </a>
+
+      <a href="#about" class="relative text-[10px] font-bold tracking-widest uppercase px-4 py-2 text-neutral-400 hover:text-white transition-colors duration-300">
+        ABOUT US
+      </a>
+     
+      <a href="#expeditions" class="relative text-[10px] font-bold tracking-widest uppercase px-4 py-2 text-neutral-400 hover:text-white transition-colors duration-300">
+        Expeditions
+      </a>
+
+       <a href="#tours" class="relative text-[10px] font-bold tracking-widest uppercase px-4 py-2 text-neutral-400 hover:text-white transition-colors duration-300">
+        Tours
+      </a>
+    </div>
+
+    <!-- Right: High-Conversion Micro CTA Hub -->
+    <div class="flex items-center space-x-4">
+      <!-- Tactically Refined Action Button -->
+     <a href="https://wa.me/255788296274?text=Hello%20Arena%20Africa%20Safaris%2C%0A%0AI%20would%20like%20to%20plan%20a%20tour%20or%20safari.%0A%0A%E2%80%A2%20Destination%3A%0A%E2%80%A2%20Number%20of%20Travelers%3A%0A%E2%80%A2%20Preferred%20Travel%20Dates%3A%0A%E2%80%A2%20Budget%20Range%3A%0A%E2%80%A2%20Special%20Requests%3A%0A%0AI%20look%20forward%20to%20hearing%20from%20you."
+   target="_blank"
+   class="hidden sm:inline-flex relative overflow-hidden bg-blue-950 border border-blue-900/50 text-white font-bold text-[10px] tracking-[0.2em] uppercase px-5 py-2.5 rounded-full transition-all duration-300 shadow-[0_0_20px_rgba(59,130,246,0.1)] hover:border-blue-500 hover:scale-[1.03] group/btn">
+    
+    <span class="relative z-10">BOOK TOUR</span>
+    
+    <div class="absolute inset-0 bg-gradient-to-r from-blue-900 to-blue-950 opacity-0 group-hover/btn:opacity-100 transition-opacity duration-300"></div>
+</a>
+
+      <!-- Compact Floating Hamburger Menu Switcher -->
+      <button id="menu-toggle" class="md:hidden w-9 h-9 flex items-center justify-center bg-neutral-900/60 border border-neutral-800/80 rounded-full text-neutral-400 hover:text-white focus:outline-none transition-colors duration-300" aria-label="Toggle Menu Matrix">
+        <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+          <path id="menu-icon" stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16" />
+        </svg>
+      </button>
+    </div>
+
+  </div>
+
+  <!-- Mobile Dropdown Matrix System -->
+  <div id="mobile-menu" class="hidden md:hidden mt-3 w-full bg-neutral-950/90 backdrop-blur-xl border border-neutral-800/80 rounded-3xl p-6 shadow-2xl space-y-3 transform origin-top transition-all duration-300 scale-95 opacity-0">
+    <div class="grid grid-cols-2 gap-3">
+      <a href="#home" class="bg-neutral-900/50 border border-neutral-800/40 p-4 rounded-xl text-center text-xs font-bold uppercase tracking-widest text-white hover:border-blue-900/40 transition-colors">Home</a>
+      <a href="#sanctuaries" class="bg-neutral-900/50 border border-neutral-800/40 p-4 rounded-xl text-center text-xs  font-bold uppercase tracking-widest text-neutral-400 hover:text-white transition-colors">Sanctuaries</a>
+     
+      <a href="#about" class="bg-neutral-900/50 border border-neutral-800/40 p-4 rounded-xl text-center text-xs font-bold uppercase tracking-widest text-neutral-400 hover:text-white transition-colors">About Us</a>
+       <a href="#expeditions" class="bg-neutral-900/50 border border-neutral-800/40 p-4 rounded-xl text-center text-xs font-bold uppercase tracking-widest text-neutral-400 hover:text-white transition-colors">Expeditions</a>
+     <a href="#tours" class="bg-neutral-900/50 border border-neutral-800/40 p-4 rounded-xl text-center text-xs font-bold uppercase tracking-widest text-neutral-400 hover:text-white transition-colors">Tours</a>
+   </div>
+    <div class="pt-3 border-t border-neutral-900">
+     <a href="https://wa.me/255788296274?text=Hello%20Arena%20Africa%20Safaris%2C%0A%0AI%20would%20like%20to%20plan%20a%20tour%20or%20safari.%0A%0A%E2%80%A2%20Destination%3A%0A%E2%80%A2%20Number%20of%20Travelers%3A%0A%E2%80%A2%20Preferred%20Travel%20Dates%3A%0A%E2%80%A2%20Budget%20Range%3A%0A%E2%80%A2%20Special%20Requests%3A%0A%0AI%20look%20forward%20to%20hearing%20from%20you."
+   target="_blank"
+   class="flex justify-center items-center w-full relative overflow-hidden bg-blue-950 border border-blue-900/50 text-white font-bold text-[10px] tracking-[0.2em] uppercase px-5 py-3 rounded-full transition-all duration-300 shadow-[0_0_20px_rgba(59,130,246,0.1)] hover:border-blue-500 group/btn" 
+    <span class="relative z-10">BOOK TOUR</span>
+    
+    <div class="absolute inset-0 bg-gradient-to-r from-blue-900 to-blue-950 opacity-0 group-hover/btn:opacity-100 transition-opacity duration-300"></div>
+</a>
+    </div>
+  </div>
+</nav>
+
+
+  <article class="w-full max-w-3xl bg-neutral-950 border mt-32 border-neutral-900 rounded-sm p-6 sm:p-10 my-12">
+    
+    <!-- Meta Header -->
+    <header class="mb-8">
+      <div class="flex items-center space-x-2 text-[9px] font-mono text-blue-400 mb-3 uppercase tracking-wider">
+        <span>Great Rift Valley Cultural Circuit</span>
+        <span class="text-neutral-600">•</span>
+        <span class="text-neutral-500">5 MIN READ</span>
+      </div>
+      
+      <h1 class="text-2xl sm:text-4xl font-black uppercase tracking-wide text-white mb-6 leading-tight">
+        Authentic Maasai Village Tour: Cultural Day Trips From Arusha
+      </h1>
+      
+      <div class="w-full h-64 sm:h-96 bg-neutral-900 overflow-hidden border border-neutral-900 rounded-sm mb-8">
+        <img src="thumbnails/maasai.jpg" alt="Maasai Traditions in Tanzania" class="w-full h-full object-cover" />
+      </div>
+    </header>
+
+    <!-- Editorial Content Area -->
+    <div class="space-y-6 text-xs sm:text-sm font-light tracking-wide leading-relaxed">
+      
+      <!-- Key Abstract -->
+      <p class="text-neutral-300 font-normal border-l-2 border-blue-500 pl-4 italic text-sm sm:text-base">
+        Book an ethical cultural excursion to experience living Maasai traditions, ancient land rhythms, and traditional dance performances.
+      </p>
+      
+      <!-- Macro Context -->
+      <p>
+        The Great Rift Valley landscape provides a stunning backdrop for deeply immersive cultural encounters in Tanzania. Our community-led Maasai day tours remove the artificial staging often found in mass tourism, connecting you directly with local families. From morning medicine walks along the volcanic ridges to joining traditional welcome songs, these day trips support authentic indigenous heritage preservation.
+      </p>
+
+      <div class="border-y border-neutral-900 py-4 my-6 grid grid-cols-2 gap-4 font-mono text-[10px]">
+        <div>
+          <span class="text-neutral-600 block uppercase">TOUR TYPE</span>
+          <span class="text-white font-bold text-xs uppercase">Ethical Community Day Trip</span>
+        </div>
+        <div>
+          <span class="text-neutral-600 block uppercase">DEPARTURE HUB</span>
+          <span class="text-blue-400 font-bold text-xs uppercase">Arusha / Moshi Hotels</span>
+        </div>
+      </div>
+      
+      <!-- Section 1 -->
+      <h2 class="text-base font-bold uppercase tracking-wider text-blue-400 pt-4 font-mono">
+        01 / Ancestral Boma Experiences
+      </h2>
+      
+      <p>
+        Our guided tours invite travelers inside a functioning thorn-fenced Maasai Boma (homestead) to understand daily life under the guidance of village elders. Learn about the sustainable mud-walled architecture, traditional jewelry design, and the complex social structures that have protected this landscape for generations. This direct interaction offers genuine insight into modern pastoralism.
+      </p>
+
+      <!-- Section 2 -->
+      <h2 class="text-base font-bold uppercase tracking-wider text-blue-400 pt-4 font-mono">
+        02 / Guided Bush Medicine Walks
+      </h2>
+      
+      <p>
+        Step outside the village borders with Maasai warriors to explore the ancient botanical secrets of the Great Rift Valley. You will learn to identify natural roots, leaves, and bark used in traditional healing practices while tracking the paths of regional wildlife. This walking tour connects your journey directly to the timeless ecological balance of northern Tanzania.
+      </p>
+    </div>
+
+    <!-- Call to Action Button Area -->
+    <div class="mt-10 pt-6 border-t border-neutral-900 flex justify-end">
+      <a href="/bookings/maasai-cultural-tour" class="text-[11px] font-bold tracking-widest uppercase bg-blue-600 hover:bg-blue-500 text-white px-6 py-3 rounded-sm transition-colors duration-300 inline-flex items-center gap-2 group">
+        <span>BOOK MAASAI TOUR</span>
+        <svg class="w-3.5 h-3.5 transform group-hover:translate-x-1 transition-transform duration-300" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7" />
+        </svg>
+      </a>
+    </div>
+
+  </article>
+
+</body>
+<script>
+  document.addEventListener('DOMContentLoaded', () => {
+    const navFrame = document.getElementById('master-navigation');
+    const menuToggle = document.getElementById('menu-toggle');
+    const mobileMenu = document.getElementById('mobile-menu');
+    const menuIcon = document.getElementById('menu-icon');
+
+    // 1. Dynamic Scroll Matrix Engine (Shrinks & anchors on scroll)
+    window.addEventListener('scroll', () => {
+      if (window.scrollY > 40) {
+        navFrame.classList.remove('top-6', 'max-w-6xl', 'px-4');
+        navFrame.classList.add('top-0', 'max-w-full', 'px-0');
+        navFrame.firstElementChild.classList.remove('rounded-full', 'px-6');
+        navFrame.firstElementChild.classList.add('rounded-none', 'px-8', 'border-x-0', 'border-t-0', 'bg-neutral-950/80');
+      } else {
+        navFrame.classList.remove('top-0', 'max-w-full', 'px-0');
+        navFrame.classList.add('top-6', 'max-w-6xl', 'px-4');
+        navFrame.firstElementChild.classList.remove('rounded-none', 'px-8', 'border-x-0', 'border-t-0', 'bg-neutral-950/80');
+        navFrame.firstElementChild.classList.add('rounded-full', 'px-6');
+      }
+    });
+
+    // 2. Mobile Dropdown Activation System
+    menuToggle.addEventListener('click', () => {
+      const isHidden = mobileMenu.classList.contains('hidden');
+      
+      if (isHidden) {
+        mobileMenu.classList.remove('hidden');
+        // Let thread resolve to trigger entrance animations cleanly
+        setTimeout(() => {
+          mobileMenu.classList.remove('scale-95', 'opacity-0');
+          mobileMenu.classList.add('scale-100', 'opacity-100');
+        }, 10);
+        menuIcon.setAttribute('d', 'M6 18L18 6M6 6l12 12');
+      } else {
+        mobileMenu.classList.remove('scale-100', 'opacity-100');
+        mobileMenu.classList.add('scale-95', 'opacity-0');
+        menuIcon.setAttribute('d', 'M4 6h16M4 12h16M4 18h16');
+        setTimeout(() => mobileMenu.classList.add('hidden'), 300);
+      }
+    });
+
+    // Auto close menu when a tracking location anchor link gets targeted
+    mobileMenu.querySelectorAll('a').forEach(link => {
+      link.addEventListener('click', () => {
+        mobileMenu.classList.remove('scale-100', 'opacity-100');
+        mobileMenu.classList.add('scale-95', 'opacity-0');
+        menuIcon.setAttribute('d', 'M4 6h16M4 12h16M4 18h16');
+        setTimeout(() => mobileMenu.classList.add('hidden'), 300);
+      });
+    });
+  });
+</script>
+</html>

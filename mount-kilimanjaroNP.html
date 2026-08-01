@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+    
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ARENA AFRICA SAFARIS</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="icon" href="thumbnails/ArenaLogoNew.png" type="image/x-icon">
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            neutral: {
+              950: '#0a0a0a',
+            }
+          }
+        }
+      }
+    }
+  </script>
+</head>
+<body class="bg-neutral-950 text-white font-sans antialiased overflow-x-hidden selection:bg-blue-950 selection:text-blue-400">
+
+  <!-- Floating Minimal Capsule Header Navigation -->
+  <nav id="master-navigation" class="fixed top-6 inset-x-0 z-50 max-w-5xl mx-auto px-4 transition-all duration-500">
+    <div class="bg-neutral-950/30 backdrop-blur-xl border border-neutral-900/60 rounded-full px-6 py-3 flex items-center justify-between transition-all duration-500 shadow-2xl group hover:border-neutral-800 hover:bg-neutral-950/60">
+      
+      
+      <a href="index.html" class="flex items-center space-x-3 group/logo">
+        <div class="w-8 h-8 bg-neutral-900 border border-neutral-800 rounded-full flex items-center justify-center p-1 overflow-hidden transition-transform duration-500 group-hover/logo:rotate-12">
+          <img src="thumbnails/ArenaLogoNew.png" alt="Logo" class="w-full h-full object-cover rounded-full">
+        </div>
+        <div class="flex flex-col font-mono tracking-widest text-left">
+          <span class="text-[10px] font-black uppercase text-white leading-none">ARENA<span class="text-blue-500">AFRICA</span></span>
+          <span class="text-[7px] text-neutral-500 uppercase tracking-[0.2em] mt-0.5 leading-none">// ROOFTOP_DATA</span>
+        </div>
+      </a>
+
+      <!-- Desktop Links -->
+      <div class="hidden md:flex items-center space-x-1 bg-neutral-950/50 border border-neutral-900/40 px-2 py-1 rounded-full">
+        <a href="index.html#destinations" class="text-[9px] font-mono font-bold tracking-widest uppercase px-4 py-1.5 text-neutral-400 hover:text-white transition-colors">Sanctuaries</a>
+        <a href="index.html#tanzania-expeditions" class="text-[9px] font-mono font-bold tracking-widest uppercase px-4 py-1.5 text-neutral-400 hover:text-white transition-colors">Expeditions</a>
+        <a href="journal.html" class="text-[9px] font-mono font-bold tracking-widest uppercase px-4 py-1.5 text-neutral-400 hover:text-white transition-colors">Journal</a>
+        <a href="about.html" class="text-[9px] font-mono font-bold tracking-widest uppercase px-4 py-1.5 text-neutral-400 hover:text-white transition-colors">Our Story</a>
+      </div>
+
+      <!-- Action Button -->
+      <div class="flex items-center space-x-4">
+        <a href="#whatsapp-cta" class="hidden sm:inline-block bg-blue-950 hover:bg-blue-900 text-white font-mono font-bold text-[9px] tracking-widest uppercase px-4 py-2 rounded-full border border-blue-900/40 shadow-[0_0_15px_rgba(59,130,246,0.1)] transition-all">
+          Initialize Intake
+        </a>
+        <button id="menu-toggle" class="md:hidden w-8 h-8 flex items-center justify-center bg-neutral-900/40 border border-neutral-800 rounded-full text-neutral-400 hover:text-white outline-none" aria-label="Toggle Menu">
+          <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+            <path id="menu-icon" stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16" />
+          </svg>
+        </button>
+      </div>
+    </div>
+
+    <!-- Mobile Dropdown System -->
+    <div id="mobile-menu" class="hidden md:hidden mt-2 w-full bg-neutral-950/90 backdrop-blur-2xl border border-neutral-900 rounded-2xl p-4 space-y-2 transition-all duration-300 scale-95 opacity-0 origin-top">
+      <div class="grid grid-cols-2 gap-2">
+        <a href="index.html#destinations" class="bg-neutral-900/30 border border-neutral-900/60 p-3 rounded-lg text-center text-[10px] font-mono tracking-widest text-neutral-400">Sanctuaries</a>
+        <a href="index.html#tanzania-expeditions" class="bg-neutral-900/30 border border-neutral-900/60 p-3 rounded-lg text-center text-[10px] font-mono tracking-widest text-neutral-400">Expeditions</a>
+        <a href="journal.html" class="bg-neutral-900/30 border border-blue-900/40 p-3 rounded-lg text-center text-[10px] font-mono tracking-widest text-white">Journal</a>
+        <a href="about.html" class="bg-neutral-900/30 border border-neutral-900/60 p-3 rounded-lg text-center text-[10px] font-mono tracking-widest text-neutral-400">Our Story</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Editorial Section Split Header Block -->
+  <header class="relative min-h-[60vh] w-full flex items-center justify-center overflow-hidden pt-40 pb-16 border-b border-neutral-900/60">
+    <div class="max-w-5xl mx-auto w-full px-6 relative z-20">
+      <div class="flex flex-col lg:flex-row lg:items-end justify-between gap-8">
+        <div class="max-w-2xl">
+          <span class="text-[20px] tracking-[0.1em] text-blue-400 uppercase block mb-3">
+        MOUNT KILIMANJARO NATIONAL PARK
+          </span>
+          <h1 class="text-5xl sm:text-6xl font-black tracking-tight uppercase leading-[0.95] text-white">
+            THE FREE-STANDING <br>
+            <span class="text-transparent bg-clip-text bg-gradient-to-r from-neutral-200 via-neutral-400 to-neutral-600">IMPERIOUS MASSIVE</span>
+          </h1>
+        </div>
+       
+      </div>
+    </div>
+  </header>
+
+  <!-- Main Exploration Matrix Layout -->
+  <section class="relative bg-neutral-950 py-24 px-6 overflow-hidden">
+    <div class="absolute inset-x-0 top-12 flex justify-center opacity-[0.015] select-none pointer-events-none z-0">
+      <span class="text-[14vw] font-mono font-black tracking-[0.2em] uppercase text-white">UHURU PEAK</span>
+    </div>
+
+    <div class="max-w-5xl mx-auto relative z-10">
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-start">
+        
+        <!-- Left Column: Master Visual Card Feature Component (5/12 Grid Span) -->
+        <div class="lg:col-span-5 lg:sticky lg:top-36">
+          <div class="group bg-neutral-950 border border-neutral-900 overflow-hidden rounded-sm relative shadow-2xl">
+            
+            <div class="aspect-[4/5] relative overflow-hidden">
+              <div class="absolute inset-0 bg-gradient-to-t from-neutral-950 via-neutral-950/30 to-transparent z-10"></div>
+              <img src="thumbnails/mountkilimanjaroNP.jpeg" 
+                   alt="Mount Kilimanjaro Glaciers and Snowy Summit" 
+                   class="w-full h-full object-cover transform scale-105 group-hover:scale-100 transition-transform duration-700 ease-out" />
+              
+            </div>
+
+            <div class="p-6 relative z-20">
+              <span class="text-[15px] tracking-widest text-blue-400 uppercase block mb-1">
+                TACTICAL SPECIFICATIONS FILE
+              </span>
+              <h3 class="text-xl font-black uppercase tracking-wide text-white mb-3">
+                Kilimanjaro Core Grid
+              </h3>
+              
+              <div class="space-y-1.5 mb-6 border-b border-neutral-900 pb-4 text-[11px] text-neutral-500 uppercase tracking-wider">
+                <div class="flex items-center gap-2">
+                  <span class="text-blue-400">VISIT:</span>
+                  <span class="text-neutral-400">Near Moshi Township</span>
+                </div>
+                <div class="flex items-center gap-2">
+                  <span class="text-blue-400">FOCUS:</span>
+                  <span class="text-neutral-400">Climatic Tour World Odyssey</span>
+                </div>
+               
+              </div>
+
+             
+            </div>
+
+          </div>
+        </div>
+
+        <!-- Right Column: Raw Intel Dossier Content Block (7/12 Grid Span) -->
+        <div class="lg:col-span-7 space-y-12">
+          
+          <!-- Manifesto Overview -->
+          <div class="space-y-6">
+            <p class="text-white text-base sm:text-lg font-light leading-relaxed border-l-2 border-blue-950 pl-6 italic tracking-wide">
+              At 5895m Mount Kilimanjaro, Africa’s highest mountain and one of the continent’s magnificent sights, features three main volcanic peaks: Kibo, Mawenzi, and Shira. The name itself, "Kilimanjaro," remains a mystery wreathed in clouds, evoking translated meanings such as Mountain of Light, Mountain of Greatness, or Mountain of Caravans.
+            </p>
+                        <p class="text-sm text-neutral-400 font-light tracking-wide leading-relaxed">
+              Above the gently rolling hills and plateaus of northern Tanzania rises the snowy peak, its slopes and glaciers shimmering above the rising clouds. Rising in breathtaking isolation from the surrounding coastal scrubland (elevation around 900m) to an imperious 5,895 metres (19,336 feet), it stands as the tallest free-standing mountain on the globe.
+            </p>
+          </div>
+
+          <!-- Climatic World Tour Layer -->
+          <div class="border-t border-neutral-900/60 pt-10">
+            <div class="flex items-center space-x-2 text-[20px] text-blue-400 uppercase tracking-widest mb-4">
+              <span>THE VIRTUAL CLIMATIC WORLD TOUR</span>
+            </div>
+            <p class="text-sm text-neutral-400 font-light tracking-wide leading-relaxed mb-6">
+              The ascent from the cultivated footslopes (where coffee, banana, cassava, and maize thrive on small plots) up to the ultimate rim behaves as a virtual ecological tour across five distinct environmental layers:
+            </p>
+            <div class="space-y-4 text-xs text-neutral-400 uppercase tracking-wide">
+              <div class="border border-neutral-900 p-4 bg-neutral-900/20">
+                <span class="text-blue-500 block font-bold mb-1">01. MONTANE FOREST (Up to 2,700m)</span>
+                Lush, humid highland canopy inhabited by elusive elephants, leopards, buffaloes, primates, and the endangered Abbot’s duiker.
+              </div>
+              <div class="border border-neutral-900 p-4 bg-neutral-900/20">
+                <span class="text-blue-500 block font-bold mb-1">02. MOORLAND ZONE</span>
+                An otherworldly cover of giant heather studded comprehensively with spectacular giant lobelias.
+              </div>
+              <div class="border border-neutral-900 p-4 bg-neutral-900/20">
+                <span class="text-blue-500 block font-bold mb-1">03. ALPINE DESERT (Above 4,000m)</span>
+                A surreal, harsh landscape supporting little organic life other than a few hardy lines of mosses and lichens.
+              </div>
+              <div class="border border-neutral-900 p-4 bg-neutral-900/20">
+                <span class="text-blue-500 block font-bold mb-1">04. ARCTIC WINTER WONDERLAND</span>
+                The final vestigial lines give way to a barren landscape dominated purely by vertical rocks, ancient glaciers, ice, and snow.
+              </div>
+            </div>
+          </div>
+
+          <!-- Trekking Directives -->
+          <div class="border-t border-neutral-900/60 pt-10">
+            <div class="flex items-center space-x-2 text-[20px] text-blue-500 uppercase tracking-widest mb-4">
+              <span>TREKKING DIRECTIVES & ACCESSIBILITY</span>
+            </div>
+            <p class="text-sm text-neutral-400 font-light tracking-wide leading-relaxed mb-4">
+              Kilimanjaro is one of the world’s most accessible high summits, a beacon requiring determination and pacing over professional technical gear. Climbers reach the crater lip (Gillman's Point) or actual summit (Uhuru Point) to earn their official climbing certificates and permanent memories.
+            </p>
+            <div class="bg-blue-950/20 border border-blue-900/40 p-5 rounded-sm text-xs text-white tracking-wide">
+              <span class="font-black block text-blue-400 text-sm uppercase mb-1">ACCLIMATIZATION PROTOCOL:</span>
+              Climb slowly to maximize your safety margins. To minimize and prevent altitude sickness, your custom itinerary blueprint must allocate a minimum of five nights (preferably more) on the slopes to successfully conquer the peak.
+            </div>
+          </div>
+
+          <!-- Regional Infrastructure Coordinates -->
+          <div class="border-t border-neutral-900/60 pt-10">
+            <div class="flex items-center space-x-2 text-[20px] text-blue-500 uppercase tracking-widest mb-4">
+              <span>REGIONAL INFRASTRUCTURE COORDINATES</span>
+            </div>
+            <div class="space-y-4 text-xs font-sans text-neutral-400">
+              <div class="border-b border-neutral-900 pb-3">
+                <span class=" text-[20px] text-blue-500 block mb-2">LOGISTICAL ACCESS</span>
+                Situated exactly 128 km (80 miles) from Arusha City hub and roughly a one-hour driving window from Kilimanjaro International Airport (KIA).
+              </div>
+              <div class="border-b border-neutral-900 pb-3">
+                <span class=" text-[20px] text-blue-500 block mb-2">ROUTING OPERATIONS</span>
+                Six standard established trekking routes lead to the summit along with more demanding mountaineering lines. Optional paths cover day or overnight hikes on the Shira Plateau, trout fishing expeditions, and visits to the deep blue waters of Chala Crater Lake on the southeastern slopes.
+              </div>
+              <div>
+                <span class=" text-[20px] text-blue-500 block mb-2">LOGGING SHELTERS</span>
+                A systematic network of huts and campsites are positioned on mountain sectors. Premium lodging properties and hotels operate immediately outside the park boundary line inside Marangu village and Moshi town.
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+  
+<!-- Mini CTA Banner: Ultra-Premium High-Conversion Wilderness Link -->
+<section class="relative bg-neutral-950 py-20 px-6 border-y border-neutral-900 overflow-hidden">
+  
+  <!-- Backing Design Element: Floating Atmospheric Light Glow -->
+  <div class="absolute -top-24 left-1/3 w-96 h-96 bg-blue-950/20 rounded-full blur-[120px] pointer-events-none mix-blend-screen"></div>
+
+  <div class="max-w-5xl mx-auto relative z-10">
+    <div class="flex flex-col lg:flex-row items-start lg:items-center justify-between gap-10">
+      
+      <!-- Left Column: The Hook & Value Proposition Text -->
+      <div class="max-w-xl">
+      
+        <h2 class="text-5xl sm:text-7xl font-black tracking-tight uppercase leading-none text-white mb-4">
+          Ready to chart <br>
+          <span class="text-transparent bg-clip-text bg-blue-400">Your Own Expedition?</span>
+        </h2>
+        <p class="text-xs sm:text-sm text-neutral-400 font-light tracking-wide leading-relaxed">
+          Skip standard itineraries. Connect directly with our expedition designers to wireframe a fully tailored luxury voyage matching your precise schedule.
+        </p>
+      </div>
+
+      <!-- Right Column: High-Priority Click Authority Action -->
+      <div class="w-full lg:w-auto shrink-0">
+        <a href="index.html#booking-form" class="group relative inline-flex items-center justify-between w-full sm:w-auto bg-blue-950 hover:bg-blue-900 text-white font-bold text-xs tracking-[0.25em] uppercase px-8 py-5 rounded-sm border border-blue-500 shadow-[0_0_30px_rgba(59,130,246,0.15)] transition-all duration-300 hover:scale-[1.02] min-w-[260px] text-center">
+          <span class="w-full">Initialize Booking</span>
+          
+          <!-- Directional Arrow Micro-Interaction -->
+          <svg class="w-4 h-4 text-blue-400 transform group-hover:translate-x-1.5 transition-transform duration-300 ml-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M14 5l7 7m0 0l-7 7m7-7H3" />
+          </svg>
+          
+          <!-- Sleek sliding layout border underlay -->
+          <div class="absolute bottom-0 left-0 w-0 h-[2px] bg-blue-500 group-hover:w-full transition-all duration-500"></div>
+        </a>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+  <!-- 6. HIGH-DENSITY AUDITED BRAND FOOTER -->
+  <footer class="bg-neutral-950 text-neutral-400 py-24 relative overflow-hidden border-t border-neutral-900">
+    <div class="max-w-7xl mx-auto px-6 relative z-10">
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-16 lg:gap-12 pb-20 border-b border-neutral-900">
+        
+        <!-- Column 1: Brand Essence -->
+        <div class="flex flex-col justify-between">
+          <div>
+            <div class="flex items-center space-x-3 mb-8">
+              <div class="w-12 h-12 bg-neutral-900 flex items-center justify-center border border-neutral-800 rounded-full overflow-hidden">
+                <img src="thumbnails/ArenaLogoNew.png" alt="Logo" class="w-full h-full object-cover">
+              </div>
+              <span class="text-xs font-black tracking-widest text-blue-400 uppercase font-mono">WILD<span class="text-white">QUEST</span></span>
+            </div>
+            <p class="text-sm leading-relaxed mb-8 font-light italic text-neutral-400">
+              "The pinnacle of bespoke African expeditions. Bridging the gap between untamed wilderness and uncompromising luxury."
+            </p>
+          </div>
+          <div class="flex gap-6 items-center">
+            <a href="#" class="text-neutral-500 hover:text-white transition-colors" aria-label="Instagram"><i class="fa fa-instagram" style="font-size:24px;"></i></a>
+            <a href="#" class="text-neutral-500 hover:text-white transition-colors" aria-label="Facebook"><i class="fa fa-facebook" style="font-size:24px;"></i></a>
+            <a href="#" class="text-neutral-500 hover:text-white transition-colors" aria-label="TripAdvisor"><i class="fa fa-tripadvisor" style="font-size:24px;"></i></a>
+          </div>
+        </div>
+
+        <!-- Column 2: Navigation Links -->
+        <div>
+          <h4 class="text-blue-500 font-mono font-black uppercase tracking-[0.3em] text-[10px] mb-8">// NAVIGATION</h4>
+          <ul class="space-y-4 text-xs font-bold uppercase tracking-widest font-mono">
+            <li><a href="index.html#home" class="text-neutral-300 hover:text-blue-400 transition-all hover:translate-x-1 inline-block">Home</a></li>
+            <li><a href="index.html#destinations" class="text-neutral-300 hover:text-blue-400 transition-all hover:translate-x-1 inline-block">Sanctuaries</a></li>
+            <li><a href="index.html#tanzania-expeditions" class="text-neutral-300 hover:text-blue-400 transition-all hover:translate-x-1 inline-block">Expeditions</a></li>
+          </ul>
+        </div>
+
+        <!-- Column 3: Membership Status Badges -->
+        <div>
+          <h4 class="text-blue-500 font-mono font-black uppercase tracking-[0.3em] text-[10px] mb-8">// PROUD MEMBER OF</h4>
+          <div class="flex flex-wrap items-center gap-4">
+            <div class="bg-neutral-900 border border-neutral-800 p-1.5 rounded-full"><img src="img/ATTA.jpg" alt="ATTA" class="h-10 w-10 object-contain rounded-full grayscale"></div>
+            <div class="bg-neutral-900 border border-neutral-800 p-1.5 rounded-full"><img src="img/TATO.png" alt="TATO" class="h-10 w-10 object-contain rounded-full grayscale"></div>
+          </div>
+        </div>
+
+        <!-- Column 4: Newsletter Submission Box -->
+        <div class="flex flex-col justify-between">
+          <div>
+            <h4 class="text-blue-500 font-mono font-black uppercase tracking-[0.3em] text-[10px] mb-6">// SUBSCRIBE</h4>
+            <form action="https://formspree.io" method="POST" class="relative w-full">
+              <input type="email" name="email" placeholder="ENTER EMAIL" required class="w-full bg-neutral-900 border border-neutral-800 p-4 pr-12 text-[10px] font-mono text-white tracking-widest focus:outline-none focus:border-blue-900 rounded-sm uppercase" />
+              <button type="submit" class="absolute right-2 top-1/2 -translate-y-1/2 h-8 w-10 flex items-center justify-center bg-blue-950 border border-blue-900/50 text-blue-400 font-bold rounded-sm">→</button>
+            </form>
+          </div>
+          <div class="grid grid-cols-1 gap-2 text-xs mt-6 font-mono text-neutral-500">
+            <span>HQ // SINONI AREA, ARUSHA, TANZANIA</span>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Payment Gateways Sub Row Container -->
+      <div class="flex flex-col sm:flex-row items-start sm:items-center gap-4 py-8 border-b border-neutral-900 text-xs font-mono">
+        <span class="text-[10px] uppercase font-bold tracking-widest text-neutral-600 select-none">WE ACCEPT //</span>
+        <div class="flex items-center gap-5 text-2xl text-neutral-400 select-none">
+          <i class="fa fa-cc-visa hover:text-white transition-colors"></i>
+          <i class="fa fa-cc-mastercard hover:text-white transition-colors"></i>
+          <i class="fa fa-cc-amex hover:text-white transition-colors"></i>
+          <div class="flex items-center h-6 px-2.5 bg-neutral-900 border border-neutral-800 rounded-sm"><span class="text-[9px] font-black uppercase text-teal-500">pesa</span><span class="text-[9px] font-black uppercase text-amber-500">pal</span></div>
+        </div>
+      </div>
+
+      <!-- Bottom Attribution & Legal Framework Row -->
+      <div class="pt-10 flex flex-col lg:flex-row justify-between items-center gap-8 text-xs font-mono text-neutral-500">
+        <div class="flex gap-6 text-[9px] font-black tracking-widest uppercase">
+          <a href="Privacy.html" class="hover:text-blue-400 transition-colors duration-300">Privacy Policy</a>
+          <a href="TermsOfService.html" class="hover:text-blue-400 transition-colors duration-300">Terms of Service</a>
+        </div>
+        <p class="text-[9px] font-black tracking-[0.3em] uppercase">
+          © 2026 AFRICA SCENERY DISCOVERY
+        </p>
+        <div class="flex items-center gap-3 px-4 py-2 bg-neutral-900 border border-neutral-800 skew-x-[-10deg] group hover:border-blue-900 transition-all duration-300">
+          <a href="https://synlotech.com" target="_blank" rel="noopener noreferrer" class="text-[8px] font-black text-neutral-500 uppercase tracking-widest leading-none block skew-x-[10deg]">
+            Designed and Developed By <span class="text-[10px] font-black text-white group-hover:text-blue-400 transition-colors duration-300">Synlotech Technologies</span>
+          </a>
+        </div>
+      </div>
+
+    </div>
+  </footer>
+
+  <!-- Complete Interaction JavaScript Engine -->
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const navFrame = document.getElementById('master-navigation');
+      const menuToggle = document.getElementById('menu-toggle');
+      const mobileMenu = document.getElementById('mobile-menu');
+      const dispatchBtn = document.getElementById('launch-kilimanjaro-dispatch');
+
+      // Adaptive Scroll Tracking
+      window.addEventListener('scroll', () => {
+        if (window.scrollY > 40) {
+          navFrame.classList.remove('top-6', 'max-w-5xl', 'px-4');
+          navFrame.classList.add('top-0', 'max-w-full', 'px-0');
+          navFrame.firstElementChild.classList.remove('rounded-full', 'px-6');
+          navFrame.firstElementChild.classList.add('rounded-none', 'px-8', 'border-x-0', 'border-t-0', 'bg-neutral-950/80');
+        } else {
+          navFrame.classList.remove('top-0', 'max-w-full', 'px-0');
+          navFrame.classList.add('top-6', 'max-w-5xl', 'px-4');
+          navFrame.firstElementChild.classList.remove('rounded-none', 'px-8', 'border-x-0', 'border-t-0', 'bg-neutral-950/80');
+          navFrame.firstElementChild.classList.add('rounded-full', 'px-6');
+        }
+      });
+
+      // Mobile Menu Trigger
+      if (menuToggle && mobileMenu) {
+        menuToggle.addEventListener('click', () => {
+          const isHidden = mobileMenu.classList.contains('hidden');
+          if (isHidden) {
+            mobileMenu.classList.remove('hidden');
+            setTimeout(() => {
+              mobileMenu.classList.remove('scale-95', 'opacity-0');
+              mobileMenu.classList.add('scale-100', 'opacity-100');
+            }, 10);
+          } else {
+            mobileMenu.classList.remove('scale-100', 'opacity-100');
+            mobileMenu.classList.add('scale-95', 'opacity-0');
+            setTimeout(() => mobileMenu.classList.add('hidden'), 300);
+          }
+        });
+      }
+
+      // Safe WhatsApp Router Node
+      if (dispatchBtn) {
+        dispatchBtn.addEventListener('click', () => {
+          const targetWhatsAppNumber = "255700000000"; 
+          const textPayload = 
+`*// EXPEDITION BRIEF REQ: KILIMANJARO ROOFTOP *
+-----------------------------------------
+*Request Origin:* Standalone Destination Portal
+*Sanctuary:* Mount Kilimanjaro National Park
+*Focus Domain:* 5-Zone Climatic Odyssey Trekking
+-----------------------------------------
+Please connect me with a private wilderness designer to wireframe this blueprint parameters live over secure chat logs.`;
+
+          const encodedPayload = `https://whatsapp.com{targetWhatsAppNumber}&text=${encodeURIComponent(textPayload)}`;
+          window.open(encodedPayload, '_blank');
+        });
+      }
+    });
+  </script>
+</body>
+</html>
+

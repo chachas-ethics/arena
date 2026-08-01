@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+    
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ARENA AFRICA SAFARIS</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="icon" href="thumbnails/ArenaLogoNew.png" type="image/x-icon">
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            neutral: {
+              950: '#0a0a0a',
+            }
+          }
+        }
+      }
+    }
+  </script>
+</head>
+<body class="bg-neutral-950 text-white font-sans antialiased overflow-x-hidden selection:bg-blue-950 selection:text-blue-400">
+
+  <!-- Floating Minimal Capsule Header Navigation -->
+  <nav id="master-navigation" class="fixed top-6 inset-x-0 z-50 max-w-5xl mx-auto px-4 transition-all duration-500">
+    <div class="bg-neutral-950/30 backdrop-blur-xl border border-neutral-900/60 rounded-full px-6 py-3 flex items-center justify-between transition-all duration-500 shadow-2xl group hover:border-neutral-800 hover:bg-neutral-950/60">
+      
+      
+      <a href="index.html" class="flex items-center space-x-3 group/logo">
+        <div class="w-8 h-8 bg-neutral-900 border border-neutral-800 rounded-full flex items-center justify-center p-1 overflow-hidden transition-transform duration-500 group-hover/logo:rotate-12">
+          <img src="thumbnails/ArenaLogoNew.png" alt="Logo" class="w-full h-full object-cover rounded-full">
+        </div>
+        <div class="flex flex-col font-mono tracking-widest text-left">
+          <span class="text-[10px] font-black uppercase text-white leading-none">ARENA<span class="text-blue-500">AFRICA</span></span>
+          <span class="text-[7px] text-neutral-500 uppercase tracking-[0.2em] mt-0.5 leading-none">// MANIFESTO</span>
+        </div>
+      </a>
+
+      <!-- Desktop Navigation Anchor Paths -->
+      <div class="hidden md:flex items-center space-x-1 bg-neutral-950/50 border border-neutral-900/40 px-2 py-1 rounded-full">
+        <a href="index.html#destinations" class="text-[9px] font-mono font-bold tracking-widest uppercase px-4 py-1.5 text-neutral-400 hover:text-white transition-colors">Sanctuaries</a>
+        <a href="index.html#tanzania-expeditions" class="text-[9px] font-mono font-bold tracking-widest uppercase px-4 py-1.5 text-neutral-400 hover:text-white transition-colors">Expeditions</a>
+        <a href="index.html#insights" class="text-[9px] font-mono font-bold tracking-widest uppercase px-4 py-1.5 text-neutral-400 hover:text-white transition-colors">Journal</a>
+        <a href="#" class="text-[9px] font-mono font-bold tracking-widest uppercase px-4 py-1.5 text-blue-400">Our Story</a>
+      </div>
+
+      <!-- Action Intake Hub Trigger -->
+      <div class="flex items-center space-x-4">
+        <a href="index.html#booking-form" class="hidden sm:inline-block bg-blue-950 hover:bg-blue-900 text-white font-mono font-bold text-[9px] tracking-widest uppercase px-4 py-2 rounded-full border border-blue-900/40 shadow-[0_0_15px_rgba(59,130,246,0.1)] transition-all">
+          Initiate Intake
+        </a>
+        <button id="menu-toggle" class="md:hidden w-8 h-8 flex items-center justify-center bg-neutral-900/40 border border-neutral-800 rounded-full text-neutral-400 hover:text-white outline-none" aria-label="Toggle Menu">
+          <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+            <path id="menu-icon" stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16" />
+          </svg>
+        </button>
+      </div>
+    </div>
+
+    <!-- Mobile Dropdown Navigation System Grid -->
+    <div id="mobile-menu" class="hidden md:hidden mt-2 w-full bg-neutral-950/90 backdrop-blur-2xl border border-neutral-900 rounded-2xl p-4 space-y-2 transition-all duration-300 scale-95 opacity-0 origin-top">
+      <div class="grid grid-cols-2 gap-2">
+        <a href="index.html#destinations" class="bg-neutral-900/30 border border-neutral-900/60 p-3 rounded-lg text-center text-[10px] font-mono tracking-widest text-neutral-400">Sanctuaries</a>
+        <a href="index.html#tanzania-expeditions" class="bg-neutral-900/30 border border-neutral-900/60 p-3 rounded-lg text-center text-[10px] font-mono tracking-widest text-neutral-400">Expeditions</a>
+        <a href="index.html#insights" class="bg-neutral-900/30 border border-neutral-900/60 p-3 rounded-lg text-center text-[10px] font-mono tracking-widest text-neutral-400">Journal</a>
+        <a href="#" class="bg-neutral-900/30 border border-blue-900/40 p-3 rounded-lg text-center text-[10px] font-mono tracking-widest text-white">Our Story</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Editorial Asymmetric Intro Canvas Hero -->
+  <header class="relative min-h-[50vh] w-full flex items-center justify-center overflow-hidden pt-40 pb-16">
+    <div class="absolute inset-0 bg-neutral-950 z-10"></div>
+    <div class="max-w-5xl mx-auto w-full px-6 relative z-20">
+      <div class="flex flex-col lg:flex-row lg:items-end justify-between border-b border-neutral-900 pb-10 gap-6">
+        <div class="max-w-xl">
+          <span class="text-[20px] tracking-[0.1em] text-blue-500 uppercase inline-block mb-3">ABOUT US</span>
+          <h1 class="text-5xl sm:text-7xl font-black tracking-tight uppercase leading-[0.95] text-white">
+         ARENA AFRICA SAFARIS</span>
+          </h1>
+        </div>
+       
+      </div>
+    </div>
+  </header>
+
+  <!-- Clean Artistic Structural Narrative Matrix -->
+  <section class="relative bg-neutral-950 py-16 px-6 overflow-hidden">
+    <!-- Giant Monospaced Faded Watermark Layout Layer -->
+    <div class="absolute inset-x-0 top-0 flex justify-center opacity-[0.015] select-none pointer-events-none z-0">
+      <span class="text-[16vw] font-mono font-black tracking-widest uppercase text-white">ARENA</span>
+    </div>
+
+    <div class="max-w-5xl mx-auto relative z-10">
+      <!-- Minimalist Grid Framework Layout Lines -->
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-start">
+        
+        <!-- Left Side: Clean Isolated Single Graphic Frame Node (5/12 Grid Span) -->
+        <div class="lg:col-span-5 lg:sticky lg:top-36">
+          <div class="relative aspect-[3/4] w-full bg-neutral-900 border border-neutral-900 overflow-hidden rounded-sm group shadow-2xl">
+            <div class="absolute inset-0 bg-neutral-950/20 group-hover:opacity-0 transition-opacity duration-500 z-10 mix-blend-multiply"></div>
+            <img src="thumbnails/ArenaLogoNew.png" alt="East African Untamed Wilderness" class="w-full h-full object-cover scale-102 group-hover:scale-100 transition-transform duration-700 ease-out" />
+          </div>
+        </div>
+
+        <!-- Right Side: The Clean Text Document Streams (7/12 Grid高度) -->
+        <div class="lg:col-span-7 space-y-12 text-sm sm:text-base leading-relaxed tracking-wide text-neutral-400 font-light">
+          
+          <!-- Codex Paragraph 1: Core Essence -->
+          <div class="space-y-6">
+            <p class="text-white text-base sm:text-lg font-normal leading-relaxed border-l-2 border-blue-950 pl-6 italic">
+              At Arena Africa Safaris, we don’t just create trips, we co‑design journeys that become lifelong memories. Born from a deep love for East Africa’s wild heart and rich heritage, we specialize in tailor‑made safari experiences that blend untamed nature, authentic culture, and once‑in‑a‑lifetime wildlife encounters across Tanzania, Kenya, Uganda, and Rwanda.
+            </p>
+            <p>
+              We’re driven by a simple conviction: every safari should reflect your vision. Whether you’re chasing the thunderous herds of the Great Migration, gazing at snow‑tipped Kilimanjaro at dawn, or connecting with local communities, we put personalization and passion at the core of everything we do.
+            </p>
+          </div>
+
+          <!-- Codex Paragraph 2: Local Expertise -->
+          <div class="border-t border-neutral-900/60 pt-10">
+            <div class="flex items-center space-x-2 text-[20px] text-blue-400 uppercase tracking-widest mb-4">TACTICAL LOGISTICS</div>
+            <p>
+              Our team of safari specialists brings local expertise and global perspective together weaving deep knowledge of East Africa’s landscapes, wildlife rhythms, and cultural traditions into journeys that feel both effortless and extraordinary. From luxury lodge stays to rugged wilderness adventures, we design every itinerary with meticulous care and unparalleled service.
+            </p>
+          </div>
+
+          <!-- Codex Paragraph 3: Diversity -->
+          <div class="border-t border-neutral-900/60 pt-10">
+            <div class="flex items-center space-x-2 text-[20px] text-blue-400 uppercase tracking-widest mb-4">THE CONCLUDING GATEWAY</div>
+            <p>
+              At Arena Africa Safaris, we celebrate Africa’s heritage and diversity pairing thrilling game drives and scenic flights with cultural immersion experiences that connect you to the people and stories behind the land. Whether it’s a romantic honeymoon safari, a family adventure, or a photographer’s dream expedition, your story starts here.
+            </p>
+          </div>
+
+        </div>
+              </div>
+    </div>
+  </section>
+
+  <!-- 4. MISSION & VISION MATRIX LAYER -->
+  <section class="relative bg-neutral-950 py-24 px-6 overflow-hidden border-t border-neutral-900/60">
+    <div class="max-w-5xl mx-auto relative z-10">
+      <!-- 2-Column Sharp Brutalist Layout Divider Lines -->
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-px bg-neutral-900 border border-neutral-900">
+        
+        <!-- Mission Module Box -->
+        <div class="bg-neutral-950 p-8 sm:p-12 transition-colors duration-500 hover:bg-neutral-900/20 flex flex-col justify-between relative group">
+          <div class="absolute top-0 left-0 w-full h-px bg-blue-900 scale-x-0 group-hover:scale-x-100 transition-transform duration-500 origin-left"></div>
+          <div>
+            <span class="text-[18px] tracking-widest text-blue-500 uppercase block mb-4">CORE</span>
+            <h2 class="text-xl font-black tracking-wider uppercase mb-4 text-white group-hover:text-blue-400 transition-colors">OUR MISSION</h2>
+            <p class="text-xs sm:text-sm text-neutral-400 font-light leading-relaxed">
+              To architect deeply personalized, uncompromisingly premium expeditions that expose global travelers to the raw, untamed reality of East African wilderness, while actively prioritizing habitat conservation and authentic indigenous cultural preservation in every configuration we chart.
+            </p>
+          </div>
+        </div>
+
+        <!-- Vision Module Box -->
+        <div class="bg-neutral-950 p-8 sm:p-12 transition-colors duration-500 hover:bg-neutral-900/20 flex flex-col justify-between relative group border-t lg:border-t-0 lg:border-l border-neutral-900">
+          <div class="absolute top-0 left-0 w-full h-px bg-blue-900 scale-x-0 group-hover:scale-x-100 transition-transform duration-500 origin-left"></div>
+          <div>
+            <span class="text-[18px] tracking-widest text-blue-500 uppercase block mb-4">FUTURE</span>
+            <h2 class="text-xl font-black tracking-wider uppercase mb-4 text-white group-hover:text-blue-400 transition-colors">OUR VISION</h2>
+            <p class="text-xs sm:text-sm text-neutral-400 font-light leading-relaxed">
+              To be globally recognized as the definitive benchmark for custom luxury tourism in East Africa—fusing high-fidelity logistics telemetry, expert field trackers, and premium sustainable lodge assets to compose flawless, generational chronicles of adventure.
+            </p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Mini CTA Banner: Ultra-Premium High-Conversion Wilderness Link -->
+<section class="relative bg-neutral-950 py-20 px-6 border-y border-neutral-900 overflow-hidden">
+  
+  <!-- Backing Design Element: Floating Atmospheric Light Glow -->
+  <div class="absolute -top-24 left-1/3 w-96 h-96 bg-blue-950/20 rounded-full blur-[120px] pointer-events-none mix-blend-screen"></div>
+
+  <div class="max-w-5xl mx-auto relative z-10">
+    <div class="flex flex-col lg:flex-row items-start lg:items-center justify-between gap-10">
+      
+      <!-- Left Column: The Hook & Value Proposition Text -->
+      <div class="max-w-xl">
+      
+        <h2 class="text-5xl sm:text-7xl font-black tracking-tight uppercase leading-none text-white mb-4">
+          Ready to chart <br>
+          <span class="text-transparent bg-clip-text bg-blue-400">Your Own Expedition?</span>
+        </h2>
+        <p class="text-xs sm:text-sm text-neutral-400 font-light tracking-wide leading-relaxed">
+          Skip standard itineraries. Connect directly with our expedition designers to wireframe a fully tailored luxury voyage matching your precise schedule.
+        </p>
+      </div>
+
+      <!-- Right Column: High-Priority Click Authority Action -->
+      <div class="w-full lg:w-auto shrink-0">
+        <a href="index.html#booking-form" class="group relative inline-flex items-center justify-between w-full sm:w-auto bg-blue-950 hover:bg-blue-900 text-white font-bold text-xs tracking-[0.25em] uppercase px-8 py-5 rounded-sm border border-blue-500 shadow-[0_0_30px_rgba(59,130,246,0.15)] transition-all duration-300 hover:scale-[1.02] min-w-[260px] text-center">
+          <span class="w-full">Initialize Booking</span>
+          
+          <!-- Directional Arrow Micro-Interaction -->
+          <svg class="w-4 h-4 text-blue-400 transform group-hover:translate-x-1.5 transition-transform duration-300 ml-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M14 5l7 7m0 0l-7 7m7-7H3" />
+          </svg>
+          
+          <!-- Sleek sliding layout border underlay -->
+          <div class="absolute bottom-0 left-0 w-0 h-[2px] bg-blue-500 group-hover:w-full transition-all duration-500"></div>
+        </a>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+  <!-- 6. HIGH-DENSITY AUDITED BRAND FOOTER -->
+  <footer class="bg-neutral-950 text-neutral-500 py-20 relative overflow-hidden border-t border-neutral-900/60">
+    <div class="max-w-5xl mx-auto px-6 relative z-10">
+      <!-- 4-Column Balanced Grid Block Grid Matrix -->
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 pb-12 border-b border-neutral-900/60">
+        
+        <!-- Column 1: Core Description -->
+        <div>
+          <div class="flex items-center space-x-3 mb-6">
+            <div class="w-10 h-10 bg-neutral-900 border border-neutral-800 flex items-center justify-center rounded-full overflow-hidden">
+              <img src="thumbnails/ArenaLogoNew.png" alt="Logo" class="w-full h-full object-cover rounded-full">
+            </div>
+            <span class="text-[10px] font-mono font-black tracking-widest text-blue-400 uppercase">WILD<span class="text-white">QUEST</span></span>
+          </div>
+          <p class="text-xs leading-relaxed italic text-neutral-500 font-light mb-6">
+            "The pinnacle of bespoke African expeditions. Bridging the gap between untamed wilderness and luxury."
+          </p>
+          <div class="flex gap-4 items-center text-neutral-600">
+            <a href="#" class="hover:text-white transition-colors" aria-label="Instagram"><i class="fa fa-instagram" style="font-size:18px;"></i></a>
+            <a href="#" class="hover:text-white transition-colors" aria-label="Facebook"><i class="fa fa-facebook" style="font-size:18px;"></i></a>
+            <a href="#" class="hover:text-white transition-colors" aria-label="TripAdvisor"><i class="fa fa-tripadvisor" style="font-size:18px;"></i></a>
+          </div>
+        </div>
+
+        <!-- Column 2: Navigation Links -->
+        <div>
+          <h4 class="text-blue-500 font-mono font-black uppercase tracking-widest text-[9px] mb-6">// NAVIGATION</h4>
+          <ul class="space-y-3 text-[10px] font-mono font-bold uppercase tracking-wider">
+            <li><a href="index.html#home" class="text-neutral-400 hover:text-blue-400 transition-all hover:translate-x-0.5 inline-block">Home</a></li>
+            <li><a href="index.html#destinations" class="text-neutral-400 hover:text-blue-400 transition-all hover:translate-x-0.5 inline-block">Sanctuaries</a></li>
+            <li><a href="index.html#tanzania-expeditions" class="text-neutral-400 hover:text-blue-400 transition-all hover:translate-x-0.5 inline-block">Expeditions</a></li>
+          </ul>
+        </div>
+
+        <!-- Column 3: Membership Status Badges -->
+        <div>
+          <h4 class="text-blue-500 font-mono font-black uppercase tracking-widest text-[9px] mb-6">// MEMBER STATUS</h4>
+          <div class="flex flex-wrap items-center gap-3">
+            <div class="bg-neutral-900 border border-neutral-800 p-1 rounded-full"><img src="img/ATTA.jpg" alt="ATTA" class="h-8 w-8 object-contain rounded-full grayscale opacity-60"></div>
+            <div class="bg-neutral-900 border border-neutral-800 p-1 rounded-full"><img src="img/TATO.png" alt="TATO" class="h-8 w-8 object-contain rounded-full grayscale opacity-60"></div>
+          </div>
+        </div>
+
+        <!-- Column 4: Newsletter Submission -->
+        <div>
+          <h4 class="text-blue-500 font-mono font-black uppercase tracking-widest text-[9px] mb-4">// BRIEFING DISPATCH</h4>
+          <form action="https://formspree.io" method="POST" class="relative w-full mb-4">
+            <input type="email" name="email" placeholder="EMAIL WINDOW" required class="w-full bg-neutral-900 border border-neutral-800 p-3 pr-10 text-[9px] font-mono text-white tracking-widest focus:outline-none focus:border-blue-900 rounded-sm uppercase" />
+            <button type="submit" class="absolute right-2 top-1/2 -translate-y-1/2 text-blue-400 text-xs font-bold">→</button>
+          </form>
+          <span class="text-[8px] font-mono text-neutral-600 block uppercase tracking-wider">HQ // SINONI, ARUSHA, TANZANIA</span>
+        </div>
+
+      </div>
+
+      <!-- Payment Gateways Sub Row -->
+      <div class="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4 py-8 border-b border-neutral-900/60 text-xs font-mono">
+        <div class="flex items-center gap-4">
+          <span class="text-[9px] font-black uppercase tracking-widest text-neutral-600">WE ACCEPT //</span>
+          <div class="flex items-center gap-4 text-xl select-none text-neutral-400">
+            <i class="fa fa-cc-visa hover:text-white transition-colors"></i>
+            <i class="fa fa-cc-mastercard hover:text-white transition-colors"></i>
+            <i class="fa fa-cc-amex hover:text-white transition-colors"></i>
+            <div class="flex items-center h-5 px-2 bg-neutral-900 border border-neutral-800 rounded-sm text-[8px] font-black uppercase tracking-tighter"><span class="text-teal-500">pesa</span><span class="text-amber-500">pal</span></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Legal & Developer Credit Row -->
+      <div class="pt-8 flex flex-col sm:flex-row justify-between items-center gap-6 text-[9px] font-mono text-neutral-600 uppercase tracking-widest">
+        <div class="flex gap-6">
+          <a href="Privacy.html" class="hover:text-blue-400 transition-colors">Privacy Policy</a>
+          <a href="TermsOfService.html" class="hover:text-blue-400 transition-colors">Terms of Service</a>
+        </div>
+        <p>© 2026 AFRICA SCENERY DISCOVERY</p>
+        <div class="flex items-center gap-2 px-3 py-1.5 bg-neutral-900 border border-neutral-800 skew-x-[-10deg] group hover:border-blue-900 transition-all">
+          <a href="https://synlotech.com" target="_blank" rel="noopener noreferrer" class="text-[7px] font-black text-neutral-500 leading-none block skew-x-[10deg]">
+            DEVELOPED BY <span class="text-[9px] font-black text-white group-hover:text-blue-400 transition-colors">SYNLOTECH</span>
+          </a>
+        </div>
+      </div>
+
+    </div>
+  </footer>
+    <!-- Complete Script Hub: Core Layout Scrolling & Menu Interaction Mechanics -->
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const navFrame = document.getElementById('master-navigation');
+      const menuToggle = document.getElementById('menu-toggle');
+      const mobileMenu = document.getElementById('mobile-menu');
+      const menuIcon = document.getElementById('menu-icon');
+
+      // 1. Dynamic Scroll Tracking System
+      window.addEventListener('scroll', () => {
+        if (window.scrollY > 40) {
+          navFrame.classList.remove('top-6', 'max-w-5xl', 'px-4');
+          navFrame.classList.add('top-0', 'max-w-full', 'px-0');
+          navFrame.firstElementChild.classList.remove('rounded-full', 'px-6');
+          navFrame.firstElementChild.classList.add('rounded-none', 'px-8', 'border-x-0', 'border-t-0', 'bg-neutral-950/80');
+        } else {
+          navFrame.classList.remove('top-0', 'max-w-full', 'px-0');
+          navFrame.classList.add('top-6', 'max-w-5xl', 'px-4');
+          navFrame.firstElementChild.classList.remove('rounded-none', 'px-8', 'border-x-0', 'border-t-0', 'bg-neutral-950/80');
+          navFrame.firstElementChild.classList.add('rounded-full', 'px-6');
+        }
+      });
+
+      // 2. Mobile Dropdown Interface Controller
+      if (menuToggle && mobileMenu) {
+        menuToggle.addEventListener('click', () => {
+          const isHidden = mobileMenu.classList.contains('hidden');
+          if (isHidden) {
+            mobileMenu.classList.remove('hidden');
+            setTimeout(() => {
+              mobileMenu.classList.remove('scale-95', 'opacity-0');
+              mobileMenu.classList.add('scale-100', 'opacity-100');
+            }, 10);
+            menuIcon.setAttribute('d', 'M6 18L18 6M6 6l12 12');
+          } else {
+            mobileMenu.classList.remove('scale-100', 'opacity-100');
+            mobileMenu.classList.add('scale-95', 'opacity-0');
+            menuIcon.setAttribute('d', 'M4 6h16M4 12h16M4 18h16');
+            setTimeout(() => mobileMenu.classList.add('hidden'), 300);
+          }
+        });
+      }
+    });
+  </script>
+</body>
+</html>
+
+
+
+
