@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en">
+    
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ARENA AFRICA SAFARIS</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="icon" href="thumbnails/ArenaLogoNew.png" type="image/x-icon">
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            neutral: {
+              950: '#0a0a0a',
+            }
+          }
+        }
+      }
+    }
+  </script>
+</head>
+<body class="bg-neutral-950 text-white font-sans selection:bg-blue-900 selection:text-white">
+
+   <nav id="master-navigation" class="fixed top-6 inset-x-0 z-50 max-w-6xl mx-auto px-4 transition-all duration-500 ease-out">
+  <!-- Container with Floating Capsule Design -->
+  <div class="relative bg-neutral-950/40 backdrop-blur-xl border border-neutral-800/40 rounded-full px-4 py-5 flex items-center justify-between transition-all duration-500 group/nav hover:border-neutral-700/60 hover:bg-neutral-950/60">
+    
+    <!-- Fine glow line underneath capsule -->
+    <div class="absolute inset-x-12 bottom-0 h-px bg-gradient-to-r from-transparent via-blue-900/30 to-transparent"></div>
+  <a href="index.html#home" class="flex items-center space-x-2 shrink-0 relative group/logo">
+    <!-- New Left Side Image Placement Container -->
+    <img src="thumbnails/ArenaLogoNew.png" alt="Icon or Emblem Accent" class="w-8 h-8 ml-3 object-contain">
+    
+    <!-- Existing Main Logo Text Asset -->
+    <img src="images/ChatGPT Image Aug 24, 2026, 12_09_24 PM.png" alt="Arena Africa Safaris Logo" class="w-[10rem] h-8 object-cover">
+</a>
+
+
+    <!-- Center: Premium Minimalistic Menu Matrix (Desktop) -->
+    <div class="hidden md:flex items-center space-x-1 relative bg-neutral-950/60 border border-neutral-900/80 px-2 py-1.5 rounded-full">
+      <a href="index.html#home" class="relative text-[10px] font-bold tracking-widest uppercase px-4 py-2 text-white hover:text-blue-400 transition-colors duration-300">
+        HOME
+      </a>
+
+       <a href="index.html#destinations" class="relative text-[10px] font-bold tracking-widest uppercase px-4 py-2 text-neutral-400 hover:text-white transition-colors duration-300">
+        DESTINATIONS
+      </a>
+
+
+     
+      <a href="index.html#expeditions" class="relative text-[10px] font-bold tracking-widest uppercase px-4 py-2 text-neutral-400 hover:text-white transition-colors duration-300">
+        Expeditions
+      </a>
+
+       <a href="index.html#tours" class="relative text-[10px] font-bold tracking-widest uppercase px-4 py-2 text-neutral-400 hover:text-white transition-colors duration-300">
+        Tours
+      </a>
+
+       <a href="index.html#about" class="relative text-[10px] font-bold tracking-widest uppercase px-4 py-2 text-neutral-400 hover:text-white transition-colors duration-300">
+        ABOUT US
+      </a>
+    </div>
+
+    <!-- Right: High-Conversion Micro CTA Hub -->
+    <div class="flex items-center space-x-4">
+      <!-- Tactically Refined Action Button -->
+     <a href="https://wa.me/255711936842?text=Hello%20Arena%20Africa%20Safaris%2C%0A%0AI%20would%20like%20to%20plan%20a%20tour%20or%20safari.%0A%0A%E2%80%A2%20Destination%3A%0A%E2%80%A2%20Number%20of%20Travelers%3A%0A%E2%80%A2%20Preferred%20Travel%20Dates%3A%0A%E2%80%A2%20Budget%20Range%3A%0A%E2%80%A2%20Special%20Requests%3A%0A%0AI%20look%20forward%20to%20hearing%20from%20you."
+   target="_blank"
+   class="hidden sm:inline-flex relative overflow-hidden bg-blue-950 border border-blue-900/50 text-white font-bold text-[10px] tracking-[0.2em] uppercase px-5 py-2.5 rounded-full transition-all duration-300 shadow-[0_0_20px_rgba(59,130,246,0.1)] hover:border-blue-500 hover:scale-[1.03] group/btn">
+    
+    <span class="relative z-10">BOOK TOUR</span>
+    
+    <div class="absolute inset-0 bg-gradient-to-r from-blue-900 to-blue-950 opacity-0 group-hover/btn:opacity-100 transition-opacity duration-300"></div>
+</a>
+
+      <!-- Compact Floating Hamburger Menu Switcher -->
+      <button id="menu-toggle" class="md:hidden w-9 h-9 flex items-center justify-center bg-neutral-900/60 border border-neutral-800/80 rounded-full text-neutral-400 hover:text-white focus:outline-none transition-colors duration-300" aria-label="Toggle Menu Matrix">
+        <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+          <path id="menu-icon" stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16" />
+        </svg>
+      </button>
+    </div>
+
+  </div>
+
+ <!-- Mobile Dropdown Matrix System -->
+<div id="mobile-menu" class="hidden md:hidden mt-3 w-full bg-neutral-950/90 backdrop-blur-xl border border-neutral-800/80 rounded-3xl p-6 shadow-2xl space-y-3 transform origin-top transition-all duration-300 scale-95 opacity-0">
+  
+  <!-- Clean text link stack with backgrounds and borders removed -->
+  <div class="flex flex-col gap-1">
+    <a href="index.html#home" class="py-2 text-xs font-bold uppercase tracking-widest text-white hover:text-blue-400 transition-colors">Home</a>
+    
+    <a href="index.html#destinations" class="py-2 text-xs font-bold uppercase tracking-widest text-neutral-400 hover:text-white transition-colors">Destinations</a>
+    
+    <a href="index.html#expeditions" class="py-2 text-xs font-bold uppercase tracking-widest text-neutral-400 hover:text-white transition-colors">Expeditions</a>
+    
+    <a href="index.html#tours" class="py-2 text-xs font-bold uppercase tracking-widest text-neutral-400 hover:text-white transition-colors">TOURS</a>
+    
+    <a href="index.html#about" class="py-2 text-xs font-bold uppercase tracking-widest text-neutral-400 hover:text-white transition-colors">ABOUT US</a>
+    
+    <a href="index.html#accommodation" class="py-2 text-xs font-bold uppercase tracking-widest text-neutral-400 hover:text-white transition-colors">ACCOMODATION</a>
+    
+    
+    <a href="index.html#gallery" class="py-2 text-xs font-bold uppercase tracking-widest text-neutral-400 hover:text-white transition-colors">Gallery</a>
+    
+    
+  </div>
+  
+  <div class="pt-3 border-t border-neutral-900">
+    <a href="https://wa.me/255711936842?text=Hello%20Arena%20Africa%20Safaris%2C%0A%0AI%20would%20like%20to%20plan%20a%20tour%20or%20safari.%0A%0A%E2%80%A2%20Destination%3A%0A%E2%80%A2%20Number%20of%20Travelers%3A%0A%E2%80%A2%20Preferred%20Travel%20Dates%3A%0A%E2%80%A2%20Budget%20Range%3A%0A%E2%80%A2%20Special%20Requests%3A%0A%0AI%20look%20forward%20to%20hearing%20from%20you."
+       target="_blank"
+       class="flex justify-center items-center w-full relative overflow-hidden bg-blue-950 border border-blue-900/50 text-white font-bold text-[10px] tracking-[0.2em] uppercase px-5 py-3 rounded-full transition-all duration-300 shadow-[0_0_20px_rgba(59,130,246,0.1)] hover:border-blue-500"> 
+      <span class="relative z-10">BOOK TOUR</span>
+      <div class="absolute inset-0 bg-gradient-to-r from-blue-900 to-blue-950 opacity-0 group-hover/btn:opacity-100 transition-opacity duration-300"></div>
+    </a>
+  </div>
+</div>
+
+</nav>
+
+
+  <!-- ========================================== -->
+  <!-- FULL MEDIA GALLERY PAGE CONTAINER          -->
+  <!-- ========================================== -->
+  <section class="relative min-h-screen py-16 px-6 overflow-hidden">
+    
+    <!-- Subtle Glowing Wilderness Background Ambient Layer -->
+    <div class="absolute top-1/3 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[1000px] h-[500px] bg-blue-950/10 rounded-full blur-[180px] pointer-events-none"></div>
+
+    <div class="max-w-7xl mx-auto relative z-10">
+      
+      <!-- Top Row: Content Narrative Header -->
+      <div class="mb-16 max-w-3xl">
+       
+        <br>
+        <span class="text-xs font-bold pt-20 racking-[0.3em] text-blue-400 uppercase inline-block mb-4">
+          EXPEDITION ARCHIVES
+        </span>
+        <h1 class="text-6xl sm:text-8xl font-black tracking-tight uppercase leading-[1.05] mb-8">
+          The Arena <br>
+          <span class="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-blue-600">Media Gallery</span>
+        </h1>
+        <p class="text-neutral-400 font-light tracking-wide text-sm sm:text-base leading-relaxed">
+          Welcome to our complete photographic library. Click on any item below to trigger the high-resolution lightbox canvas view, exploring genuine captures of wild predation, deep cultural legacies, and untouched wilderness landscapes.
+        </p>
+      </div>
+
+    
+
+           <!-- Expanded Interactive Media Grid (Supports 8+ items easily with Lazy Loading) -->
+      <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 sm:gap-6">
+        
+        <!-- Image 1: Wildlife -->
+        <div class="gallery-item relative group aspect-[4/5] bg-neutral-900 border border-neutral-900 overflow-hidden rounded-sm transition-all duration-500 hover:border-blue-900/40 cursor-pointer" data-category="wildlife" onclick="openLightbox(this)">
+          <div class="absolute inset-0 bg-gradient-to-t from-neutral-950 via-transparent to-transparent z-10 opacity-80 group-hover:opacity-40 transition-opacity duration-500"></div>
+          <img src="gallery/DSC08098.JPG" alt="Serengeti Lion Pride on Expedition" loading="lazy" class="w-full h-full object-cover scale-105 group-hover:scale-100 transition-transform duration-700 ease-out" />
+          <span class="absolute bottom-4 left-4 z-20 text-[10px] tracking-widest text-blue-400 uppercase font-bold">SERENGETI LIONS</span>
+        </div>
+
+        <!-- Image 2: Culture -->
+        <div class="gallery-item relative group aspect-[4/5] bg-neutral-900 border border-neutral-900 overflow-hidden rounded-sm transition-all duration-500 hover:border-blue-900/40 cursor-pointer" data-category="culture" onclick="openLightbox(this)">
+          <div class="absolute inset-0 bg-gradient-to-t from-neutral-950 via-transparent to-transparent z-10 opacity-80 group-hover:opacity-40 transition-opacity duration-500"></div>
+          <img src="images/MMara.jpg" alt="Maasai Traditional Celebration" loading="lazy" class="w-full h-full object-cover scale-105 group-hover:scale-100 transition-transform duration-700 ease-out" />
+          <span class="absolute bottom-4 left-4 z-20 text-[10px] tracking-widest text-blue-400 uppercase font-bold">MAASAI HERITAGE</span>
+        </div>
+
+        <!-- Image 3: Wildlife -->
+        <div class="gallery-item relative group aspect-[4/5] bg-neutral-900 border border-neutral-900 overflow-hidden rounded-sm transition-all duration-500 hover:border-blue-900/40 cursor-pointer" data-category="wildlife" onclick="openLightbox(this)">
+          <div class="absolute inset-0 bg-gradient-to-t from-neutral-950 via-transparent to-transparent z-10 opacity-80 group-hover:opacity-40 transition-opacity duration-500"></div>
+          <img src="gallery/elephant.JPG" alt="Ngorongoro Elephant Caverns" loading="lazy" class="w-full h-full object-cover scale-105 group-hover:scale-100 transition-transform duration-700 ease-out" />
+          <span class="absolute bottom-4 left-4 z-20 text-[10px] tracking-widest text-blue-400 uppercase font-bold">LAND GIANTS</span>
+        </div>
+
+        <!-- Image 4: Wildlife -->
+        <div class="gallery-item relative group aspect-[4/5] bg-neutral-900 border border-neutral-900 overflow-hidden rounded-sm transition-all duration-500 hover:border-blue-900/40 cursor-pointer" data-category="wildlife" onclick="openLightbox(this)">
+          <div class="absolute inset-0 bg-gradient-to-t from-neutral-950 via-transparent to-transparent z-10 opacity-80 group-hover:opacity-40 transition-opacity duration-500"></div>
+          <img src="shots/savannah_antelopes.jpg" alt="Fringe-eared oryx and eland traversing the golden savannah plains" loading="lazy" class="w-full h-full object-cover scale-105 group-hover:scale-100 transition-transform duration-700 ease-out" />
+          <span class="absolute bottom-4 left-4 z-20 text-[10px] tracking-widest text-blue-400 uppercase font-bold">PLAINS GAME</span>
+        </div>
+
+        <!-- Image 5: Wildlife -->
+        <div class="gallery-item relative group aspect-[4/5] bg-neutral-900 border border-neutral-900 overflow-hidden rounded-sm transition-all duration-500 hover:border-blue-900/40 cursor-pointer" data-category="wildlife" onclick="openLightbox(this)">
+          <div class="absolute inset-0 bg-gradient-to-t from-neutral-950 via-transparent to-transparent z-10 opacity-80 group-hover:opacity-40 transition-opacity duration-500"></div>
+          <img src="shots/tarangire_tree_lions.jpg" alt="Arboreal predators resting on tree branches" loading="lazy" class="w-full h-full object-cover scale-105 group-hover:scale-100 transition-transform duration-700 ease-out" />
+          <span class="absolute bottom-4 left-4 z-20 text-[10px] tracking-widest text-blue-400 uppercase font-bold">TREE LIONS</span>
+        </div>
+
+        <!-- Image 6: Landscapes -->
+        <div class="gallery-item relative group aspect-[4/5] bg-neutral-900 border border-neutral-900 overflow-hidden rounded-sm transition-all duration-500 hover:border-blue-900/40 cursor-pointer" data-category="landscapes" onclick="openLightbox(this)">
+          <div class="absolute inset-0 bg-gradient-to-t from-neutral-950 via-transparent to-transparent z-10 opacity-80 group-hover:opacity-40 transition-opacity duration-500"></div>
+          <img src="shots/natron_lengai_volcano.jpg" alt="Ol Doinyo Lengai volcano landscapes" loading="lazy" class="w-full h-full object-cover scale-105 group-hover:scale-100 transition-transform duration-700 ease-out" />
+          <span class="absolute bottom-4 left-4 z-20 text-[10px] tracking-widest text-blue-400 uppercase font-bold">VOLCANIC VISTAS</span>
+        </div>
+
+        <!-- Image 7: Landscapes -->
+        <div class="gallery-item relative group aspect-[4/5] bg-neutral-900 border border-neutral-900 overflow-hidden rounded-sm transition-all duration-500 hover:border-blue-900/40 cursor-pointer" data-category="landscapes" onclick="openLightbox(this)">
+          <div class="absolute inset-0 bg-gradient-to-t from-neutral-950 via-transparent to-transparent z-10 opacity-80 group-hover:opacity-40 transition-opacity duration-500"></div>
+          <img src="shots/chemka_hot_springs.jpg" alt="Turquoise geothermal pools of Chemka" loading="lazy" class="w-full h-full object-cover scale-105 group-hover:scale-100 transition-transform duration-700 ease-out" />
+          <span class="absolute bottom-4 left-4 z-20 text-[10px] tracking-widest text-blue-400 uppercase font-bold">TURQUOISE LAGOONS</span>
+        </div>
+
+        <!-- Image 8: Culture -->
+        <div class="gallery-item relative group aspect-[4/5] bg-neutral-900 border border-neutral-900 overflow-hidden rounded-sm transition-all duration-500 hover:border-blue-900/40 cursor-pointer" data-category="culture" onclick="openLightbox(this)">
+          <div class="absolute inset-0 bg-gradient-to-t from-neutral-950 via-transparent to-transparent z-10 opacity-80 group-hover:opacity-40 transition-opacity duration-500"></div>
+          <img src="shots/materuni_coffee.jpg" alt="Chagga coffee pounding ceremonies" loading="lazy" class="w-full h-full object-cover scale-105 group-hover:scale-100 transition-transform duration-700 ease-out" />
+          <span class="absolute bottom-4 left-4 z-20 text-[10px] tracking-widest text-blue-400 uppercase font-bold">CHAGGA RITUALS</span>
+        </div>
+
+      </div>
+
+  </section>
+
+  <!-- ========================================== -->
+  <!-- LIGHTBOX MODAL LAYER                       -->
+  <!-- ========================================== -->
+  <div id="lightboxModal" class="fixed inset-0 bg-neutral-950/95 z-50 flex items-center justify-center opacity-0 pointer-events-none transition-opacity duration-300 backdrop-blur-md">
+    <!-- Close Action Trigger -->
+    <button onclick="closeLightbox()" class="absolute top-6 right-6 text-neutral-400 hover:text-white transition-colors z-50 p-2">
+      <svg xmlns="http://w3.org" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-8 h-8">
+        <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+      </svg>
+    </button>
+    
+    <!-- Lightbox Frame Structure -->
+    <div class="max-w-5xl max-h-[85vh] p-4 relative flex flex-col items-center">
+      <img id="lightboxImg" src="" alt="Expanded View Asset" class="max-w-full max-h-[75vh] object-contain rounded-sm border border-neutral-900 shadow-2xl" />
+      <div class="mt-4 text-center">
+        <p id="lightboxCaption" class="text-sm font-bold tracking-wider uppercase text-white"></p>
+      </div>
+    </div>
+  </div>
+
+  <!-- ========================================== -->
+  <!-- LIGHTBOX & FILTER FUNCTIONAL SCRIPTS      -->
+  <!-- ========================================== -->
+  <script>
+    
+  document.addEventListener('DOMContentLoaded', () => {
+    const navFrame = document.getElementById('master-navigation');
+    const menuToggle = document.getElementById('menu-toggle');
+    const mobileMenu = document.getElementById('mobile-menu');
+    const menuIcon = document.getElementById('menu-icon');
+
+    // 1. Dynamic Scroll Matrix Engine (Shrinks & anchors on scroll)
+    window.addEventListener('scroll', () => {
+      if (window.scrollY > 40) {
+        navFrame.classList.remove('top-6', 'max-w-6xl', 'px-4');
+        navFrame.classList.add('top-0', 'max-w-full', 'px-0');
+        navFrame.firstElementChild.classList.remove('rounded-full', 'px-6');
+        navFrame.firstElementChild.classList.add('rounded-none', 'px-8', 'border-x-0', 'border-t-0', 'bg-neutral-950/80');
+      } else {
+        navFrame.classList.remove('top-0', 'max-w-full', 'px-0');
+        navFrame.classList.add('top-6', 'max-w-6xl', 'px-4');
+        navFrame.firstElementChild.classList.remove('rounded-none', 'px-8', 'border-x-0', 'border-t-0', 'bg-neutral-950/80');
+        navFrame.firstElementChild.classList.add('rounded-full', 'px-6');
+      }
+    });
+
+    // 2. Mobile Dropdown Activation System
+    menuToggle.addEventListener('click', () => {
+      const isHidden = mobileMenu.classList.contains('hidden');
+      
+      if (isHidden) {
+        mobileMenu.classList.remove('hidden');
+        // Let thread resolve to trigger entrance animations cleanly
+        setTimeout(() => {
+          mobileMenu.classList.remove('scale-95', 'opacity-0');
+          mobileMenu.classList.add('scale-100', 'opacity-100');
+        }, 10);
+        menuIcon.setAttribute('d', 'M6 18L18 6M6 6l12 12');
+      } else {
+        mobileMenu.classList.remove('scale-100', 'opacity-100');
+        mobileMenu.classList.add('scale-95', 'opacity-0');
+        menuIcon.setAttribute('d', 'M4 6h16M4 12h16M4 18h16');
+        setTimeout(() => mobileMenu.classList.add('hidden'), 300);
+      }
+    });
+
+    // Auto close menu when a tracking location anchor link gets targeted
+    mobileMenu.querySelectorAll('a').forEach(link => {
+      link.addEventListener('click', () => {
+        mobileMenu.classList.remove('scale-100', 'opacity-100');
+        mobileMenu.classList.add('scale-95', 'opacity-0');
+        menuIcon.setAttribute('d', 'M4 6h16M4 12h16M4 18h16');
+        setTimeout(() => mobileMenu.classList.add('hidden'), 300);
+      });
+    });
+  });
+  
+    // Lightbox Mechanics
+    const modal = document.getElementById('lightboxModal');
+    const lbImg = document.getElementById('lightboxImg');
+    const lbCaption = document.getElementById('lightboxCaption');
+
+    function openLightbox(element) {
+      const srcImage = element.querySelector('img');
+      const labelText = element.querySelector('span').textContent;
+      
+      lbImg.src = srcImage.src;
+      lbCaption.textContent = labelText;
+      
+      modal.classList.remove('opacity-0', 'pointer-events-none');
+    }
+
+    function closeLightbox() {
+      modal.classList.add('opacity-0', 'pointer-events-none');
+      // Delay cleaning path values slightly to avoid flash animations
+      setTimeout(() => { lbImg.src = ''; }, 300);
+    }
+
+    // Close when clicking empty space background area
+    modal.addEventListener('click', function(e) {
+      if(e.target === modal) closeLightbox();
+    });
+
+    // Close on Escape button press down event
+    document.addEventListener('keydown', function(e) {
+      if (e.key === 'Escape') closeLightbox();
+    });
+
+    // Filter System Mechanics
+    function filterGallery(category) {
+      const items = document.querySelectorAll('.gallery-item');
+      const buttons = document.querySelectorAll('.gallery-filter-btn');
+
+      // Update button highlights safely
+      buttons.forEach(btn => {
+        if(btn.textContent.toLowerCase().includes(category) || (category === 'all' && btn.textContent.toLowerCase().includes('all'))) {
+          btn.className = "gallery-filter-btn px-5 py-2 text-xs font-bold tracking-widest uppercase rounded-sm border border-blue-400 bg-blue-950/40 text-blue-400 transition-all duration-300";
+        } else {
+          btn.className = "gallery-filter-btn px-5 py-2 text-xs font-bold tracking-widest uppercase rounded-sm border border-neutral-900 text-neutral-400 hover:border-blue-900/40 hover:text-white transition-all duration-300";
+        }
+      });
+
+      // Filter grid cards logic
+      items.forEach(item => {
+        if(category === 'all' || item.getAttribute('data-category') === category) {
+          item.style.display = 'block';
+        } else {
+          item.style.display = 'none';
+        }
+      });
+    }
+  </script>
+
+<script>/* ios hover */ document.addEventListener("touchstart", function() {}, true);</script>
+</body>
+</html>
