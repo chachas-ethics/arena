@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+    
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ARENA AFRICA SAFARIS</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="icon" href="thumbnails/ArenaLogoNew.png" type="image/x-icon">
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            neutral: {
+              950: '#0a0a0a',
+            }
+          }
+        }
+      }
+    }
+  </script>
+</head>
+<body class="bg-neutral-950 text-white font-sans antialiased">
+
+     <nav id="master-navigation" class="fixed top-6 inset-x-0 z-50 max-w-6xl mx-auto px-4 transition-all duration-500 ease-out">
+  <!-- Container with Floating Capsule Design -->
+  <div class="relative bg-neutral-950/40 backdrop-blur-xl border border-neutral-800/40 rounded-full px-4 py-5 flex items-center justify-between transition-all duration-500 group/nav hover:border-neutral-700/60 hover:bg-neutral-950/60">
+    
+    <!-- Fine glow line underneath capsule -->
+    <div class="absolute inset-x-12 bottom-0 h-px bg-gradient-to-r from-transparent via-blue-900/30 to-transparent"></div>
+  <a href="index.html#home" class="flex items-center space-x-2 shrink-0 relative group/logo">
+    <!-- New Left Side Image Placement Container -->
+    <img src="thumbnails/ArenaLogoNew.png" alt="Icon or Emblem Accent" class="w-8 h-8 ml-3 object-contain">
+    
+    <!-- Existing Main Logo Text Asset -->
+    <img src="images/ChatGPT Image Aug 24, 2026, 12_09_24 PM.png" alt="Arena Africa Safaris Logo" class="w-[10rem] h-8 object-cover">
+</a>
+
+
+    <!-- Center: Premium Minimalistic Menu Matrix (Desktop) -->
+    <div class="hidden md:flex items-center space-x-1 relative bg-neutral-950/60 border border-neutral-900/80 px-2 py-1.5 rounded-full">
+      <a href="index.html#home" class="relative text-[10px] font-bold tracking-widest uppercase px-4 py-2 text-white hover:text-blue-400 transition-colors duration-300">
+        HOME
+      </a>
+
+       <a href="index.html#destinations" class="relative text-[10px] font-bold tracking-widest uppercase px-4 py-2 text-neutral-400 hover:text-white transition-colors duration-300">
+        DESTINATIONS
+      </a>
+
+
+     
+      <a href="index.html#expeditions" class="relative text-[10px] font-bold tracking-widest uppercase px-4 py-2 text-neutral-400 hover:text-white transition-colors duration-300">
+        Expeditions
+      </a>
+
+       <a href="index.html#tours" class="relative text-[10px] font-bold tracking-widest uppercase px-4 py-2 text-neutral-400 hover:text-white transition-colors duration-300">
+        Tours
+      </a>
+
+       <a href="index.html#about" class="relative text-[10px] font-bold tracking-widest uppercase px-4 py-2 text-neutral-400 hover:text-white transition-colors duration-300">
+        ABOUT US
+      </a>
+    </div>
+
+    <!-- Right: High-Conversion Micro CTA Hub -->
+    <div class="flex items-center space-x-4">
+      <!-- Tactically Refined Action Button -->
+     <a href="https://wa.me/255711936842?text=Hello%20Arena%20Africa%20Safaris%2C%0A%0AI%20would%20like%20to%20plan%20a%20tour%20or%20safari.%0A%0A%E2%80%A2%20Destination%3A%0A%E2%80%A2%20Number%20of%20Travelers%3A%0A%E2%80%A2%20Preferred%20Travel%20Dates%3A%0A%E2%80%A2%20Budget%20Range%3A%0A%E2%80%A2%20Special%20Requests%3A%0A%0AI%20look%20forward%20to%20hearing%20from%20you."
+   target="_blank"
+   class="hidden sm:inline-flex relative overflow-hidden bg-blue-950 border border-blue-900/50 text-white font-bold text-[10px] tracking-[0.2em] uppercase px-5 py-2.5 rounded-full transition-all duration-300 shadow-[0_0_20px_rgba(59,130,246,0.1)] hover:border-blue-500 hover:scale-[1.03] group/btn">
+    
+    <span class="relative z-10">BOOK TOUR</span>
+    
+    <div class="absolute inset-0 bg-gradient-to-r from-blue-900 to-blue-950 opacity-0 group-hover/btn:opacity-100 transition-opacity duration-300"></div>
+</a>
+
+      <!-- Compact Floating Hamburger Menu Switcher -->
+      <button id="menu-toggle" class="md:hidden w-9 h-9 flex items-center justify-center bg-neutral-900/60 border border-neutral-800/80 rounded-full text-neutral-400 hover:text-white focus:outline-none transition-colors duration-300" aria-label="Toggle Menu Matrix">
+        <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+          <path id="menu-icon" stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16" />
+        </svg>
+      </button>
+    </div>
+
+  </div>
+
+ <!-- Mobile Dropdown Matrix System -->
+<div id="mobile-menu" class="hidden md:hidden mt-3 w-full bg-neutral-950/90 backdrop-blur-xl border border-neutral-800/80 rounded-3xl p-6 shadow-2xl space-y-3 transform origin-top transition-all duration-300 scale-95 opacity-0">
+  
+  <!-- Clean text link stack with backgrounds and borders removed -->
+  <div class="flex flex-col gap-1">
+    <a href="index.html#home" class="py-2 text-xs font-bold uppercase tracking-widest text-white hover:text-blue-400 transition-colors">Home</a>
+    
+    <a href="index.html#destinations" class="py-2 text-xs font-bold uppercase tracking-widest text-neutral-400 hover:text-white transition-colors">Destinations</a>
+    
+    <a href="index.html#expeditions" class="py-2 text-xs font-bold uppercase tracking-widest text-neutral-400 hover:text-white transition-colors">Expeditions</a>
+    
+    <a href="index.html#tours" class="py-2 text-xs font-bold uppercase tracking-widest text-neutral-400 hover:text-white transition-colors">TOURS</a>
+    
+    <a href="index.html#about" class="py-2 text-xs font-bold uppercase tracking-widest text-neutral-400 hover:text-white transition-colors">ABOUT US</a>
+    
+    <a href="index.html#accommodation" class="py-2 text-xs font-bold uppercase tracking-widest text-neutral-400 hover:text-white transition-colors">ACCOMODATION</a>
+    
+    
+    <a href="index.html#gallery" class="py-2 text-xs font-bold uppercase tracking-widest text-neutral-400 hover:text-white transition-colors">Gallery</a>
+    
+    
+  </div>
+  
+  <div class="pt-3 border-t border-neutral-900">
+    <a href="https://wa.me."
+       target="_blank"
+       class="flex justify-center items-center w-full relative overflow-hidden bg-blue-950 border border-blue-900/50 text-white font-bold text-[10px] tracking-[0.2em] uppercase px-5 py-3 rounded-full transition-all duration-300 shadow-[0_0_20px_rgba(59,130,246,0.1)] hover:border-blue-500"> 
+      <span class="relative z-10">BOOK TOUR</span>
+      <div class="absolute inset-0 bg-gradient-to-r from-blue-900 to-blue-950 opacity-0 group-hover/btn:opacity-100 transition-opacity duration-300"></div>
+    </a>
+  </div>
+</div>
+
+</nav>
+
+  <!-- Artistic Terms & Conditions Header Section -->
+  <section id="terms-header" class="relative bg-neutral-950 text-white pt-36 pb-20 px-6 overflow-hidden border-b border-neutral-900">
+    
+    <!-- Subtle Glowing Wilderness Background Ambient Layer -->
+    <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[400px] bg-blue-950/10 rounded-full blur-[160px] pointer-events-none"></div>
+
+    <div class="max-w-7xl mx-auto relative z-10">
+      <!-- Asymmetric Split Grid: Text Content Left, Artistic Image Right -->
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-20 items-center">
+        
+        <!-- Left Column: Content Narrative (7/12 Span) -->
+        <div class="lg:col-span-7 order-2 lg:order-1">
+          <span class="text-xs font-bold tracking-[0.3em] text-blue-400 uppercase inline-block mb-4">
+            LEGAL FRAMEWORK & AGREEMENTS
+          </span>
+          
+          <h1 class="text-6xl sm:text-8xl font-black tracking-tight uppercase leading-[1.05] mb-8">
+            Terms & <br>
+            <span class="text-transparent bg-clip-text bg-blue-400">Conditions</span>
+          </h1>
+          
+          <div class="space-y-6 text-neutral-400 font-light tracking-wide text-sm sm:text-base leading-relaxed max-w-2xl">
+            <p>
+              All trips operated by Arena Africa Safaris provide clients with a detailed itinerary describing the destinations and scheduled experiences, ensuring complete transparency for what to expect.
+            </p>
+            <p class="border-l-2 border-blue-500/40 pl-6 text-neutral-300 italic font-normal">
+              Making a booking with Arena Africa Safaris is taken as explicit acceptance by the customer of the statutory Terms and Conditions outlined below.
+            </p>
+            <p>
+              By requesting us to confirm your booking, you are regarded as having read, understood, and agreed to these terms before a binding contract comes into legal existence.
+            </p>
+          </div>
+
+          <!-- Quick Navigation Link Group -->
+          <div class="mt-12">
+            <a href="#provisions" class="group relative inline-flex items-center justify-between bg-blue-950 hover:bg-blue-900 text-white text-xs font-bold tracking-[0.2em] uppercase px-8 py-5 rounded-sm border border-blue-900/60 shadow-[0_0_30px_rgba(59,130,246,0.15)] transition-all duration-300 hover:scale-[1.02] min-w-[240px]">
+              <span>Review Full Policy</span>
+              <svg class="w-4 h-4 transform group-hover:translate-y-1 transition-transform duration-300 text-blue-400" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M19 14l-7 7m0 0l-7-7m7 7V3" />
+              </svg>
+              <div class="absolute bottom-0 left-0 w-0 h-[2px] bg-blue-500 group-hover:w-full transition-all duration-500"></div>
+            </a>
+          </div>
+        </div>
+
+        <!-- Right Column: Artistic Multi-Layer Image Frame (5/12 Span) -->
+        <div class="lg:col-span-5 order-1 lg:order-2 relative">
+          <!-- Distant Architectural Geometric Background Frame -->
+          <div class="absolute -inset-4 border border-neutral-900 rounded-sm pointer-events-none translate-x-2 translate-y-2 z-0"></div>
+          
+          <!-- Primary Luxury Nature Image Container -->
+          <div class="relative z-10 aspect-[4/5] w-full bg-neutral-900 overflow-hidden border border-neutral-800/80 group rounded-sm">
+            <div class="absolute inset-0 bg-gradient-to-t from-neutral-950 via-transparent to-transparent opacity-80 z-10"></div>
+            <img src="thumbnails/ArenaLogoNew.png" 
+                 alt="Arena Africa Safaris Signature Branding" 
+                 class="w-full h-full object-contain p-12 scale-105 group-hover:scale-100 transition-transform duration-700 ease-out" />
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Detailed Policy Content View -->
+  <section id="provisions" class="py-24 px-6 relative bg-neutral-950">
+    <div class="max-w-7xl mx-auto">
+      
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-12">
+        
+        <!-- Left Side Sticky Summary / Context -->
+        <div class="lg:col-span-4 lg:sticky lg:top-8 h-fit space-y-4">
+          <h2 class="text-xs font-bold tracking-[0.3em] text-blue-400 uppercase">Core Operations</h2>
+          <p class="text-2xl font-bold uppercase tracking-tight text-neutral-200">Trip Operations & Local Variables</p>
+          <p class="text-sm text-neutral-500 font-light leading-relaxed">
+            Please note that operational conditions in Tanzania and East Africa differ fundamentally from developed countries. We remain exposed to unannounced changes in government-regulated taxes and park structures.
+          </p>
+        </div>
+
+        <!-- Right Side: Structured Clauses -->
+        <div class="lg:col-span-8 space-y-12 border-l border-neutral-900 pl-4 sm:pl-8">
+          
+          <!-- Clause 1 -->
+          <div class="space-y-4">
+            <h3 class="text-lg font-bold tracking-wide text-neutral-100 uppercase">1. Operational Parameters & Alterations</h3>
+            <p class="text-neutral-400 text-sm sm:text-base font-light leading-relaxed">
+              Safari services agreed upon will be fully provided, except during unforeseen force majeure events (e.g., road closures, severe weather, security considerations). The itinerary can be changed at company discretion; clients will be kept informed and equivalent alternatives provided. Arena Africa Safaris holds the statutory right to pass any unannounced government-regulated park fees or tax increases directly onto customers.
+            </p>
+          </div>
+
+          <!-- Clause 2 -->
+          <div class="space-y-4">
+            <h3 class="text-lg font-bold tracking-wide text-neutral-100 uppercase">2. Booking Procedures & Contractual Nature</h3>
+            <p class="text-neutral-400 text-sm sm:text-base font-light leading-relaxed">
+              Arena Africa Safaris specializes exclusively in customized, tailor-made holiday architectures to fulfill personal needs, rather than pre-packaged holiday deals. A legally binding contract establishes itself only upon receipt of your initial deposit or complete payment.
+            </p>
+          </div>
+
+          <!-- Clause 3 -->
+          <div class="space-y-4">
+            <h3 class="text-lg font-bold tracking-wide text-neutral-100 uppercase">3. Financial Framework & Payment Terms</h3>
+            <div class="bg-neutral-900/40 border border-neutral-900 p-6 rounded-sm space-y-4">
+              <p class="text-neutral-400 text-sm font-light leading-relaxed">
+                Confirmed bookings generate a descriptive commercial invoice. Required milestones include:
+              </p>
+              <ul class="space-y-2 text-xs uppercase tracking-wider text-neutral-300">
+                <li class="flex items-center gap-3"><span class="w-1.5 h-1.5 bg-blue-500 rounded-full"></span> <strong>45% Deposit:</strong> Required immediately to confirm reservation spaces.</li>
+                <li class="flex items-center gap-3"><span class="w-1.5 h-1.5 bg-blue-500 rounded-full"></span> <strong>100% Upfront:</strong> Required instantly for any flight segments.</li>
+                <li class="flex items-center gap-3"><span class="w-1.5 h-1.5 bg-blue-500 rounded-full"></span> <strong>65 Days Prior:</strong> Balance payment deadline.</li>
+              </ul>
+              <p class="text-neutral-500 text-xs italic font-light pt-2 border-t border-neutral-900">
+                *Bookings made within 65 days of departure demand instant, complete prepayment at the moment of reservation. All payments must be cleared via bank wire/transfer.
+              </p>
+            </div>
+          </div>
+
+          <!-- Clause 4 -->
+          <div class="space-y-4">
+            <h3 class="text-lg font-bold tracking-wide text-neutral-100 uppercase">4. Cancellation & Amendment Levies</h3>
+            <p class="text-neutral-400 text-sm font-light leading-relaxed">
+              Cancellations incurred either in full or partial increments attract standard deduction thresholds:
+            </p>
+            <div class="grid grid-cols-1 sm:grid-cols-3 gap-4 text-center">
+              <div class="p-4 bg-neutral-900 border border-neutral-900/60 rounded-sm">
+                <div class="text-xs tracking-widest text-neutral-500 uppercase">65+ Days Prior</div>
+                <div class="text-sm font-bold text-blue-400 mt-1">Non-Refundable Deposit</div>
+              </div>
+              <div class="p-4 bg-neutral-900 border border-neutral-900/60 rounded-sm">
+                <div class="text-xs tracking-widest text-neutral-500 uppercase">50–65 Days Prior</div>
+                <div class="text-sm font-bold text-blue-400 mt-1">50% Itinerary Cost Deducted</div>
+              </div>
+              <div class="p-4 bg-neutral-900 border border-neutral-900/60 rounded-sm">
+                <div class="text-xs tracking-widest text-neutral-500 uppercase">0–50 Days Prior</div>
+                <div class="text-sm font-bold text-red-400 mt-1">100% Itinerary Cost Deducted</div>
+              </div>
+            </div>
+            <p class="text-neutral-400 text-sm font-light leading-relaxed">
+                            <p class="text-neutral-400 text-sm font-light leading-relaxed">
+              After your booking has been confirmed, should you wish to make any changes to your itinerary or wish an earlier departure date, we will make every effort to accommodate your requests based on availability. However, the extra costs involved to make changes are <strong class="text-neutral-200">€150</strong>.
+            </p>
+          </div>
+
+          <!-- Clause 5 -->
+          <div class="space-y-4">
+            <h3 class="text-lg font-bold tracking-wide text-neutral-100 uppercase">5. Website Pricing & Quotations</h3>
+            <p class="text-neutral-400 text-sm sm:text-base font-light leading-relaxed">
+              All prices published on <em>arenaafricasafaris.com</em> are per person, based on two persons (unless otherwise stated), and quoted in US dollars (<strong class="text-neutral-200">US$</strong>). Costs of obtaining passports or visas, border taxes (if applicable), tips for guides, drivers, and hotel staff, insurance, additional excursions, or personal expenses are not included in the itinerary cost. Discount rates for children or peak rates during high/festive seasons are not included. 
+            </p>
+            <p class="text-neutral-400 text-sm sm:text-base font-light leading-relaxed">
+              All prices on the website should be used as a guideline only. Arena Africa Safaris cannot be held responsible for any changes or pricing errors. Arena Africa Safaris will specify all costs in their invoices. The quotations are valid for <strong class="text-neutral-200">two weeks</strong>.
+            </p>
+          </div>
+
+          <!-- Clause 6 -->
+          <div class="space-y-4">
+            <h3 class="text-lg font-bold tracking-wide text-neutral-100 uppercase">6. Travel Documents</h3>
+            <p class="text-neutral-400 text-sm sm:text-base font-light leading-relaxed">
+              You receive all travel documents (vouchers, e-tickets, luggage labels, and flyers) <strong class="text-neutral-200">two weeks</strong> before departure. Please check your confirmation invoice and travel documents immediately upon receipt. Contact us if there are errors. We are not liable if notified after 14 days of issuance.
+            </p>
+          </div>
+
+          <!-- Clause 7 -->
+          <div class="space-y-4">
+            <h3 class="text-lg font-bold tracking-wide text-neutral-100 uppercase">7. Insurances</h3>
+            <p class="text-neutral-400 text-sm sm:text-base font-light leading-relaxed">
+              It is a condition of booking that the sole responsibility lies with the guest to ensure that they carry the correct comprehensive travel and medical insurance to cover themselves, as well as any dependents or traveling companions, for the duration of their trip to Tanzania/Africa. This insurance should include medical expenses and repatriation expenses. 
+            </p>
+            <p class="text-neutral-400 text-sm sm:text-base font-light leading-relaxed">
+              Optional insurances are cancellation or curtailment of the safari, emergency evacuation expenses (flying doctors), and damage/theft/loss of personal baggage, money, and goods. Arena Africa Safaris may cancel your booking if such insurance is not obtained.
+            </p>
+          </div>
+
+          <!-- Clause 8 -->
+          <div class="space-y-4">
+            <h3 class="text-lg font-bold tracking-wide text-neutral-100 uppercase">8. Passports, Visas & Name Checks</h3>
+            <p class="text-neutral-400 text-sm sm:text-base font-light leading-relaxed">
+              It is upon the guest to ensure that passports and visas are valid for the countries visited. Most nationalities can get a tourist visa on arrival in Tanzania at the border/airport (<strong class="text-neutral-200">$50 per person</strong>, US citizens <strong class="text-neutral-200">$100 per person</strong>). This visa is valid for a period of three months. You can also get your visa in advance at the embassy in your home country. Check the visa rules before you go. Passports should have at least <strong class="text-neutral-200">six months</strong> of validity after the final day of travel. Arena Africa Safaris cannot be held liable for any visas not held by the guests, nor the cost of visas.
+            </p>
+            <p class="text-neutral-400 text-sm sm:text-base font-light leading-relaxed">
+              Please check the names on the invoice carefully when you receive our invoice. In case we need to change a name three or more days after you receive our invoice, we are obligated to charge a fee of <strong class="text-neutral-200">€125</strong>.
+            </p>
+          </div>
+
+          <!-- Clause 9 -->
+          <div class="space-y-4">
+            <h3 class="text-lg font-bold tracking-wide text-neutral-100 uppercase">9. Medical Conditions and Disabilities</h3>
+            <p class="text-neutral-400 text-sm sm:text-base font-light leading-relaxed">
+              Please inform us of any medical condition or disability that may affect your holiday before confirming your booking so we can assess suitability. We reserve the right to decline bookings or cancel them if we cannot accommodate specific needs.
+            </p>
+          </div>
+
+          <!-- Clause 10 -->
+          <div class="space-y-4">
+            <h3 class="text-lg font-bold tracking-wide text-neutral-100 uppercase">10. Amendments & Cancellation by Arena Africa Safaris</h3>
+            <p class="text-neutral-400 text-sm sm:text-base font-light leading-relaxed">
+              We reserve the right to cancel your holiday before full payment has been received. In such cases, we'll refund all monies or offer an alternative. We are not liable for cancellations caused by force majeure (war, natural disasters, pandemics, etc.). 
+            </p>
+            <p class="text-neutral-400 text-sm sm:text-base font-light leading-relaxed">
+              If a major change occurs (e.g., flight delay over 12 hours), we'll offer alternatives or a refund. No compensation is payable for changes due to force majeure.
+            </p>
+          </div>
+
+          <!-- Clause 11 -->
+          <div class="space-y-4">
+            <h3 class="text-lg font-bold tracking-wide text-neutral-100 uppercase">11. Our Responsibilities & Carriers</h3>
+            <p class="text-neutral-400 text-sm sm:text-base font-light leading-relaxed">
+              Arena Africa Safaris ensures your holiday is provided as described and meets reasonable local standards. We are not responsible for external services or optional excursions not booked directly with us. 
+            </p>
+            <p class="text-neutral-400 text-sm sm:text-base font-light leading-relaxed">
+              Travel by air and sea is subject to international carrier terms. Arena Africa Safaris accepts no liability for cancellations, strikes, delays, or lost luggage caused by carriers.
+            </p>
+          </div>
+
+          <!-- Clause 12 -->
+          <div class="space-y-4">
+            <h3 class="text-lg font-bold tracking-wide text-neutral-100 uppercase">12. Governing Law & Waiver of Claim</h3>
+            <p class="text-neutral-400 text-sm sm:text-base font-light leading-relaxed">
+              This contract and any disputes shall be governed by Tanzanian law, with exclusive jurisdiction in the courts of Dar es Salaam. If referred by another party (e.g., travel agent), you waive claims against that party. All issues must be addressed to Arena Africa Safaris directly.
+            </p>
+          </div>
+
+          <!-- Clause 13 -->
+          <div class="space-y-4">
+            <h3 class="text-lg font-bold tracking-wide text-neutral-100 uppercase">13. Real-Time Problem Resolutions</h3>
+            <p class="text-neutral-400 text-sm sm:text-base font-light leading-relaxed">
+              If you encounter problems during your trip, inform your guide, hotel manager, or safari provider immediately. If unresolved, write to Arena Africa Safaris within <strong class="text-neutral-200">28 days</strong> of your return. Failure to do so limits our liability.
+            </p>
+          </div>
+
+        </div>
+      </div>
+      
+    </div>
+  </section>
+
+   <script>
+  document.addEventListener('DOMContentLoaded', () => {
+    const navFrame = document.getElementById('master-navigation');
+    const menuToggle = document.getElementById('menu-toggle');
+    const mobileMenu = document.getElementById('mobile-menu');
+    const menuIcon = document.getElementById('menu-icon');
+
+    // 1. Dynamic Scroll Matrix Engine (Shrinks & anchors on scroll)
+    window.addEventListener('scroll', () => {
+      if (window.scrollY > 40) {
+        navFrame.classList.remove('top-6', 'max-w-6xl', 'px-4');
+        navFrame.classList.add('top-0', 'max-w-full', 'px-0');
+        navFrame.firstElementChild.classList.remove('rounded-full', 'px-6');
+        navFrame.firstElementChild.classList.add('rounded-none', 'px-8', 'border-x-0', 'border-t-0', 'bg-neutral-950/80');
+      } else {
+        navFrame.classList.remove('top-0', 'max-w-full', 'px-0');
+        navFrame.classList.add('top-6', 'max-w-6xl', 'px-4');
+        navFrame.firstElementChild.classList.remove('rounded-none', 'px-8', 'border-x-0', 'border-t-0', 'bg-neutral-950/80');
+        navFrame.firstElementChild.classList.add('rounded-full', 'px-6');
+      }
+    });
+
+    // 2. Mobile Dropdown Activation System
+    menuToggle.addEventListener('click', () => {
+      const isHidden = mobileMenu.classList.contains('hidden');
+      
+      if (isHidden) {
+        mobileMenu.classList.remove('hidden');
+        // Let thread resolve to trigger entrance animations cleanly
+        setTimeout(() => {
+          mobileMenu.classList.remove('scale-95', 'opacity-0');
+          mobileMenu.classList.add('scale-100', 'opacity-100');
+        }, 10);
+        menuIcon.setAttribute('d', 'M6 18L18 6M6 6l12 12');
+      } else {
+        mobileMenu.classList.remove('scale-100', 'opacity-100');
+        mobileMenu.classList.add('scale-95', 'opacity-0');
+        menuIcon.setAttribute('d', 'M4 6h16M4 12h16M4 18h16');
+        setTimeout(() => mobileMenu.classList.add('hidden'), 300);
+      }
+    });
+
+    // Auto close menu when a tracking location anchor link gets targeted
+    mobileMenu.querySelectorAll('a').forEach(link => {
+      link.addEventListener('click', () => {
+        mobileMenu.classList.remove('scale-100', 'opacity-100');
+        mobileMenu.classList.add('scale-95', 'opacity-0');
+        menuIcon.setAttribute('d', 'M4 6h16M4 12h16M4 18h16');
+        setTimeout(() => mobileMenu.classList.add('hidden'), 300);
+      });
+    });
+  });
+  </script>
+<script>/* ios hover */ document.addEventListener("touchstart", function() {}, true);</script>
+</body>
+</html>
+

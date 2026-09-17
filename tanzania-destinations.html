@@ -1,0 +1,923 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ARENA AFRICA SAFARIS</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="icon" href="thumbnails/ArenaLogoNew.png" type="image/x-icon">
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            neutral: {
+              950: '#0a0a0a',
+            }
+          }
+        }
+      }
+    }
+  </script>
+</head>
+<body class="bg-neutral-950 text-neutral-200 font-sans antialiased overflow-x-hidden">
+
+    <nav id="master-navigation" class="fixed top-6 inset-x-0 z-50 max-w-6xl mx-auto px-4 transition-all duration-500 ease-out">
+  <!-- Container with Floating Capsule Design -->
+  <div class="relative bg-neutral-950/40 backdrop-blur-xl border border-neutral-800/40 rounded-full px-4 py-5 flex items-center justify-between transition-all duration-500 group/nav hover:border-neutral-700/60 hover:bg-neutral-950/60">
+    
+    <!-- Fine glow line underneath capsule -->
+    <div class="absolute inset-x-12 bottom-0 h-px bg-gradient-to-r from-transparent via-blue-900/30 to-transparent"></div>
+
+    
+    <a href="#" class="flex items-center space-x-3 shrink-0 relative group/logo">
+      <div class="relative w-9 h-9 bg-neutral-900 border border-neutral-800/80 rounded-full flex items-center justify-center p-1 overflow-hidden transition-all duration-300 group-hover/logo:border-blue-950 group-hover/logo:scale-105">
+        <img src="thumbnails/ArenaLogoNew.png" alt="Arena Africa Safaris Logo" class="w-full h-full object-cover">
+      </div>
+      <div class="flex flex-col">
+        <span class="text-[12px] font-black tracking-[0.1em] uppercase text-white leading-none">
+          ARENA AFRICA SAFARIS
+        </span>
+       
+      </div>
+    </a>
+
+    <!-- Center: Premium Minimalistic Menu Matrix (Desktop) -->
+    <div class="hidden md:flex items-center space-x-1 relative bg-neutral-950/60 border border-neutral-900/80 px-2 py-1.5 rounded-full">
+      <a href="index.html#home" class="relative text-[10px] font-bold tracking-widest uppercase px-4 py-2 text-white hover:text-blue-400 transition-colors duration-300">
+        HOME
+      </a>
+
+       <a href="index.html#destinations" class="relative text-[10px] font-bold tracking-widest uppercase px-4 py-2 text-neutral-400 hover:text-white transition-colors duration-300">
+        DESTINATIONS
+      </a>
+
+     <div class="relative group inline-block">
+  <!-- Main Nav Link with Down Arrow -->
+  <a href="index.html#about" class="relative flex items-center gap-1 text-[10px] font-bold tracking-widest uppercase px-4 py-2 text-neutral-400 hover:text-white transition-colors duration-300">
+    SAFARIS
+    <!-- Down Arrow Icon -->
+    <svg xmlns="http://w3.org" fill="none" viewBox="0 0 24 24" stroke-width="2.5" stroke="currentColor" class="w-3 h-3 transition-transform duration-300 group-hover:rotate-180">
+      <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
+    </svg>
+  </a>
+
+  <!-- Dropdown Menu Options -->
+  <div class="absolute left-0 top-full hidden group-hover:block min-w-[200px] bg-neutral-900 border border-neutral-800 rounded shadow-xl z-50 py-2">
+    <a href="#" class="block px-4 py-2 text-[10px] font-bold tracking-widest uppercase text-neutral-400 hover:text-white hover:bg-neutral-800 transition-colors duration-200">
+    SHORT EXPERIENCES
+    </a>
+    <a href="#" class="block px-4 py-2 text-[10px] font-bold tracking-widest uppercase text-neutral-400 hover:text-white hover:bg-neutral-800 transition-colors duration-200">
+      ACTIVITIES
+    </a>
+  
+  </div>
+</div>
+
+     
+      <a href="index.html#expeditions" class="relative text-[10px] font-bold tracking-widest uppercase px-4 py-2 text-neutral-400 hover:text-white transition-colors duration-300">
+        Expeditions
+      </a>
+
+       <a href="index.html#tours" class="relative text-[10px] font-bold tracking-widest uppercase px-4 py-2 text-neutral-400 hover:text-white transition-colors duration-300">
+        Tours
+      </a>
+    </div>
+
+    <!-- Right: High-Conversion Micro CTA Hub -->
+    <div class="flex items-center space-x-4">
+      <!-- Tactically Refined Action Button -->
+     <a href="https://wa.me/255788296274?text=Hello%20Arena%20Africa%20Safaris%2C%0A%0AI%20would%20like%20to%20plan%20a%20tour%20or%20safari.%0A%0A%E2%80%A2%20Destination%3A%0A%E2%80%A2%20Number%20of%20Travelers%3A%0A%E2%80%A2%20Preferred%20Travel%20Dates%3A%0A%E2%80%A2%20Budget%20Range%3A%0A%E2%80%A2%20Special%20Requests%3A%0A%0AI%20look%20forward%20to%20hearing%20from%20you."
+   target="_blank"
+   class="hidden sm:inline-flex relative overflow-hidden bg-blue-950 border border-blue-900/50 text-white font-bold text-[10px] tracking-[0.2em] uppercase px-5 py-2.5 rounded-full transition-all duration-300 shadow-[0_0_20px_rgba(59,130,246,0.1)] hover:border-blue-500 hover:scale-[1.03] group/btn">
+    
+    <span class="relative z-10">BOOK TOUR</span>
+    
+    <div class="absolute inset-0 bg-gradient-to-r from-blue-900 to-blue-950 opacity-0 group-hover/btn:opacity-100 transition-opacity duration-300"></div>
+</a>
+
+      <!-- Compact Floating Hamburger Menu Switcher -->
+      <button id="menu-toggle" class="md:hidden w-9 h-9 flex items-center justify-center bg-neutral-900/60 border border-neutral-800/80 rounded-full text-neutral-400 hover:text-white focus:outline-none transition-colors duration-300" aria-label="Toggle Menu Matrix">
+        <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+          <path id="menu-icon" stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16" />
+        </svg>
+      </button>
+    </div>
+
+  </div>
+
+  <!-- Mobile Dropdown Matrix System -->
+  <div id="mobile-menu" class="hidden md:hidden mt-3 w-full bg-neutral-950/90 backdrop-blur-xl border border-neutral-800/80 rounded-3xl p-6 shadow-2xl space-y-3 transform origin-top transition-all duration-300 scale-95 opacity-0">
+    <div class="grid grid-cols-2 gap-3">
+      <a href="index.html#home" class="bg-neutral-900/50 border border-neutral-800/40 p-4 rounded-xl text-center text-xs font-bold uppercase tracking-widest text-white hover:border-blue-900/40 transition-colors">Home</a>
+      <a href="index.html#destinations" class="bg-neutral-900/50 border border-neutral-800/40 p-4 rounded-xl text-center text-xs  font-bold uppercase tracking-widest text-neutral-400 hover:text-white transition-colors">Destinations</a>
+     <div class="w-full">
+  <!-- Invisible Checkbox to Toggle State -->
+  <input type="checkbox" id="mobile-safari-toggle" class="peer hidden" />
+
+  <!-- Main Button Container -->
+  <label for="mobile-safari-toggle" class="flex items-center justify-between cursor-pointer w-full bg-neutral-900/50 border border-neutral-800/40 p-4 rounded-xl text-xs font-bold uppercase tracking-widest text-neutral-400 hover:text-white transition-colors">
+    <span>SAFARIS</span>
+    <!-- Down Arrow Icon -->
+    <svg xmlns="http://w3.org" fill="none" viewBox="0 0 24 24" stroke-width="2.5" stroke="currentColor" class="w-4 h-4 transition-transform duration-300 peer-checked:rotate-180">
+      <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
+    </svg>
+  </label>
+
+  <!-- Clickable Dropdown Options (Opens when checkbox is checked) -->
+  <div class="hidden peer-checked:block flex-col gap-2 mt-2 pl-4 border-l-2 border-neutral-800/40 transition-all duration-300">
+    <a href="#" class="block p-3 rounded-lg text-left text-[11px] font-semibold uppercase tracking-wider text-neutral-400 hover:text-white hover:bg-neutral-800/30 transition-colors">
+      SHORT EXPERIENCES
+    </a>
+    <a href="#" class="block p-3 rounded-lg text-left text-[11px] font-semibold uppercase tracking-wider text-neutral-400 hover:text-white hover:bg-neutral-800/30 transition-colors">
+      ACTIVITIES
+    </a>
+   
+  </div>
+</div>
+
+      <a href="index.html#expeditions" class="bg-neutral-900/50 border border-neutral-800/40 p-4 rounded-xl text-center text-xs font-bold uppercase tracking-widest text-neutral-400 hover:text-white transition-colors">Expeditions</a>
+     <a href="index.html#about" class="bg-neutral-900/50 border border-neutral-800/40 p-4 rounded-xl text-center text-xs font-bold uppercase tracking-widest text-neutral-400 hover:text-white transition-colors">ABOUT US</a>
+   <a href="index.html#tours" class="bg-neutral-900/50 border border-neutral-800/40 p-4 rounded-xl text-center text-xs font-bold uppercase tracking-widest text-neutral-400 hover:text-white transition-colors">TOURS</a>
+     </div>
+    <div class="pt-3 border-t border-neutral-900">
+     <a href="https://wa.me/255788296274?text=Hello%20Arena%20Africa%20Safaris%2C%0A%0AI%20would%20like%20to%20plan%20a%20tour%20or%20safari.%0A%0A%E2%80%A2%20Destination%3A%0A%E2%80%A2%20Number%20of%20Travelers%3A%0A%E2%80%A2%20Preferred%20Travel%20Dates%3A%0A%E2%80%A2%20Budget%20Range%3A%0A%E2%80%A2%20Special%20Requests%3A%0A%0AI%20look%20forward%20to%20hearing%20from%20you."
+   target="_blank"
+   class="flex justify-center items-center w-full relative overflow-hidden bg-blue-950 border border-blue-900/50 text-white font-bold text-[10px] tracking-[0.2em] uppercase px-5 py-3 rounded-full transition-all duration-300 shadow-[0_0_20px_rgba(59,130,246,0.1)] hover:border-blue-500" 
+    <span class="relative z-10">BOOK TOUR</span>
+    
+    <div class="absolute inset-0 bg-gradient-to-r from-blue-900 to-blue-950 opacity-0 group-hover/btn:opacity-100 transition-opacity duration-300"></div>
+</a>
+    </div>
+  </div>
+</nav>
+
+  <!-- ========================================== -->
+  <!-- 1. HERO SECTION                            -->
+  <!-- ========================================== -->
+  <header class="relative w-full h-screen flex items-center justify-center overflow-hidden border-b border-neutral-900">
+    <!-- Immersive Background Image Asset -->
+    <div class="absolute inset-0 z-0">
+      <div class="absolute inset-0 bg-gradient-to-t from-neutral-950 via-neutral-950/40 to-neutral-950/20 z-10"></div>
+      <img src="images/tz.webp" alt="Tanzania Wilderness" class="w-full h-full object-cover object-center brightness-50 scale-105" />
+     </div>
+
+    <!-- Hero Content Dynamic Box -->
+    <div class="relative z-20 max-w-5xl mx-auto px-6 text-center">
+    
+      <h1 class="text-6xl sm:text-8xl md:text-8xl font-black uppercase tracking-wider text-white mb-6 leading-none">
+        Tanzania
+      </h1>
+      <p class="text-white max-w-xl mx-auto text-xs sm:text-sm tracking-widest uppercase mb-8 leading-relaxed">
+        Discover the raw majesty of Africa's ultimate safari and mountain expedition destination.
+      </p>
+      <a href="#destinations" class="inline-block bg-blue-950 hover:bg-blue-900 text-white font-bold text-[11px] tracking-[0.15em] uppercase px-8 py-3.5 rounded-sm border border-blue-900/40 transition-all duration-300 hover:shadow-[0_0_20px_rgba(30,58,138,0.3)]">
+        Explore Destinations
+      </a>
+    </div>
+  </header>
+
+
+
+  <!-- ========================================== -->
+  <!-- 3. DESTINATIONS GRID SECTION               -->
+  <!-- ========================================== -->
+  <section id="destinations" class="max-w-7xl mx-auto px-6 py-24">
+    <div class="flex flex-col md:flex-row md:items-end justify-between mb-16 gap-4">
+      <div>
+       
+        <h2 class="text-5xl sm:text-8xl font-black uppercase tracking-wide text-white">
+          Our Featured Destinations
+        </h2>
+      </div>
+    </div>
+
+    <!-- Multi-Block Flexible Responsive Grid Layout -->
+    <div class="flex flex-wrap gap-6 justify-center">
+      
+      <!-- Card 1: Kilimanjaro Marangu Route Climb (Your Shared Base) -->
+      <div class="w-full sm:w-[calc((100%-24px)/2)] lg:w-[calc((100%-48px)/3)] shrink-0 snap-start snap-always">
+        <div class="group bg-neutral-950 border border-neutral-900 overflow-hidden rounded-sm transition-all duration-500 hover:border-blue-900/40 relative">
+          <div class="aspect-square relative overflow-hidden">
+            <div class="absolute inset-0 bg-gradient-to-t from-neutral-950 via-neutral-950/30 to-transparent z-10"></div>
+            <img src="thumbnails/Arusha_National_Park.jpg" alt="Arusha National Park" class="w-full h-full object-cover transform scale-105 group-hover:scale-100 transition-transform duration-700 ease-out" />
+             <div class="absolute top-4 left-4 z-20 bg-blue-950/80 backdrop-blur-md border border-blue-900/40 px-3 py-1 text-[9px] tracking-widest text-blue-400 uppercase">
+              01
+            </div>
+          </div>
+          <div class="p-6 relative z-20">
+           
+            <h3 class="text-4xl font-black uppercase tracking-wide text-white mb-3">
+              ARUSHA NATIONAL PARK
+            </h3>
+            <div class="flex items-center justify-between border-t border-neutral-900 pt-4">
+              <a href="arushaNP.html" class="w-full text-center bg-blue-950 hover:bg-blue-900 text-white font-bold text-[10px] tracking-widest uppercase px-4 py-2.5 rounded-sm border border-blue-900/40 transition-colors duration-300">
+                EXPLORE DESTINATION
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+       <!-- Card 1: Kilimanjaro Marangu Route Climb (Your Shared Base) -->
+      <div class="w-full sm:w-[calc((100%-24px)/2)] lg:w-[calc((100%-48px)/3)] shrink-0 snap-start snap-always">
+        <div class="group bg-neutral-950 border border-neutral-900 overflow-hidden rounded-sm transition-all duration-500 hover:border-blue-900/40 relative">
+          <div class="aspect-square relative overflow-hidden">
+            <div class="absolute inset-0 bg-gradient-to-t from-neutral-950 via-neutral-950/30 to-transparent z-10"></div>
+            <img src="portraits/lakemanyaraNP.webp" alt="Lake Manyara National Park" class="w-full h-full object-cover transform scale-105 group-hover:scale-100 transition-transform duration-700 ease-out" />
+             <div class="absolute top-4 left-4 z-20 bg-blue-950/80 backdrop-blur-md border border-blue-900/40 px-3 py-1 text-[9px] tracking-widest text-blue-400 uppercase">
+              02
+            </div>
+          </div>
+          <div class="p-6 relative z-20">
+           
+            <h3 class="text-4xl font-black uppercase tracking-wide text-white mb-3">
+              LAKE MANYARA NATIONAL PARK
+            </h3>
+            <div class="flex items-center justify-between border-t border-neutral-900 pt-4">
+              <a href="lake-manyara-NP.html" class="w-full text-center bg-blue-950 hover:bg-blue-900 text-white font-bold text-[10px] tracking-widest uppercase px-4 py-2.5 rounded-sm border border-blue-900/40 transition-colors duration-300">
+                EXPLORE DESTINATIONS
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+       <!-- Card 1: Kilimanjaro Marangu Route Climb (Your Shared Base) -->
+      <div class="w-full sm:w-[calc((100%-24px)/2)] lg:w-[calc((100%-48px)/3)] shrink-0 snap-start snap-always">
+        <div class="group bg-neutral-950 border border-neutral-900 overflow-hidden rounded-sm transition-all duration-500 hover:border-blue-900/40 relative">
+          <div class="aspect-square relative overflow-hidden">
+            <div class="absolute inset-0 bg-gradient-to-t from-neutral-950 via-neutral-950/30 to-transparent z-10"></div>
+            <img src="thumbnails/mountkilimanjaroNP.jpeg" alt="Mount Kilimanjaro National Park" class="w-full h-full object-cover transform scale-105 group-hover:scale-100 transition-transform duration-700 ease-out" />
+             <div class="absolute top-4 left-4 z-20 bg-blue-950/80 backdrop-blur-md border border-blue-900/40 px-3 py-1 text-[9px] tracking-widest text-blue-400 uppercase">
+              03
+            </div>
+          </div>
+          <div class="p-6 relative z-20">
+           
+            <h3 class="text-4xl font-black uppercase tracking-wide text-white mb-3">
+              MOUNT KILIMANJARO NATIONAL PARK
+            </h3>
+            <div class="flex items-center justify-between border-t border-neutral-900 pt-4">
+              <a href="mount-kilimanjaroNP.html" class="w-full text-center bg-blue-950 hover:bg-blue-900 text-white font-bold text-[10px] tracking-widest uppercase px-4 py-2.5 rounded-sm border border-blue-900/40 transition-colors duration-300">
+                EXPLORE DESTINATION
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+       <!-- Card 1: Kilimanjaro Marangu Route Climb (Your Shared Base) -->
+      <div class="w-full sm:w-[calc((100%-24px)/2)] lg:w-[calc((100%-48px)/3)] shrink-0 snap-start snap-always">
+        <div class="group bg-neutral-950 border border-neutral-900 overflow-hidden rounded-sm transition-all duration-500 hover:border-blue-900/40 relative">
+          <div class="aspect-square relative overflow-hidden">
+            <div class="absolute inset-0 bg-gradient-to-t from-neutral-950 via-neutral-950/30 to-transparent z-10"></div>
+            <img src="portraits/ECN.jpg" alt="Elephant caves ngorongoro" class="w-full h-full object-cover transform scale-105 group-hover:scale-100 transition-transform duration-700 ease-out" />
+             <div class="absolute top-4 left-4 z-20 bg-blue-950/80 backdrop-blur-md border border-blue-900/40 px-3 py-1 text-[9px] tracking-widest text-blue-400 uppercase">
+              04
+            </div>
+          </div>
+          <div class="p-6 relative z-20">
+           
+            <h3 class="text-4xl font-black uppercase tracking-wide text-white mb-3">
+              ELEPHANT CAVES (NGORONGORO)
+            </h3>
+            <div class="flex items-center justify-between border-t border-neutral-900 pt-4">
+              <a href="elephant-caves.html" class="w-full text-center bg-blue-950 hover:bg-blue-900 text-white font-bold text-[10px] tracking-widest uppercase px-4 py-2.5 rounded-sm border border-blue-900/40 transition-colors duration-300">
+                EXPLPORE DESTINATION
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+       <!-- Card 1: Kilimanjaro Marangu Route Climb (Your Shared Base) -->
+      <div class="w-full sm:w-[calc((100%-24px)/2)] lg:w-[calc((100%-48px)/3)] shrink-0 snap-start snap-always">
+        <div class="group bg-neutral-950 border border-neutral-900 overflow-hidden rounded-sm transition-all duration-500 hover:border-blue-900/40 relative">
+          <div class="aspect-square relative overflow-hidden">
+            <div class="absolute inset-0 bg-gradient-to-t from-neutral-950 via-neutral-950/30 to-transparent z-10"></div>
+            <img src="portraits/empakaai.jpg" alt="Empakaai Crater" class="w-full h-full object-cover transform scale-105 group-hover:scale-100 transition-transform duration-700 ease-out" />
+             <div class="absolute top-4 left-4 z-20 bg-blue-950/80 backdrop-blur-md border border-blue-900/40 px-3 py-1 text-[9px] tracking-widest text-blue-400 uppercase">
+              05
+            </div>
+          </div>
+          <div class="p-6 relative z-20">
+           
+            <h3 class="text-4xl font-black uppercase tracking-wide text-white mb-3">
+              EMPAKAAI CRATER
+            </h3>
+            <div class="flex items-center justify-between border-t border-neutral-900 pt-4">
+              <a href="empakaai-crater.html" class="w-full text-center bg-blue-950 hover:bg-blue-900 text-white font-bold text-[10px] tracking-widest uppercase px-4 py-2.5 rounded-sm border border-blue-900/40 transition-colors duration-300">
+                EXPLORE DESTINATION
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+       <!-- Card 1: Kilimanjaro Marangu Route Climb (Your Shared Base) -->
+      <div class="w-full sm:w-[calc((100%-24px)/2)] lg:w-[calc((100%-48px)/3)] shrink-0 snap-start snap-always">
+        <div class="group bg-neutral-950 border border-neutral-900 overflow-hidden rounded-sm transition-all duration-500 hover:border-blue-900/40 relative">
+          <div class="aspect-square relative overflow-hidden">
+            <div class="absolute inset-0 bg-gradient-to-t from-neutral-950 via-neutral-950/30 to-transparent z-10"></div>
+            <img src="portraits/pexels-riccardo-parretti-145996493-10628684.jpg" alt="Maasai Tribe" class="w-full h-full object-cover transform scale-105 group-hover:scale-100 transition-transform duration-700 ease-out" />
+             <div class="absolute top-4 left-4 z-20 bg-blue-950/80 backdrop-blur-md border border-blue-900/40 px-3 py-1 text-[9px] tracking-widest text-blue-400 uppercase">
+              06
+            </div>
+          </div>
+          <div class="p-6 relative z-20">
+           
+            <h3 class="text-4xl font-black uppercase tracking-wide text-white mb-3">
+              MAASAI TRIBE
+            </h3>
+            <div class="flex items-center justify-between border-t border-neutral-900 pt-4">
+              <a href="maasai.html" class="w-full text-center bg-blue-950 hover:bg-blue-900 text-white font-bold text-[10px] tracking-widest uppercase px-4 py-2.5 rounded-sm border border-blue-900/40 transition-colors duration-300">
+                EXPLORE DESTINATION
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+       <!-- Card 1: Kilimanjaro Marangu Route Climb (Your Shared Base) -->
+      <div class="w-full sm:w-[calc((100%-24px)/2)] lg:w-[calc((100%-48px)/3)] shrink-0 snap-start snap-always">
+        <div class="group bg-neutral-950 border border-neutral-900 overflow-hidden rounded-sm transition-all duration-500 hover:border-blue-900/40 relative">
+          <div class="aspect-square relative overflow-hidden">
+            <div class="absolute inset-0 bg-gradient-to-t from-neutral-950 via-neutral-950/30 to-transparent z-10"></div>
+            <img src="portraits/lakeduluti.avif" alt="Lake Duluti" class="w-full h-full object-cover transform scale-105 group-hover:scale-100 transition-transform duration-700 ease-out" />
+             <div class="absolute top-4 left-4 z-20 bg-blue-950/80 backdrop-blur-md border border-blue-900/40 px-3 py-1 text-[9px] tracking-widest text-blue-400 uppercase">
+              07
+            </div>
+          </div>
+          <div class="p-6 relative z-20">
+           
+            <h3 class="text-4xl font-black uppercase tracking-wide text-white mb-3">
+              LAKE DULUTI
+            </h3>
+            <div class="flex items-center justify-between border-t border-neutral-900 pt-4">
+              <a href="lake-duluti.html" class="w-full text-center bg-blue-950 hover:bg-blue-900 text-white font-bold text-[10px] tracking-widest uppercase px-4 py-2.5 rounded-sm border border-blue-900/40 transition-colors duration-300">
+                EXPLORE DESTINATION
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+       <!-- Card 1: Kilimanjaro Marangu Route Climb (Your Shared Base) -->
+      <div class="w-full sm:w-[calc((100%-24px)/2)] lg:w-[calc((100%-48px)/3)] shrink-0 snap-start snap-always">
+        <div class="group bg-neutral-950 border border-neutral-900 overflow-hidden rounded-sm transition-all duration-500 hover:border-blue-900/40 relative">
+          <div class="aspect-square relative overflow-hidden">
+            <div class="absolute inset-0 bg-gradient-to-t from-neutral-950 via-neutral-950/30 to-transparent z-10"></div>
+            <img src="portraits/datoga.jpg" alt="datoga tribe" class="w-full h-full object-cover transform scale-105 group-hover:scale-100 transition-transform duration-700 ease-out" />
+             <div class="absolute top-4 left-4 z-20 bg-blue-950/80 backdrop-blur-md border border-blue-900/40 px-3 py-1 text-[9px] tracking-widest text-blue-400 uppercase">
+              08
+            </div>
+          </div>
+          <div class="p-6 relative z-20">
+           
+            <h3 class="text-4xl font-black uppercase tracking-wide text-white mb-3">
+              DATOGA TRIBE
+            </h3>
+            <div class="flex items-center justify-between border-t border-neutral-900 pt-4">
+              <a href="datoga-tribe.html" class="w-full text-center bg-blue-950 hover:bg-blue-900 text-white font-bold text-[10px] tracking-widest uppercase px-4 py-2.5 rounded-sm border border-blue-900/40 transition-colors duration-300">
+                EXPLORE DESTINATION
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+       <!-- Card 1: Kilimanjaro Marangu Route Climb (Your Shared Base) -->
+      <div class="w-full sm:w-[calc((100%-24px)/2)] lg:w-[calc((100%-48px)/3)] shrink-0 snap-start snap-always">
+        <div class="group bg-neutral-950 border border-neutral-900 overflow-hidden rounded-sm transition-all duration-500 hover:border-blue-900/40 relative">
+          <div class="aspect-square relative overflow-hidden">
+            <div class="absolute inset-0 bg-gradient-to-t from-neutral-950 via-neutral-950/30 to-transparent z-10"></div>
+            <img src="thumbnails/zanzibarbeach.webp" alt="Zanzibar Beach" class="w-full h-full object-cover transform scale-105 group-hover:scale-100 transition-transform duration-700 ease-out" />
+             <div class="absolute top-4 left-4 z-20 bg-blue-950/80 backdrop-blur-md border border-blue-900/40 px-3 py-1 text-[9px] tracking-widest text-blue-400 uppercase">
+              09
+            </div>
+          </div>
+          <div class="p-6 relative z-20">
+            
+            <h3 class="text-4xl font-black uppercase tracking-wide text-white mb-3">
+              ZANZIBAR
+            </h3>
+            <div class="flex items-center justify-between border-t border-neutral-900 pt-4">
+              <a href="zanzibar-beach.html" class="w-full text-center bg-blue-950 hover:bg-blue-900 text-white font-bold text-[10px] tracking-widest uppercase px-4 py-2.5 rounded-sm border border-blue-900/40 transition-colors duration-300">
+              EXPLORE DESTINATION
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+       <!-- Card 1: Kilimanjaro Marangu Route Climb (Your Shared Base) -->
+      <div class="w-full sm:w-[calc((100%-24px)/2)] lg:w-[calc((100%-48px)/3)] shrink-0 snap-start snap-always">
+        <div class="group bg-neutral-950 border border-neutral-900 overflow-hidden rounded-sm transition-all duration-500 hover:border-blue-900/40 relative">
+          <div class="aspect-square relative overflow-hidden">
+            <div class="absolute inset-0 bg-gradient-to-t from-neutral-950 via-neutral-950/30 to-transparent z-10"></div>
+            <img src="portraits/chagga.jpeg" alt="Chagga Tribe" class="w-full h-full object-cover transform scale-105 group-hover:scale-100 transition-transform duration-700 ease-out" />
+             <div class="absolute top-4 left-4 z-20 bg-blue-950/80 backdrop-blur-md border border-blue-900/40 px-3 py-1 text-[9px] tracking-widest text-blue-400 uppercase">
+              10
+            </div>
+          </div>
+          <div class="p-6 relative z-20">
+           
+            <h3 class="text-4xl font-black uppercase tracking-wide text-white mb-3">
+              CHAGGA TRIBE
+            </h3>
+            <div class="flex items-center justify-between border-t border-neutral-900 pt-4">
+              <a href="chagga-tribe.html" class="w-full text-center bg-blue-950 hover:bg-blue-900 text-white font-bold text-[10px] tracking-widest uppercase px-4 py-2.5 rounded-sm border border-blue-900/40 transition-colors duration-300">
+                EXPLORE DESTINATION
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+       <!-- Card 1: Kilimanjaro Marangu Route Climb (Your Shared Base) -->
+      <div class="w-full sm:w-[calc((100%-24px)/2)] lg:w-[calc((100%-48px)/3)] shrink-0 snap-start snap-always">
+        <div class="group bg-neutral-950 border border-neutral-900 overflow-hidden rounded-sm transition-all duration-500 hover:border-blue-900/40 relative">
+          <div class="aspect-square relative overflow-hidden">
+            <div class="absolute inset-0 bg-gradient-to-t from-neutral-950 via-neutral-950/30 to-transparent z-10"></div>
+            <img src="portraits/mtowambu.jpg" alt="Mto Wa Mbu" class="w-full h-full object-cover transform scale-105 group-hover:scale-100 transition-transform duration-700 ease-out" />
+             <div class="absolute top-4 left-4 z-20 bg-blue-950/80 backdrop-blur-md border border-blue-900/40 px-3 py-1 text-[9px] tracking-widest text-blue-400 uppercase">
+              11
+            </div>
+          </div>
+          <div class="p-6 relative z-20">
+           
+            <h3 class="text-4xl font-black uppercase tracking-wide text-white mb-3">
+              MTO WA MBU
+            </h3>
+            <div class="flex items-center justify-between border-t border-neutral-900 pt-4">
+              <a href="mto-wa-mbu.html" class="w-full text-center bg-blue-950 hover:bg-blue-900 text-white font-bold text-[10px] tracking-widest uppercase px-4 py-2.5 rounded-sm border border-blue-900/40 transition-colors duration-300">
+                EXPLORE DESTINATION
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+       <!-- Card 1: Kilimanjaro Marangu Route Climb (Your Shared Base) -->
+      <div class="w-full sm:w-[calc((100%-24px)/2)] lg:w-[calc((100%-48px)/3)] shrink-0 snap-start snap-always">
+        <div class="group bg-neutral-950 border border-neutral-900 overflow-hidden rounded-sm transition-all duration-500 hover:border-blue-900/40 relative">
+          <div class="aspect-square relative overflow-hidden">
+            <div class="absolute inset-0 bg-gradient-to-t from-neutral-950 via-neutral-950/30 to-transparent z-10"></div>
+            <img src="portraits/servalwildlife.jpeg" alt="Serval Wildlife" class="w-full h-full object-cover transform scale-105 group-hover:scale-100 transition-transform duration-700 ease-out" />
+             <div class="absolute top-4 left-4 z-20 bg-blue-950/80 backdrop-blur-md border border-blue-900/40 px-3 py-1 text-[9px] tracking-widest text-blue-400 uppercase">
+              12
+            </div>
+          </div>
+          <div class="p-6 relative z-20">
+           
+            <h3 class="text-4xl font-black uppercase tracking-wide text-white mb-3">
+              SERVAL WILDLIFE
+            </h3>
+            <div class="flex items-center justify-between border-t border-neutral-900 pt-4">
+              <a href="serval-wildlife.html" class="w-full text-center bg-blue-950 hover:bg-blue-900 text-white font-bold text-[10px] tracking-widest uppercase px-4 py-2.5 rounded-sm border border-blue-900/40 transition-colors duration-300">
+                EXPLORE DESTINATION
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+       <!-- Card 1: Kilimanjaro Marangu Route Climb (Your Shared Base) -->
+      <div class="w-full sm:w-[calc((100%-24px)/2)] lg:w-[calc((100%-48px)/3)] shrink-0 snap-start snap-always">
+        <div class="group bg-neutral-950 border border-neutral-900 overflow-hidden rounded-sm transition-all duration-500 hover:border-blue-900/40 relative">
+          <div class="aspect-square relative overflow-hidden">
+            <div class="absolute inset-0 bg-gradient-to-t from-neutral-950 via-neutral-950/30 to-transparent z-10"></div>
+            <img src="portraits/mountmeru.jpeg" alt="Mount Meru" class="w-full h-full object-cover transform scale-105 group-hover:scale-100 transition-transform duration-700 ease-out" />
+             <div class="absolute top-4 left-4 z-20 bg-blue-950/80 backdrop-blur-md border border-blue-900/40 px-3 py-1 text-[9px] tracking-widest text-blue-400 uppercase">
+              13
+            </div>
+          </div>
+          <div class="p-6 relative z-20">
+           
+            <h3 class="text-4xl font-black uppercase tracking-wide text-white mb-3">
+              MOUNT MERU
+            </h3>
+            <div class="flex items-center justify-between border-t border-neutral-900 pt-4">
+              <a href="mount-meru.html" class="w-full text-center bg-blue-950 hover:bg-blue-900 text-white font-bold text-[10px] tracking-widest uppercase px-4 py-2.5 rounded-sm border border-blue-900/40 transition-colors duration-300">
+                EXPLORE DESTINATION
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+       <!-- Card 1: Kilimanjaro Marangu Route Climb (Your Shared Base) -->
+      <div class="w-full sm:w-[calc((100%-24px)/2)] lg:w-[calc((100%-48px)/3)] shrink-0 snap-start snap-always">
+        <div class="group bg-neutral-950 border border-neutral-900 overflow-hidden rounded-sm transition-all duration-500 hover:border-blue-900/40 relative">
+          <div class="aspect-square relative overflow-hidden">
+            <div class="absolute inset-0 bg-gradient-to-t from-neutral-950 via-neutral-950/30 to-transparent z-10"></div>
+            <img src="thumbnails/serengeti.jpg" alt="Mount Kilimanjaro Marangu Route Climb" class="w-full h-full object-cover transform scale-105 group-hover:scale-100 transition-transform duration-700 ease-out" />
+             <div class="absolute top-4 left-4 z-20 bg-blue-950/80 backdrop-blur-md border border-blue-900/40 px-3 py-1 text-[9px] tracking-widest text-blue-400 uppercase">
+              14
+            </div>
+          </div>
+          <div class="p-6 relative z-20">
+           
+            <h3 class="text-4xl font-black uppercase tracking-wide text-white mb-3">
+              SERENGETI NATIONAL PARK
+            </h3>
+            <div class="flex items-center justify-between border-t border-neutral-900 pt-4">
+              <a href="serengetiNP.html" class="w-full text-center bg-blue-950 hover:bg-blue-900 text-white font-bold text-[10px] tracking-widest uppercase px-4 py-2.5 rounded-sm border border-blue-900/40 transition-colors duration-300">
+                EXPLORE DESTINATION
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+       <!-- Card 1: Kilimanjaro Marangu Route Climb (Your Shared Base) -->
+      <div class="w-full sm:w-[calc((100%-24px)/2)] lg:w-[calc((100%-48px)/3)] shrink-0 snap-start snap-always">
+        <div class="group bg-neutral-950 border border-neutral-900 overflow-hidden rounded-sm transition-all duration-500 hover:border-blue-900/40 relative">
+          <div class="aspect-square relative overflow-hidden">
+            <div class="absolute inset-0 bg-gradient-to-t from-neutral-950 via-neutral-950/30 to-transparent z-10"></div>
+            <img src="portraits/oldonyolengai.jpg" alt="oldonyo lengai" class="w-full h-full object-cover transform scale-105 group-hover:scale-100 transition-transform duration-700 ease-out" />
+             <div class="absolute top-4 left-4 z-20 bg-blue-950/80 backdrop-blur-md border border-blue-900/40 px-3 py-1 text-[9px] tracking-widest text-blue-400 uppercase">
+              15
+            </div>
+          </div>
+          <div class="p-6 relative z-20">
+           
+            <h3 class="text-4xl font-black uppercase tracking-wide text-white mb-3">
+              OLDONYO LENGAI
+            </h3>
+            <div class="flex items-center justify-between border-t border-neutral-900 pt-4">
+              <a href="oldonyo-lengai.html" class="w-full text-center bg-blue-950 hover:bg-blue-900 text-white font-bold text-[10px] tracking-widest uppercase px-4 py-2.5 rounded-sm border border-blue-900/40 transition-colors duration-300">
+                EXPLORE DESTINATION
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+       <!-- Card 1: Kilimanjaro Marangu Route Climb (Your Shared Base) -->
+      <div class="w-full sm:w-[calc((100%-24px)/2)] lg:w-[calc((100%-48px)/3)] shrink-0 snap-start snap-always">
+        <div class="group bg-neutral-950 border border-neutral-900 overflow-hidden rounded-sm transition-all duration-500 hover:border-blue-900/40 relative">
+          <div class="aspect-square relative overflow-hidden">
+            <div class="absolute inset-0 bg-gradient-to-t from-neutral-950 via-neutral-950/30 to-transparent z-10"></div>
+            <img src="thumbnails/tarangirewildlife.jpg" alt="Tarangire national park" class="w-full h-full object-cover transform scale-105 group-hover:scale-100 transition-transform duration-700 ease-out" />
+             <div class="absolute top-4 left-4 z-20 bg-blue-950/80 backdrop-blur-md border border-blue-900/40 px-3 py-1 text-[9px] tracking-widest text-blue-400 uppercase">
+              16
+            </div>
+          </div>
+          <div class="p-6 relative z-20">
+           
+            <h3 class="text-4xl font-black uppercase tracking-wide text-white mb-3">
+              TARANGIRE NATIONAL PARK
+            </h3>
+            <div class="flex items-center justify-between border-t border-neutral-900 pt-4">
+              <a href="tarangireNP.html" class="w-full text-center bg-blue-950 hover:bg-blue-900 text-white font-bold text-[10px] tracking-widest uppercase px-4 py-2.5 rounded-sm border border-blue-900/40 transition-colors duration-300">
+                EXPLORE DESTINATION
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+       <!-- Card 1: Kilimanjaro Marangu Route Climb (Your Shared Base) -->
+      <div class="w-full sm:w-[calc((100%-24px)/2)] lg:w-[calc((100%-48px)/3)] shrink-0 snap-start snap-always">
+        <div class="group bg-neutral-950 border border-neutral-900 overflow-hidden rounded-sm transition-all duration-500 hover:border-blue-900/40 relative">
+          <div class="aspect-square relative overflow-hidden">
+            <div class="absolute inset-0 bg-gradient-to-t from-neutral-950 via-neutral-950/30 to-transparent z-10"></div>
+            <img src="portraits/materuniWF.jpeg" alt="Materuni waterfalls " class="w-full h-full object-cover transform scale-105 group-hover:scale-100 transition-transform duration-700 ease-out" />
+             <div class="absolute top-4 left-4 z-20 bg-blue-950/80 backdrop-blur-md border border-blue-900/40 px-3 py-1 text-[9px] tracking-widest text-blue-400 uppercase">
+              17
+            </div>
+          </div>
+          <div class="p-6 relative z-20">
+           
+            <h3 class="text-4xl font-black uppercase tracking-wide text-white mb-3">
+              MATERUNI WATERFALLS
+            </h3>
+            <div class="flex items-center justify-between border-t border-neutral-900 pt-4">
+              <a href="materuni.html" class="w-full text-center bg-blue-950 hover:bg-blue-900 text-white font-bold text-[10px] tracking-widest uppercase px-4 py-2.5 rounded-sm border border-blue-900/40 transition-colors duration-300">
+                EXPLORE DESTINATION
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+       <!-- Card 1: Kilimanjaro Marangu Route Climb (Your Shared Base) -->
+      <div class="w-full sm:w-[calc((100%-24px)/2)] lg:w-[calc((100%-48px)/3)] shrink-0 snap-start snap-always">
+        <div class="group bg-neutral-950 border border-neutral-900 overflow-hidden rounded-sm transition-all duration-500 hover:border-blue-900/40 relative">
+          <div class="aspect-square relative overflow-hidden">
+            <div class="absolute inset-0 bg-gradient-to-t from-neutral-950 via-neutral-950/30 to-transparent z-10"></div>
+            <img src="thumbnails/CHS.webp" alt="Chemka Hot Springs" class="w-full h-full object-cover transform scale-105 group-hover:scale-100 transition-transform duration-700 ease-out" />
+             <div class="absolute top-4 left-4 z-20 bg-blue-950/80 backdrop-blur-md border border-blue-900/40 px-3 py-1 text-[9px] tracking-widest text-blue-400 uppercase">
+              18
+            </div>
+          </div>
+          <div class="p-6 relative z-20">
+           
+            <h3 class="text-4xl font-black uppercase tracking-wide text-white mb-3">
+              CHEMKA HOT SPRINGS
+            </h3>
+            <div class="flex items-center justify-between border-t border-neutral-900 pt-4">
+              <a href="chemka-hot-springs.html" class="w-full text-center bg-blue-950 hover:bg-blue-900 text-white font-bold text-[10px] tracking-widest uppercase px-4 py-2.5 rounded-sm border border-blue-900/40 transition-colors duration-300">
+                EXPLORE DESTINATION
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+       <!-- Card 1: Kilimanjaro Marangu Route Climb (Your Shared Base) -->
+      <div class="w-full sm:w-[calc((100%-24px)/2)] lg:w-[calc((100%-48px)/3)] shrink-0 snap-start snap-always">
+        <div class="group bg-neutral-950 border border-neutral-900 overflow-hidden rounded-sm transition-all duration-500 hover:border-blue-900/40 relative">
+          <div class="aspect-square relative overflow-hidden">
+            <div class="absolute inset-0 bg-gradient-to-t from-neutral-950 via-neutral-950/30 to-transparent z-10"></div>
+            <img src="portraits/lakenatron.jpeg" alt="Lake Natron" class="w-full h-full object-cover transform scale-105 group-hover:scale-100 transition-transform duration-700 ease-out" />
+             <div class="absolute top-4 left-4 z-20 bg-blue-950/80 backdrop-blur-md border border-blue-900/40 px-3 py-1 text-[9px] tracking-widest text-blue-400 uppercase">
+              19
+            </div>
+          </div>
+          <div class="p-6 relative z-20">
+           
+            <h3 class="text-4xl font-black uppercase tracking-wide text-white mb-3">
+              LAKE NATRON
+            </h3>
+            <div class="flex items-center justify-between border-t border-neutral-900 pt-4">
+              <a href="lake-natron.html" class="w-full text-center bg-blue-950 hover:bg-blue-900 text-white font-bold text-[10px] tracking-widest uppercase px-4 py-2.5 rounded-sm border border-blue-900/40 transition-colors duration-300">
+                EXPLORE DESTINATION
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+       <!-- Card 1: Kilimanjaro Marangu Route Climb (Your Shared Base) -->
+      <div class="w-full sm:w-[calc((100%-24px)/2)] lg:w-[calc((100%-48px)/3)] shrink-0 snap-start snap-always">
+        <div class="group bg-neutral-950 border border-neutral-900 overflow-hidden rounded-sm transition-all duration-500 hover:border-blue-900/40 relative">
+          <div class="aspect-square relative overflow-hidden">
+            <div class="absolute inset-0 bg-gradient-to-t from-neutral-950 via-neutral-950/30 to-transparent z-10"></div>
+            <img src="portraits/magoroto.jpg" alt="Magoroto forest" class="w-full h-full object-cover transform scale-105 group-hover:scale-100 transition-transform duration-700 ease-out" />
+             <div class="absolute top-4 left-4 z-20 bg-blue-950/80 backdrop-blur-md border border-blue-900/40 px-3 py-1 text-[9px] tracking-widest text-blue-400 uppercase">
+             20
+            </div>
+          </div>
+          <div class="p-6 relative z-20">
+           
+            <h3 class="text-4xl font-black uppercase tracking-wide text-white mb-3">
+              MAGOROTO FOREST
+            </h3>
+            <div class="flex items-center justify-between border-t border-neutral-900 pt-4">
+              <a href="magoroto-forest.html" class="w-full text-center bg-blue-950 hover:bg-blue-900 text-white font-bold text-[10px] tracking-widest uppercase px-4 py-2.5 rounded-sm border border-blue-900/40 transition-colors duration-300">
+                EXPLORE DESTINATION
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+       <!-- Card 1: Kilimanjaro Marangu Route Climb (Your Shared Base) -->
+      <div class="w-full sm:w-[calc((100%-24px)/2)] lg:w-[calc((100%-48px)/3)] shrink-0 snap-start snap-always">
+        <div class="group bg-neutral-950 border border-neutral-900 overflow-hidden rounded-sm transition-all duration-500 hover:border-blue-900/40 relative">
+          <div class="aspect-square relative overflow-hidden">
+            <div class="absolute inset-0 bg-gradient-to-t from-neutral-950 via-neutral-950/30 to-transparent z-10"></div>
+            <img src="portraits/olmoti.jpg" alt="Olmoti Crater" class="w-full h-full object-cover transform scale-105 group-hover:scale-100 transition-transform duration-700 ease-out" />
+             <div class="absolute top-4 left-4 z-20 bg-blue-950/80 backdrop-blur-md border border-blue-900/40 px-3 py-1 text-[9px] tracking-widest text-blue-400 uppercase">
+              21
+            </div>
+          </div>
+          <div class="p-6 relative z-20">
+          
+            <h3 class="text-4xl font-black uppercase tracking-wide text-white mb-3">
+              OLMOTI CRATER
+            </h3>
+            <div class="flex items-center justify-between border-t border-neutral-900 pt-4">
+              <a href="olmoti.html" class="w-full text-center bg-blue-950 hover:bg-blue-900 text-white font-bold text-[10px] tracking-widest uppercase px-4 py-2.5 rounded-sm border border-blue-900/40 transition-colors duration-300">
+                EXPLORE DESTINATION
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+       <!-- Card 1: Kilimanjaro Marangu Route Climb (Your Shared Base) -->
+      <div class="w-full sm:w-[calc((100%-24px)/2)] lg:w-[calc((100%-48px)/3)] shrink-0 snap-start snap-always">
+        <div class="group bg-neutral-950 border border-neutral-900 overflow-hidden rounded-sm transition-all duration-500 hover:border-blue-900/40 relative">
+          <div class="aspect-square relative overflow-hidden">
+            <div class="absolute inset-0 bg-gradient-to-t from-neutral-950 via-neutral-950/30 to-transparent z-10"></div>
+            <img src="portraits/napuru.jpeg" alt="Napuru Waterfalls" class="w-full h-full object-cover transform scale-105 group-hover:scale-100 transition-transform duration-700 ease-out" />
+             <div class="absolute top-4 left-4 z-20 bg-blue-950/80 backdrop-blur-md border border-blue-900/40 px-3 py-1 text-[9px] tracking-widest text-blue-400 uppercase">
+              22
+            </div>
+          </div>
+          <div class="p-6 relative z-20">
+           
+            <h3 class="text-4xl font-black uppercase tracking-wide text-white mb-3">
+              NAPURU WATERFALLS
+            </h3>
+            <div class="flex items-center justify-between border-t border-neutral-900 pt-4">
+              <a href="napuru-waterfalls.html" class="w-full text-center bg-blue-950 hover:bg-blue-900 text-white font-bold text-[10px] tracking-widest uppercase px-4 py-2.5 rounded-sm border border-blue-900/40 transition-colors duration-300">
+                EXPLORE DESTINATION
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+       <!-- Card 1: Kilimanjaro Marangu Route Climb (Your Shared Base) -->
+      <div class="w-full sm:w-[calc((100%-24px)/2)] lg:w-[calc((100%-48px)/3)] shrink-0 snap-start snap-always">
+        <div class="group bg-neutral-950 border border-neutral-900 overflow-hidden rounded-sm transition-all duration-500 hover:border-blue-900/40 relative">
+          <div class="aspect-square relative overflow-hidden">
+            <div class="absolute inset-0 bg-gradient-to-t from-neutral-950 via-neutral-950/30 to-transparent z-10"></div>
+            <img src="portraits/seychelles.webp" alt="Seychelles Islands" class="w-full h-full object-cover transform scale-105 group-hover:scale-100 transition-transform duration-700 ease-out" />
+             <div class="absolute top-4 left-4 z-20 bg-blue-950/80 backdrop-blur-md border border-blue-900/40 px-3 py-1 text-[9px] tracking-widest text-blue-400 uppercase">
+              23
+            </div>
+          </div>
+          <div class="p-6 relative z-20">
+          
+            <h3 class="text-4xl font-black uppercase tracking-wide text-white mb-3">
+              SEYCHELLES ISLAND
+            </h3>
+            <div class="flex items-center justify-between border-t border-neutral-900 pt-4">
+              <a href="seychelles.html" class="w-full text-center bg-blue-950 hover:bg-blue-900 text-white font-bold text-[10px] tracking-widest uppercase px-4 py-2.5 rounded-sm border border-blue-900/40 transition-colors duration-300">
+                EXPLORE DESTINATION
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+       <!-- Card 1: Kilimanjaro Marangu Route Climb (Your Shared Base) -->
+      <div class="w-full sm:w-[calc((100%-24px)/2)] lg:w-[calc((100%-48px)/3)] shrink-0 snap-start snap-always">
+        <div class="group bg-neutral-950 border border-neutral-900 overflow-hidden rounded-sm transition-all duration-500 hover:border-blue-900/40 relative">
+          <div class="aspect-square relative overflow-hidden">
+            <div class="absolute inset-0 bg-gradient-to-t from-neutral-950 via-neutral-950/30 to-transparent z-10"></div>
+            <img src="portraits/hadzabe.jpeg" alt="Hadzabe Tribe" class="w-full h-full object-cover transform scale-105 group-hover:scale-100 transition-transform duration-700 ease-out" />
+             <div class="absolute top-4 left-4 z-20 bg-blue-950/80 backdrop-blur-md border border-blue-900/40 px-3 py-1 text-[9px] tracking-widest text-blue-400 uppercase">
+              24
+            </div>
+          </div>
+          <div class="p-6 relative z-20">
+           
+            <h3 class="text-4xl font-black uppercase tracking-wide text-white mb-3">
+              HADZABE TRIBE
+            </h3>
+            <div class="flex items-center justify-between border-t border-neutral-900 pt-4">
+              <a href="hadzabe.html" class="w-full text-center bg-blue-950 hover:bg-blue-900 text-white font-bold text-[10px] tracking-widest uppercase px-4 py-2.5 rounded-sm border border-blue-900/40 transition-colors duration-300">
+                EXPLORE DESTINATION
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+
+     
+
+    </div>
+  </section>
+
+  
+<!-- Final High-Conversion CTA Section: Artistic Untamed Wilderness Manifesto -->
+<section class="relative bg-neutral-950 text-white py-36 px-6 overflow-hidden border-t border-neutral-900">
+  
+  <!-- Artistic Ambient Light Overlays -->
+  <div class="absolute -top-40 left-1/4 w-[600px] h-[600px] bg-blue-950/20 rounded-full blur-[150px] pointer-events-none mix-blend-screen"></div>
+  <div class="absolute -bottom-20 right-10 w-[500px] h-[500px] bg-neutral-900/60 rounded-full blur-[130px] pointer-events-none"></div>
+
+  <!-- Giant Distant Decorative Artistic Typography Background -->
+  <div class="absolute inset-x-0 bottom-12 flex justify-center opacity-[0.02] select-none pointer-events-none z-0">
+    <span class="text-[19vw] font-black tracking-[0.3em] uppercase text-white">ARENA AFRICA SAFARIS</span>
+  </div>
+
+  <div class="max-w-7xl mx-auto relative z-10">
+    
+    <!-- Split Layout Matrix: Left Brand Manifesto Quote, Right Massive Action Button Block -->
+    <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-20 items-center border-b border-neutral-900 pb-20 mb-16">
+      
+      <!-- Left Column: The Narrative (7/12 Span) -->
+      <div class="lg:col-span-7">
+       
+        <h2 class="text-5xl sm:text-8xl font-black tracking-tight uppercase leading-[0.95] mb-8">
+          LET THE WILD CLAIM  <br>
+          <span class="text-transparent bg-clip-text bg-blue-400">YOUR STORY.</span>
+        </h2>
+        <div class="space-y-6 text-neutral-400 font-light tracking-wide text-sm sm:text-base leading-relaxed max-w-xl">
+          <p>
+            The thundering herds of the plains, the frozen snow-lines of the peaks, and the pristine quiet of hidden archipelagos are ready. 
+          </p>
+          <p class="border-l-2 border-blue-950 pl-6 text-neutral-300 italic font-normal">
+            Don't leave your definitive African odyssey to chance—co-design it alongside the architects at Arena Africa Safaris.
+          </p>
+        </div>
+      </div>
+
+      <!-- Right Column: High-Priority Click Authority Action (5/12 Span) -->
+      <div class="lg:col-span-5 flex flex-col sm:flex-row lg:flex-col gap-4 w-full">
+        <!-- Primary Action CTA -->
+        <a href="#booking-form" class="group relative inline-flex items-center justify-between w-full bg-blue-950 hover:bg-blue-900 text-white font-bold text-xs tracking-[0.25em] uppercase px-8 py-5 rounded-sm border border-blue-500 shadow-[0_0_35px_rgba(59,130,246,0.2)] transition-all duration-300 hover:scale-[1.02] text-center">
+          <span>Initialize Tour</span>
+          <!-- Directional Arrow Micro-Interaction -->
+          <svg class="w-4 h-4 text-blue-400 transform group-hover:translate-x-1.5 transition-transform duration-300 ml-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M14 5l7 7m0 0l-7 7m7-7H3" />
+          </svg>
+          <!-- Sleek sliding layout border underlay -->
+          <div class="absolute bottom-0 left-0 w-0 h-[2px] bg-blue-500 group-hover:w-full transition-all duration-500"></div>
+        </a>
+
+        <!-- Secondary Action CTA -->
+        <a href="#sanctuaries" class="w-full bg-neutral-950/60 hover:bg-neutral-900/60 text-neutral-400 hover:text-white font-bold text-xs tracking-[0.25em] uppercase px-8 py-5 rounded-sm border border-neutral-800 transition-all duration-300 hover:scale-[1.02] text-center backdrop-blur-sm">
+          Review Sanctuaries
+        </a>
+      </div>
+
+    </div>
+
+   
+
+  </div>
+</section>
+
+
+
+<script>
+    document.addEventListener('DOMContentLoaded', () => {
+    const navFrame = document.getElementById('master-navigation');
+    const menuToggle = document.getElementById('menu-toggle');
+    const mobileMenu = document.getElementById('mobile-menu');
+    const menuIcon = document.getElementById('menu-icon');
+
+    // 1. Dynamic Scroll Matrix Engine (Shrinks & anchors on scroll)
+    window.addEventListener('scroll', () => {
+      if (window.scrollY > 40) {
+        navFrame.classList.remove('top-6', 'max-w-6xl', 'px-4');
+        navFrame.classList.add('top-0', 'max-w-full', 'px-0');
+        navFrame.firstElementChild.classList.remove('rounded-full', 'px-6');
+        navFrame.firstElementChild.classList.add('rounded-none', 'px-8', 'border-x-0', 'border-t-0', 'bg-neutral-950/80');
+      } else {
+        navFrame.classList.remove('top-0', 'max-w-full', 'px-0');
+        navFrame.classList.add('top-6', 'max-w-6xl', 'px-4');
+        navFrame.firstElementChild.classList.remove('rounded-none', 'px-8', 'border-x-0', 'border-t-0', 'bg-neutral-950/80');
+        navFrame.firstElementChild.classList.add('rounded-full', 'px-6');
+      }
+    });
+
+    // 2. Mobile Dropdown Activation System
+    menuToggle.addEventListener('click', () => {
+      const isHidden = mobileMenu.classList.contains('hidden');
+      
+      if (isHidden) {
+        mobileMenu.classList.remove('hidden');
+        // Let thread resolve to trigger entrance animations cleanly
+        setTimeout(() => {
+          mobileMenu.classList.remove('scale-95', 'opacity-0');
+          mobileMenu.classList.add('scale-100', 'opacity-100');
+        }, 10);
+        menuIcon.setAttribute('d', 'M6 18L18 6M6 6l12 12');
+      } else {
+        mobileMenu.classList.remove('scale-100', 'opacity-100');
+        mobileMenu.classList.add('scale-95', 'opacity-0');
+        menuIcon.setAttribute('d', 'M4 6h16M4 12h16M4 18h16');
+        setTimeout(() => mobileMenu.classList.add('hidden'), 300);
+      }
+    });
+
+    // Auto close menu when a tracking location anchor link gets targeted
+    mobileMenu.querySelectorAll('a').forEach(link => {
+      link.addEventListener('click', () => {
+        mobileMenu.classList.remove('scale-100', 'opacity-100');
+        mobileMenu.classList.add('scale-95', 'opacity-0');
+        menuIcon.setAttribute('d', 'M4 6h16M4 12h16M4 18h16');
+        setTimeout(() => mobileMenu.classList.add('hidden'), 300);
+      });
+    });
+  });
+
+     document.addEventListener('DOMContentLoaded', () => {
+    const track = document.getElementById('carousel-track');
+    const prevBtn = document.getElementById('slide-prev');
+    const nextBtn = document.getElementById('slide-next');
+
+    if (track && prevBtn && nextBtn) {
+      // Calculate dynamic scrolling step size including grid gap widths
+      const getScrollAmount = () => {
+        const firstCard = track.firstElementChild;
+        return firstCard ? firstCard.offsetWidth + 24 : 340; 
+      };
+
+      nextBtn.addEventListener('click', () => {
+        track.scrollBy({ left: getScrollAmount(), behavior: 'smooth' });
+      });
+
+      prevBtn.addEventListener('click', () => {
+        track.scrollBy({ left: -getScrollAmount(), behavior: 'smooth' });
+      });
+    }
+  });
+</script>
+<script>/* ios hover */ document.addEventListener("touchstart", function() {}, true);</script>
+</body>
+</html>
