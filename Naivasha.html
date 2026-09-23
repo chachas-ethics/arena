@@ -212,153 +212,227 @@
 </nav>
 
   <!-- ========================================== -->
-  <!-- 1. HERO SECTION                            -->
-  <!-- ========================================== -->
-  <header class="relative w-full h-screen flex items-center justify-center overflow-hidden border-b border-neutral-900">
-    <!-- Immersive Background Image Asset -->
-    <div class="absolute inset-0 z-0">
-      <div class="absolute inset-0 bg-gradient-to-t from-neutral-950 via-neutral-950/40 to-neutral-950/20 z-10"></div>
-      <img src="images/jinja.jpg" alt="Tanzania Wilderness" class="w-full h-full object-cover object-center brightness-50 scale-105" />
-     </div>
+<!-- 1. HERO HEADER SECTION                     -->
+<!-- ========================================== -->
+<header class="relative w-full h-screen flex items-center justify-center overflow-hidden border-b border-neutral-900">
+  <!-- Immersive Background Image Asset -->
+  <div class="absolute inset-0 z-0">
+    <div class="absolute inset-0 bg-gradient-to-t from-neutral-950 via-neutral-950/40 to-neutral-950/20 z-10"></div>
+    <img src="portraits/naivasha.jpg" alt="Tranquil freshwater expanse of Lake Naivasha framed by acacia trees" class="w-full h-full object-cover object-center brightness-50 scale-105" />
+  </div>
 
-    <!-- Hero Content Dynamic Box -->
-    <div class="relative z-20 max-w-5xl mx-auto px-6 text-center">
-    
-      <h1 class="text-6xl sm:text-8xl md:text-8xl font-black uppercase tracking-wider text-white mb-6 leading-none">
-        UGANDA
-      </h1>
-      <p class="text-white max-w-xl mx-auto text-xs sm:text-sm tracking-widest uppercase mb-8 leading-relaxed">
-     Discover the raw majesty of the Pearl of Africa’s ultimate primate and mist-shrouded alpine destination. 
+  <!-- Hero Content Dynamic Box -->
+  <div class="relative z-20 max-w-5xl mx-auto px-6 text-center">
+    <h1 class="text-6xl sm:text-8xl md:text-8xl font-black uppercase tracking-wider text-white mb-6 leading-none">
+      LAKE NAIVASHA
+    </h1>
+    <p class="text-white max-w-xl mx-auto text-xs sm:text-sm tracking-widest uppercase mb-8 leading-relaxed">
+      Discover the raw majesty of the Great Rift Valley's ultimate freshwater haven and acacia-fringed wilderness. 
     </p>
-      <a href="#destinations" class="inline-block bg-blue-950 hover:bg-blue-900 text-white font-bold text-[11px] tracking-[0.15em] uppercase px-8 py-3.5 rounded-sm border border-blue-900/40 transition-all duration-300 hover:shadow-[0_0_20px_rgba(30,58,138,0.3)]">
-        Explore Destinations
-      </a>
-    </div>
-  </header>
+    <a href="#overview" class="inline-block bg-blue-950 hover:bg-blue-900 text-white font-bold text-[11px] tracking-[0.15em] uppercase px-8 py-3.5 rounded-sm border border-blue-900/40 transition-all duration-300 hover:shadow-[0_0_20px_rgba(30,58,138,0.3)]">
+      Explore Destination
+    </a>
+  </div>
+</header>
 
 
-
+    <!-- ========================================== -->
+  <!-- 2. DESTINATION OVERVIEW BRIEFING          -->
   <!-- ========================================== -->
-  <!-- 3. DESTINATIONS GRID SECTION               -->
+  <section id="overview" class="relative z-20 max-w-4xl mx-auto px-6 py-24 text-center border-b border-neutral-900">
+    <span class="text-[15px] tracking-[0.25em] text-blue-400 uppercase block mb-4">
+      The Lacustrine Profile
+    </span>
+    <h2 class="text-5xl sm:text-7xl font-black uppercase tracking-wide text-white mb-6">
+      A Rift Valley Oasis
+    </h2>
+    <p class="text-neutral-400 text-sm sm:text-base leading-8 max-w-2xl mx-auto font-light">
+      Lake Naivasha is a landscape of serene, dramatic contrasts. Nestled within the colossal floor of the Great Rift Valley, this high-altitude freshwater gem packs dense yellow-barked acacia woodlands, soaring volcanic cliffs, and papyrus-fringed shorelines into one breathtaking expanse. It offers visitors an intimate, raw encounter with teeming aquatic ecosystems away from heavy coastal corridors.
+    </p>
+  </section>
+
+
+   <!-- ========================================== -->
+  <!-- 3. ICONIC SIGHTS & GEOGRAPHY               -->
   <!-- ========================================== -->
-  <section id="destinations" class="max-w-7xl mx-auto px-6 py-24">
-    <div class="flex flex-col md:flex-row md:items-end justify-between mb-16 gap-4">
-      <div>
-       
-        <h2 class="text-5xl sm:text-8xl font-black uppercase tracking-wide text-white">
-          Our Featured <span class="text-blue-400">Destinations</span>
-        </h2>
-      </div>
+  <section class="max-w-7xl mx-auto px-6 py-24 border-b border-neutral-900">
+    <div class="mb-16">
+      <span class="text-[15px] tracking-[0.25em] text-blue-400 uppercase block mb-2">
+        Geographic Wonders
+      </span>
+      <h2 class="text-5xl sm:text-7xl font-black uppercase tracking-wide text-white">
+        What You Will <span class="text-blue-400">Witness</span>
+      </h2>
     </div>
 
-    <!-- Multi-Block Flexible Responsive Grid Layout -->
+    <!-- Sights Grid (Using the 4:3 compact aspect ratio format) -->
     <div class="flex flex-wrap gap-6 justify-center">
       
-      <!-- Card 1: Kilimanjaro Marangu Route Climb (Your Shared Base) -->
-      <div class="w-full sm:w-[calc((100%-24px)/2)] lg:w-[calc((100%-48px)/3)] shrink-0 snap-start snap-always">
+      <!-- Sight 1: Crescent Island -->
+      <div class="w-full sm:w-[calc((100%-24px)/2)] lg:w-[calc((100%-48px)/3)] shrink-0">
         <div class="group bg-neutral-950 border border-neutral-900 overflow-hidden rounded-sm transition-all duration-500 hover:border-blue-900/40 relative">
-          <div class="aspect-square relative overflow-hidden">
+          <div class="aspect-[4/3] relative overflow-hidden">
             <div class="absolute inset-0 bg-gradient-to-t from-neutral-950 via-neutral-950/30 to-transparent z-10"></div>
-            <img src="portraits/QENP.jpg" alt="Queen Elizabeth National Park" class="w-full h-full object-cover transform scale-105 group-hover:scale-100 transition-transform duration-700 ease-out" />
-             <div class="absolute top-4 left-4 z-20 bg-blue-950/80 backdrop-blur-md border border-blue-900/40 px-3 py-1 text-[9px] tracking-widest text-blue-400 uppercase">
-              01
+            <img src="gallery/crescent.jpg" alt="Walking safari pathways on Crescent Island game sanctuary" class="w-full h-full object-cover transform scale-105 group-hover:scale-100 transition-transform duration-700 ease-out" />
+            <div class="absolute top-4 left-4 z-20 bg-blue-950/80 backdrop-blur-md border border-blue-900/40 px-3 py-1 text-[9px] tracking-widest text-blue-400 uppercase">
+              SANCTUARY
             </div>
           </div>
           <div class="p-6 relative z-20">
-           
-            <h3 class="text-4xl font-black uppercase tracking-wide text-white mb-3">
-              QUEEN ELIZABETH NATIONAL PARK
+            <span class="text-[10px] tracking-widest text-blue-400 uppercase block mb-1">
+              The Submerged Rim
+            </span>
+            <h3 class="text-2xl font-black uppercase tracking-wide text-white mb-3">
+              CRESCENT ISLAND
             </h3>
-            <div class="flex items-center justify-between border-t border-neutral-900 pt-4">
-              <a href="queen-elizabethNP.html" class="w-full text-center bg-blue-950 hover:bg-blue-900 text-white font-bold text-[10px] tracking-widest uppercase px-4 py-2.5 rounded-sm border border-blue-900/40 transition-colors duration-300">
-                View Route Details
-              </a>
-            </div>
+            <p class="text-neutral-400 text-xs leading-relaxed">
+              Explore a half-submerged volcanic crater forming a private island haven. Lacking major predators, its dynamic green pastures allow for intimate, untamed foot safaris alongside grazing herds.
+            </p>
           </div>
         </div>
       </div>
 
-       <!-- Card 1: Kilimanjaro Marangu Route Climb (Your Shared Base) -->
-      <div class="w-full sm:w-[calc((100%-24px)/2)] lg:w-[calc((100%-48px)/3)] shrink-0 snap-start snap-always">
+      <!-- Sight 2: Hell's Gate National Park -->
+      <div class="w-full sm:w-[calc((100%-24px)/2)] lg:w-[calc((100%-48px)/3)] shrink-0">
         <div class="group bg-neutral-950 border border-neutral-900 overflow-hidden rounded-sm transition-all duration-500 hover:border-blue-900/40 relative">
-          <div class="aspect-square relative overflow-hidden">
+          <div class="aspect-[4/3] relative overflow-hidden">
             <div class="absolute inset-0 bg-gradient-to-t from-neutral-950 via-neutral-950/30 to-transparent z-10"></div>
-            <img src="portraits/bwindi.jpg" alt="Bwindi Forest National Park" class="w-full h-full object-cover transform scale-105 group-hover:scale-100 transition-transform duration-700 ease-out" />
-             <div class="absolute top-4 left-4 z-20 bg-blue-950/80 backdrop-blur-md border border-blue-900/40 px-3 py-1 text-[9px] tracking-widest text-blue-400 uppercase">
-              02
+            <img src="gallery/Hell'sgate.jpg" alt="Towering red volcanic cliffs of Hells Gate gorge" class="w-full h-full object-cover transform scale-105 group-hover:scale-100 transition-transform duration-700 ease-out" />
+            <div class="absolute top-4 left-4 z-20 bg-blue-950/80 backdrop-blur-md border border-blue-900/40 px-3 py-1 text-[9px] tracking-widest text-blue-400 uppercase">
+              LANDMARK
             </div>
           </div>
           <div class="p-6 relative z-20">
-           
-            <h3 class="text-4xl font-black uppercase tracking-wide text-white mb-3">
-              BWINDI FOREST NATIONAL PARK
+            <span class="text-[10px] tracking-widest text-blue-400 uppercase block mb-1">
+              Volcanic Gorges
+            </span>
+            <h3 class="text-2xl font-black uppercase tracking-wide text-white mb-3">
+              HELL'S GATE WALLS
             </h3>
-            <div class="flex items-center justify-between border-t border-neutral-900 pt-4">
-              <a href="bwindi.html" class="w-full text-center bg-blue-950 hover:bg-blue-900 text-white font-bold text-[10px] tracking-widest uppercase px-4 py-2.5 rounded-sm border border-blue-900/40 transition-colors duration-300">
-                View Route Details
-              </a>
-            </div>
+            <p class="text-neutral-400 text-xs leading-relaxed">
+              Trace massive basaltic cliff faces and steam vents flanking the southern lake basin. The ancient, water-carved red slot gorges open up a dramatic geological landscape for hiking.
+            </p>
           </div>
         </div>
       </div>
 
-       <!-- Card 1: Kilimanjaro Marangu Route Climb (Your Shared Base) -->
-      <div class="w-full sm:w-[calc((100%-24px)/2)] lg:w-[calc((100%-48px)/3)] shrink-0 snap-start snap-always">
+      <!-- Sight 3: Mount Longonot Vista -->
+      <div class="w-full sm:w-[calc((100%-24px)/2)] lg:w-[calc((100%-48px)/3)] shrink-0">
         <div class="group bg-neutral-950 border border-neutral-900 overflow-hidden rounded-sm transition-all duration-500 hover:border-blue-900/40 relative">
-          <div class="aspect-square relative overflow-hidden">
+          <div class="aspect-[4/3] relative overflow-hidden">
             <div class="absolute inset-0 bg-gradient-to-t from-neutral-950 via-neutral-950/30 to-transparent z-10"></div>
-            <img src="portraits/MFNP.jpg" alt="Murchison Falls National Park" class="w-full h-full object-cover transform scale-105 group-hover:scale-100 transition-transform duration-700 ease-out" />
-             <div class="absolute top-4 left-4 z-20 bg-blue-950/80 backdrop-blur-md border border-blue-900/40 px-3 py-1 text-[9px] tracking-widest text-blue-400 uppercase">
-              03
+            <img src="gallery/longonot.jpg" alt="Mount Longonot volcano silhouette rising above Lake Naivasha" class="w-full h-full object-cover transform scale-105 group-hover:scale-100 transition-transform duration-700 ease-out" />
+            <div class="absolute top-4 left-4 z-20 bg-blue-950/80 backdrop-blur-md border border-blue-900/40 px-3 py-1 text-[9px] tracking-widest text-blue-400 uppercase">
+              RIFT SKYLINE
             </div>
           </div>
           <div class="p-6 relative z-20">
-           
-            <h3 class="text-4xl font-black uppercase tracking-wide text-white mb-3">
-              MURCHISON FALLS NATIONAL PARK
+            <span class="text-[10px] tracking-widest text-blue-400 uppercase block mb-1">
+              The Great Caldera
+            </span>
+            <h3 class="text-2xl font-black uppercase tracking-wide text-white mb-3">
+              MOUNT LONGONOT
             </h3>
-            <div class="flex items-center justify-between border-t border-neutral-900 pt-4">
-              <a href="murchison.html" class="w-full text-center bg-blue-950 hover:bg-blue-900 text-white font-bold text-[10px] tracking-widest uppercase px-4 py-2.5 rounded-sm border border-blue-900/40 transition-colors duration-300">
-                View Route Details
-              </a>
-            </div>
+            <p class="text-neutral-400 text-xs leading-relaxed">
+              Gaze upon the giant stratovolcano standing sentinel over the Rift Valley floor. Its soaring, forest-filled crater defines the lake’s eastern horizons and panoramic weather patterns.
+            </p>
           </div>
         </div>
       </div>
-
-       <!-- Card 1: Kilimanjaro Marangu Route Climb (Your Shared Base) -->
-      <div class="w-full sm:w-[calc((100%-24px)/2)] lg:w-[calc((100%-48px)/3)] shrink-0 snap-start snap-always">
-        <div class="group bg-neutral-950 border border-neutral-900 overflow-hidden rounded-sm transition-all duration-500 hover:border-blue-900/40 relative">
-          <div class="aspect-square relative overflow-hidden">
-            <div class="absolute inset-0 bg-gradient-to-t from-neutral-950 via-neutral-950/30 to-transparent z-10"></div>
-            <img src="portraits/KFNP.jpg" alt="Kibale Forest National Park" class="w-full h-full object-cover transform scale-105 group-hover:scale-100 transition-transform duration-700 ease-out" />
-             <div class="absolute top-4 left-4 z-20 bg-blue-950/80 backdrop-blur-md border border-blue-900/40 px-3 py-1 text-[9px] tracking-widest text-blue-400 uppercase">
-              04
-            </div>
-          </div>
-          <div class="p-6 relative z-20">
-           
-            <h3 class="text-4xl font-black uppercase tracking-wide text-white mb-3">
-             KIBALE FOREST NATIONAL PARK
-            </h3>
-            <div class="flex items-center justify-between border-t border-neutral-900 pt-4">
-              <a href="kibale.html" class="w-full text-center bg-blue-950 hover:bg-blue-900 text-white font-bold text-[10px] tracking-widest uppercase px-4 py-2.5 rounded-sm border border-blue-900/40 transition-colors duration-300">
-                View Route Details
-              </a>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      
-
-
-
-
-     
 
     </div>
   </section>
+
+
+    <!-- ========================================== -->
+  <!-- 4. WILDLIFE PROFILE SECTION                -->
+  <!-- ========================================== -->
+  <section class="max-w-7xl mx-auto px-6 py-24">
+    <div class="mb-16 text-center sm:text-left">
+     
+      <h2 class="text-5xl sm:text-7xl font-black uppercase tracking-wide text-white">
+        The <span class="text-blue-400">Wildlife</span> Encounters
+      </h2>
+    </div>
+
+    <!-- Wildlife Cards Grid -->
+    <div class="flex flex-wrap gap-6 justify-center">
+      
+      <!-- Animal 1: Hippopotamus Pods -->
+      <div class="w-full sm:w-[calc((100%-24px)/2)] lg:w-[calc((100%-48px)/3)] shrink-0">
+        <div class="group bg-neutral-950 border border-neutral-900 overflow-hidden rounded-sm transition-all duration-500 hover:border-blue-900/40 relative">
+          <div class="aspect-[4/3] relative overflow-hidden">
+            <div class="absolute inset-0 bg-gradient-to-t from-neutral-950 via-neutral-950/30 to-transparent z-10"></div>
+            <img src="gallery/hippopod.jpg" alt="Massive hippopotamus pods cooling off in the shallow waters of Lake Naivasha" class="w-full h-full object-cover transform scale-105 group-hover:scale-100 transition-transform duration-700 ease-out" />
+            <div class="absolute top-4 left-4 z-20 bg-blue-950/80 backdrop-blur-md border border-blue-900/40 px-3 py-1 text-[9px] tracking-widest text-blue-400 uppercase">
+              MEGAFAUNA
+            </div>
+          </div>
+          <div class="p-6 relative z-20">
+            <span class="text-[10px] tracking-widest text-blue-400 uppercase block mb-1">
+              Shallow Water Giants
+            </span>
+            <h3 class="text-2xl font-black uppercase tracking-wide text-white mb-3">
+              HIPPOPOTAMUS PODS
+            </h3>
+            <p class="text-neutral-400 text-xs leading-relaxed">
+              Drift past massive, active pods of hippos cooling down within the papyrus shallows, before they emerge at night to graze along the green shores of local lake lodges.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Animal 2: African Fish Eagles -->
+      <div class="w-full sm:w-[calc((100%-24px)/2)] lg:w-[calc((100%-48px)/3)] shrink-0">
+        <div class="group bg-neutral-950 border border-neutral-900 overflow-hidden rounded-sm transition-all duration-500 hover:border-blue-900/40 relative">
+          <div class="aspect-[4/3] relative overflow-hidden">
+            <div class="absolute inset-0 bg-gradient-to-t from-neutral-950 via-neutral-950/30 to-transparent z-10"></div>
+            <img src="gallery/africanfisheagle.webp" alt="An African fish eagle diving to catch prey from Lake Naivasha" class="w-full h-full object-cover transform scale-105 group-hover:scale-100 transition-transform duration-700 ease-out" />
+            <div class="absolute top-4 left-4 z-20 bg-blue-950/80 backdrop-blur-md border border-blue-900/40 px-3 py-1 text-[9px] tracking-widest text-blue-400 uppercase">
+              AVIAN
+            </div>
+          </div>
+          <div class="p-6 relative z-20">
+            <span class="text-[10px] tracking-widest text-blue-400 uppercase block mb-1">
+              Apex Raptors
+            </span>
+            <h3 class="text-2xl font-black uppercase tracking-wide text-white mb-3">
+              AFRICAN FISH EAGLES
+            </h3>
+            <p class="text-neutral-400 text-xs leading-relaxed">
+              Listen for the iconic call of Africa echoing down the banks, spotting majestic fish eagles swooping down from dead acacia branches to pluck prey straight out of the water.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Animal 3: Crescent Island Herds -->
+      <div class="w-full sm:w-[calc((100%-24px)/2)] lg:w-[calc((100%-48px)/3)] shrink-0">
+        <div class="group bg-neutral-950 border border-neutral-900 overflow-hidden rounded-sm transition-all duration-500 hover:border-blue-900/40 relative">
+          <div class="aspect-[4/3] relative overflow-hidden">
+            <div class="absolute inset-0 bg-gradient-to-t from-neutral-950 via-neutral-950/30 to-transparent z-10"></div>
+            <img src="gallery/GWHerd.avif" alt="Giraffes and waterbucks grazing on the shores of Crescent Island" class="w-full h-full object-cover transform scale-105 group-hover:scale-100 transition-transform duration-700 ease-out" />
+            <div class="absolute top-4 left-4 z-20 bg-blue-950/80 backdrop-blur-md border border-blue-900/40 px-3 py-1 text-[9px] tracking-widest text-blue-400 uppercase">
+              PLAINS GAME
+            </div>
+          </div>
+          <div class="p-6 relative z-20">
+            <span class="text-[10px] tracking-widest text-blue-400 uppercase block mb-1">
+              Shoreline Foragers
+            </span>
+            <h3 class="text-2xl font-black uppercase tracking-wide text-white mb-3">
+              RIFT VALLEY HERDS
+            </h3>
+            <p class="text-neutral-400 text-xs leading-relaxed">
+              Encounter high concentrations of elegant defassa waterbucks, zebras, wildebeests, and giraffes browsing peacefully amidst the yellow fever trees right on the shoreline.
+            </p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
 
   
 <!-- Final High-Conversion CTA Section: Artistic Untamed Wilderness Manifesto -->
@@ -672,9 +746,8 @@ Every itinerary is an intentionally composed narrative, carefully balancing the 
 
 </footer>
 
-
 <script>
-  document.addEventListener('DOMContentLoaded', () => {
+    document.addEventListener('DOMContentLoaded', () => {
     const navFrame = document.getElementById('master-navigation');
     const menuToggle = document.getElementById('menu-toggle');
     const mobileMenu = document.getElementById('mobile-menu');
@@ -725,7 +798,29 @@ Every itinerary is an intentionally composed narrative, carefully balancing the 
       });
     });
   });
-  </script>
+
+     document.addEventListener('DOMContentLoaded', () => {
+    const track = document.getElementById('carousel-track');
+    const prevBtn = document.getElementById('slide-prev');
+    const nextBtn = document.getElementById('slide-next');
+
+    if (track && prevBtn && nextBtn) {
+      // Calculate dynamic scrolling step size including grid gap widths
+      const getScrollAmount = () => {
+        const firstCard = track.firstElementChild;
+        return firstCard ? firstCard.offsetWidth + 24 : 340; 
+      };
+
+      nextBtn.addEventListener('click', () => {
+        track.scrollBy({ left: getScrollAmount(), behavior: 'smooth' });
+      });
+
+      prevBtn.addEventListener('click', () => {
+        track.scrollBy({ left: -getScrollAmount(), behavior: 'smooth' });
+      });
+    }
+  });
+</script>
 <script>/* ios hover */ document.addEventListener("touchstart", function() {}, true);</script>
 
 <script type="text/javascript">
@@ -741,3 +836,4 @@ s0.parentNode.insertBefore(s1,s0);
 </script>
 </body>
 </html>
+

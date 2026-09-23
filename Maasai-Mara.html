@@ -114,7 +114,8 @@
        ========================================================================= -->
   <link rel="icon" href="https://arenaafricasafaris.com" type="image/x-icon"></head>
 <body class="bg-neutral-900 text-white font-sans selection:bg-blue-900 selection:text-white">
- <nav id="master-navigation" class="fixed top-6 inset-x-0 z-50 max-w-6xl mx-auto px-4 transition-all duration-500 ease-out">
+
+   <nav id="master-navigation" class="fixed top-6 inset-x-0 z-50 max-w-6xl mx-auto px-4 transition-all duration-500 ease-out">
   <!-- Container with Floating Capsule Design -->
   <div class="relative bg-neutral-950/40 backdrop-blur-xl border border-neutral-800/40 rounded-full px-4 py-5 flex items-center justify-between transition-all duration-500 group/nav hover:border-neutral-700/60 hover:bg-neutral-950/60">
     
@@ -211,154 +212,225 @@
 
 </nav>
 
-  <!-- ========================================== -->
-  <!-- 1. HERO SECTION                            -->
-  <!-- ========================================== -->
-  <header class="relative w-full h-screen flex items-center justify-center overflow-hidden border-b border-neutral-900">
-    <!-- Immersive Background Image Asset -->
-    <div class="absolute inset-0 z-0">
-      <div class="absolute inset-0 bg-gradient-to-t from-neutral-950 via-neutral-950/40 to-neutral-950/20 z-10"></div>
-      <img src="images/jinja.jpg" alt="Tanzania Wilderness" class="w-full h-full object-cover object-center brightness-50 scale-105" />
-     </div>
+ <!-- ========================================== -->
+<!-- 1. HERO HEADER SECTION                     -->
+<!-- ========================================== -->
+<header class="relative w-full h-screen flex items-center justify-center overflow-hidden border-b border-neutral-900">
+  <!-- Immersive Background Image Asset -->
+  <div class="absolute inset-0 z-0">
+    <div class="absolute inset-0 bg-gradient-to-t from-neutral-950 via-neutral-950/40 to-neutral-950/20 z-10"></div>
+    <img src="portraits/maasaimara.jpg" alt="Golden savannah plains and wildlife of the Maasai Mara" class="w-full h-full object-cover object-center brightness-50 scale-105" />
+  </div>
 
-    <!-- Hero Content Dynamic Box -->
-    <div class="relative z-20 max-w-5xl mx-auto px-6 text-center">
-    
-      <h1 class="text-6xl sm:text-8xl md:text-8xl font-black uppercase tracking-wider text-white mb-6 leading-none">
-        UGANDA
-      </h1>
-      <p class="text-white max-w-xl mx-auto text-xs sm:text-sm tracking-widest uppercase mb-8 leading-relaxed">
-     Discover the raw majesty of the Pearl of Africa’s ultimate primate and mist-shrouded alpine destination. 
+  <!-- Hero Content Dynamic Box -->
+  <div class="relative z-20 max-w-5xl mx-auto px-6 text-center">
+    <h1 class="text-6xl sm:text-8xl md:text-8xl font-black uppercase tracking-wider text-white mb-6 leading-none">
+      MAASAI MARA
+    </h1>
+    <p class="text-white max-w-xl mx-auto text-xs sm:text-sm tracking-widest uppercase mb-8 leading-relaxed">
+      Discover the raw majesty of East Africa's ultimate big cat theatre and endless golden savannah plains. 
     </p>
-      <a href="#destinations" class="inline-block bg-blue-950 hover:bg-blue-900 text-white font-bold text-[11px] tracking-[0.15em] uppercase px-8 py-3.5 rounded-sm border border-blue-900/40 transition-all duration-300 hover:shadow-[0_0_20px_rgba(30,58,138,0.3)]">
-        Explore Destinations
-      </a>
-    </div>
-  </header>
-
-
+    <a href="#overview" class="inline-block bg-blue-950 hover:bg-blue-900 text-white font-bold text-[11px] tracking-[0.15em] uppercase px-8 py-3.5 rounded-sm border border-blue-900/40 transition-all duration-300 hover:shadow-[0_0_20px_rgba(30,58,138,0.3)]">
+      Explore Destination
+    </a>
+  </div>
+</header>
 
   <!-- ========================================== -->
-  <!-- 3. DESTINATIONS GRID SECTION               -->
+  <!-- 2. DESTINATION OVERVIEW BRIEFING          -->
   <!-- ========================================== -->
-  <section id="destinations" class="max-w-7xl mx-auto px-6 py-24">
-    <div class="flex flex-col md:flex-row md:items-end justify-between mb-16 gap-4">
-      <div>
-       
-        <h2 class="text-5xl sm:text-8xl font-black uppercase tracking-wide text-white">
-          Our Featured <span class="text-blue-400">Destinations</span>
-        </h2>
-      </div>
+  <section id="overview" class="relative z-20 max-w-4xl mx-auto px-6 py-24 text-center border-b border-neutral-900">
+    <span class="text-[15px] tracking-[0.25em] text-blue-400 uppercase block mb-4">
+      The Ecosystem Profile
+    </span>
+    <h2 class="text-5xl sm:text-7xl font-black uppercase tracking-wide text-white mb-6">
+      The Great Savannah
+    </h2>
+    <p class="text-neutral-400 text-sm sm:text-base leading-8 max-w-2xl mx-auto font-light">
+      The Maasai Mara is a landscape of endless, rolling horizons. Anchoring the northern tip of the vast Serengeti ecosystem, this legendary reserve packs world-renowned apex predator densities, sprawling golden grasslands, and the dramatic Mara River channels into one iconic expanse. It offers visitors an unmatched, raw encounter with the iconic Great Migration and untamed wildlife theater.
+    </p>
+  </section>
+
+ <!-- ========================================== -->
+  <!-- 3. ICONIC SIGHTS & GEOGRAPHY               -->
+  <!-- ========================================== -->
+  <section class="max-w-7xl mx-auto px-6 py-24 border-b border-neutral-900">
+    <div class="mb-16">
+      <span class="text-[15px] tracking-[0.25em] text-blue-400 uppercase block mb-2">
+        Geographic Wonders
+      </span>
+      <h2 class="text-5xl sm:text-7xl font-black uppercase tracking-wide text-white">
+        What You Will <span class="text-blue-400">Witness</span>
+      </h2>
     </div>
 
-    <!-- Multi-Block Flexible Responsive Grid Layout -->
+    <!-- Sights Grid (Using the 4:3 compact aspect ratio format) -->
     <div class="flex flex-wrap gap-6 justify-center">
       
-      <!-- Card 1: Kilimanjaro Marangu Route Climb (Your Shared Base) -->
-      <div class="w-full sm:w-[calc((100%-24px)/2)] lg:w-[calc((100%-48px)/3)] shrink-0 snap-start snap-always">
+      <!-- Sight 1: The Mara River -->
+      <div class="w-full sm:w-[calc((100%-24px)/2)] lg:w-[calc((100%-48px)/3)] shrink-0">
         <div class="group bg-neutral-950 border border-neutral-900 overflow-hidden rounded-sm transition-all duration-500 hover:border-blue-900/40 relative">
-          <div class="aspect-square relative overflow-hidden">
+          <div class="aspect-[4/3] relative overflow-hidden">
             <div class="absolute inset-0 bg-gradient-to-t from-neutral-950 via-neutral-950/30 to-transparent z-10"></div>
-            <img src="portraits/QENP.jpg" alt="Queen Elizabeth National Park" class="w-full h-full object-cover transform scale-105 group-hover:scale-100 transition-transform duration-700 ease-out" />
-             <div class="absolute top-4 left-4 z-20 bg-blue-950/80 backdrop-blur-md border border-blue-900/40 px-3 py-1 text-[9px] tracking-widest text-blue-400 uppercase">
-              01
+            <img src="gallery/marariver.jpg" alt="The winding Mara River channels" class="w-full h-full object-cover transform scale-105 group-hover:scale-100 transition-transform duration-700 ease-out" />
+            <div class="absolute top-4 left-4 z-20 bg-blue-950/80 backdrop-blur-md border border-blue-900/40 px-3 py-1 text-[9px] tracking-widest text-blue-400 uppercase">
+              WATERWAY
             </div>
           </div>
           <div class="p-6 relative z-20">
-           
-            <h3 class="text-4xl font-black uppercase tracking-wide text-white mb-3">
-              QUEEN ELIZABETH NATIONAL PARK
+            <span class="text-[10px] tracking-widest text-blue-400 uppercase block mb-1">
+              The Migration Barrier
+            </span>
+            <h3 class="text-2xl font-black uppercase tracking-wide text-white mb-3">
+              THE MARA RIVER
             </h3>
-            <div class="flex items-center justify-between border-t border-neutral-900 pt-4">
-              <a href="queen-elizabethNP.html" class="w-full text-center bg-blue-950 hover:bg-blue-900 text-white font-bold text-[10px] tracking-widest uppercase px-4 py-2.5 rounded-sm border border-blue-900/40 transition-colors duration-300">
-                View Route Details
-              </a>
-            </div>
+            <p class="text-neutral-400 text-xs leading-relaxed">
+              Trace the life-giving, predator-lined waters cutting through the reserve. Its steep muddy banks and surging channels host massive pods of hippos, Nile crocodiles, and iconic wildlife crossings.
+            </p>
           </div>
         </div>
       </div>
 
-       <!-- Card 1: Kilimanjaro Marangu Route Climb (Your Shared Base) -->
-      <div class="w-full sm:w-[calc((100%-24px)/2)] lg:w-[calc((100%-48px)/3)] shrink-0 snap-start snap-always">
+      <!-- Sight 2: Oloololo Escarpment -->
+      <div class="w-full sm:w-[calc((100%-24px)/2)] lg:w-[calc((100%-48px)/3)] shrink-0">
         <div class="group bg-neutral-950 border border-neutral-900 overflow-hidden rounded-sm transition-all duration-500 hover:border-blue-900/40 relative">
-          <div class="aspect-square relative overflow-hidden">
+          <div class="aspect-[4/3] relative overflow-hidden">
             <div class="absolute inset-0 bg-gradient-to-t from-neutral-950 via-neutral-950/30 to-transparent z-10"></div>
-            <img src="portraits/bwindi.jpg" alt="Bwindi Forest National Park" class="w-full h-full object-cover transform scale-105 group-hover:scale-100 transition-transform duration-700 ease-out" />
-             <div class="absolute top-4 left-4 z-20 bg-blue-950/80 backdrop-blur-md border border-blue-900/40 px-3 py-1 text-[9px] tracking-widest text-blue-400 uppercase">
-              02
+            <img src="gallery/escarpment.jpg" alt="The dramatic rise of the Oloololo Escarpment" class="w-full h-full object-cover transform scale-105 group-hover:scale-100 transition-transform duration-700 ease-out" />
+            <div class="absolute top-4 left-4 z-20 bg-blue-950/80 backdrop-blur-md border border-blue-900/40 px-3 py-1 text-[9px] tracking-widest text-blue-400 uppercase">
+              RIFT VALLEY
             </div>
           </div>
           <div class="p-6 relative z-20">
-           
-            <h3 class="text-4xl font-black uppercase tracking-wide text-white mb-3">
-              BWINDI FOREST NATIONAL PARK
+            <span class="text-[10px] tracking-widest text-blue-400 uppercase block mb-1">
+              The Western Border
+            </span>
+            <h3 class="text-2xl font-black uppercase tracking-wide text-white mb-3">
+              OLOOLOLO WALL
             </h3>
-            <div class="flex items-center justify-between border-t border-neutral-900 pt-4">
-              <a href="bwindi.html" class="w-full text-center bg-blue-950 hover:bg-blue-900 text-white font-bold text-[10px] tracking-widest uppercase px-4 py-2.5 rounded-sm border border-blue-900/40 transition-colors duration-300">
-                View Route Details
-              </a>
-            </div>
+            <p class="text-neutral-400 text-xs leading-relaxed">
+              Gaze up at the dramatic granite wall marking the edge of the Siria Plateau. This imposing geological fault line rises sharply above the flats, offering unmatched vistas over the plains below.
+            </p>
           </div>
         </div>
       </div>
 
-       <!-- Card 1: Kilimanjaro Marangu Route Climb (Your Shared Base) -->
-      <div class="w-full sm:w-[calc((100%-24px)/2)] lg:w-[calc((100%-48px)/3)] shrink-0 snap-start snap-always">
+      <!-- Sight 3: The Savannah Plains -->
+      <div class="w-full sm:w-[calc((100%-24px)/2)] lg:w-[calc((100%-48px)/3)] shrink-0">
         <div class="group bg-neutral-950 border border-neutral-900 overflow-hidden rounded-sm transition-all duration-500 hover:border-blue-900/40 relative">
-          <div class="aspect-square relative overflow-hidden">
+          <div class="aspect-[4/3] relative overflow-hidden">
             <div class="absolute inset-0 bg-gradient-to-t from-neutral-950 via-neutral-950/30 to-transparent z-10"></div>
-            <img src="portraits/MFNP.jpg" alt="Murchison Falls National Park" class="w-full h-full object-cover transform scale-105 group-hover:scale-100 transition-transform duration-700 ease-out" />
-             <div class="absolute top-4 left-4 z-20 bg-blue-950/80 backdrop-blur-md border border-blue-900/40 px-3 py-1 text-[9px] tracking-widest text-blue-400 uppercase">
-              03
+            <img src="gallery/Plains.png" alt="Endless golden grasslands of the Maasai Mara" class="w-full h-full object-cover transform scale-105 group-hover:scale-100 transition-transform duration-700 ease-out" />
+            <div class="absolute top-4 left-4 z-20 bg-blue-950/80 backdrop-blur-md border border-blue-900/40 px-3 py-1 text-[9px] tracking-widest text-blue-400 uppercase">
+              ECOSYSTEM
             </div>
           </div>
           <div class="p-6 relative z-20">
-           
-            <h3 class="text-4xl font-black uppercase tracking-wide text-white mb-3">
-              MURCHISON FALLS NATIONAL PARK
+            <span class="text-[10px] tracking-widest text-blue-400 uppercase block mb-1">
+              The Endless Horizons
+            </span>
+            <h3 class="text-2xl font-black uppercase tracking-wide text-white mb-3">
+              SAVANNAH PLAINS
             </h3>
-            <div class="flex items-center justify-between border-t border-neutral-900 pt-4">
-              <a href="murchison.html" class="w-full text-center bg-blue-950 hover:bg-blue-900 text-white font-bold text-[10px] tracking-widest uppercase px-4 py-2.5 rounded-sm border border-blue-900/40 transition-colors duration-300">
-                View Route Details
-              </a>
-            </div>
+            <p class="text-neutral-400 text-xs leading-relaxed">
+              Traverse the iconic, open grasslands dotted with solitary acacia trees. This sprawling sea of gold changes completely with the seasons, providing the open canvas for millions of migrating grazers.
+            </p>
           </div>
         </div>
       </div>
-
-       <!-- Card 1: Kilimanjaro Marangu Route Climb (Your Shared Base) -->
-      <div class="w-full sm:w-[calc((100%-24px)/2)] lg:w-[calc((100%-48px)/3)] shrink-0 snap-start snap-always">
-        <div class="group bg-neutral-950 border border-neutral-900 overflow-hidden rounded-sm transition-all duration-500 hover:border-blue-900/40 relative">
-          <div class="aspect-square relative overflow-hidden">
-            <div class="absolute inset-0 bg-gradient-to-t from-neutral-950 via-neutral-950/30 to-transparent z-10"></div>
-            <img src="portraits/KFNP.jpg" alt="Kibale Forest National Park" class="w-full h-full object-cover transform scale-105 group-hover:scale-100 transition-transform duration-700 ease-out" />
-             <div class="absolute top-4 left-4 z-20 bg-blue-950/80 backdrop-blur-md border border-blue-900/40 px-3 py-1 text-[9px] tracking-widest text-blue-400 uppercase">
-              04
-            </div>
-          </div>
-          <div class="p-6 relative z-20">
-           
-            <h3 class="text-4xl font-black uppercase tracking-wide text-white mb-3">
-             KIBALE FOREST NATIONAL PARK
-            </h3>
-            <div class="flex items-center justify-between border-t border-neutral-900 pt-4">
-              <a href="kibale.html" class="w-full text-center bg-blue-950 hover:bg-blue-900 text-white font-bold text-[10px] tracking-widest uppercase px-4 py-2.5 rounded-sm border border-blue-900/40 transition-colors duration-300">
-                View Route Details
-              </a>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      
-
-
-
-
-     
 
     </div>
   </section>
+
+  <!-- ========================================== -->
+  <!-- 4. WILDLIFE PROFILE SECTION                -->
+  <!-- ========================================== -->
+  <section class="max-w-7xl mx-auto px-6 py-24">
+    <div class="mb-16 text-center sm:text-left">
+     
+      <h2 class="text-5xl sm:text-7xl font-black uppercase tracking-wide text-white">
+        The <span class="text-blue-400">Wildlife</span> Encounters
+      </h2>
+    </div>
+
+    <!-- Wildlife Cards Grid -->
+    <div class="flex flex-wrap gap-6 justify-center">
+      
+      <!-- Animal 1: Apex Lion Prides -->
+      <div class="w-full sm:w-[calc((100%-24px)/2)] lg:w-[calc((100%-48px)/3)] shrink-0">
+        <div class="group bg-neutral-950 border border-neutral-900 overflow-hidden rounded-sm transition-all duration-500 hover:border-blue-900/40 relative">
+          <div class="aspect-[4/3] relative overflow-hidden">
+            <div class="absolute inset-0 bg-gradient-to-t from-neutral-950 via-neutral-950/30 to-transparent z-10"></div>
+            <img src="gallery/SavannahPride.jpg" alt="Maasai Mara lion pride tracking prey on the savannah plains" class="w-full h-full object-cover transform scale-105 group-hover:scale-100 transition-transform duration-700 ease-out" />
+            <div class="absolute top-4 left-4 z-20 bg-blue-950/80 backdrop-blur-md border border-blue-900/40 px-3 py-1 text-[9px] tracking-widest text-blue-400 uppercase">
+              APEX PREDATOR
+            </div>
+          </div>
+          <div class="p-6 relative z-20">
+            <span class="text-[10px] tracking-widest text-blue-400 uppercase block mb-1">
+              Savannah Monarchs
+            </span>
+            <h3 class="text-2xl font-black uppercase tracking-wide text-white mb-3">
+              SAVANNAH LION PRIDES
+            </h3>
+            <p class="text-neutral-400 text-xs leading-relaxed">
+              Track the legendary, massive pride coalitions ruling the open terrain. Watch apex behaviors up close as they rest under acacia canopies or strategize tactical twilight hunts.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Animal 2: Blue Wildebeest -->
+      <div class="w-full sm:w-[calc((100%-24px)/2)] lg:w-[calc((100%-48px)/3)] shrink-0">
+        <div class="group bg-neutral-950 border border-neutral-900 overflow-hidden rounded-sm transition-all duration-500 hover:border-blue-900/40 relative">
+          <div class="aspect-[4/3] relative overflow-hidden">
+            <div class="absolute inset-0 bg-gradient-to-t from-neutral-950 via-neutral-950/30 to-transparent z-10"></div>
+            <img src="gallery/Bluebeest.png" alt="Thousands of wildebeest migrating across open grasslands" class="w-full h-full object-cover transform scale-105 group-hover:scale-100 transition-transform duration-700 ease-out" />
+            <div class="absolute top-4 left-4 z-20 bg-blue-950/80 backdrop-blur-md border border-blue-900/40 px-3 py-1 text-[9px] tracking-widest text-blue-400 uppercase">
+              MIGRANT
+            </div>
+          </div>
+          <div class="p-6 relative z-20">
+            <span class="text-[10px] tracking-widest text-blue-400 uppercase block mb-1">
+              The Great Herds
+            </span>
+            <h3 class="text-2xl font-black uppercase tracking-wide text-white mb-3">
+              BLUE WILDEBEEST
+            </h3>
+            <p class="text-neutral-400 text-xs leading-relaxed">
+              Witness the earth-shaking spectacle of countless migrating herds blanketing the plains, moving in thunderous patterns driven by the ancient quest for green pastureland.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Animal 3: Savannah Leopards -->
+      <div class="w-full sm:w-[calc((100%-24px)/2)] lg:w-[calc((100%-48px)/3)] shrink-0">
+        <div class="group bg-neutral-950 border border-neutral-900 overflow-hidden rounded-sm transition-all duration-500 hover:border-blue-900/40 relative">
+          <div class="aspect-[4/3] relative overflow-hidden">
+            <div class="absolute inset-0 bg-gradient-to-t from-neutral-950 via-neutral-950/30 to-transparent z-10"></div>
+            <img src="gallery/SvannahLeo.jpg" alt="Leopard perched high in an acacia tree branches" class="w-full h-full object-cover transform scale-105 group-hover:scale-100 transition-transform duration-700 ease-out" />
+            <div class="absolute top-4 left-4 z-20 bg-blue-950/80 backdrop-blur-md border border-blue-900/40 px-3 py-1 text-[9px] tracking-widest text-blue-400 uppercase">
+              FELINE
+            </div>
+          </div>
+          <div class="p-6 relative z-20">
+            <span class="text-[10px] tracking-widest text-blue-400 uppercase block mb-1">
+              Elusive Tree Stalkers
+            </span>
+            <h3 class="text-2xl font-black uppercase tracking-wide text-white mb-3">
+              SAVANNAH LEOPARDS
+            </h3>
+            <p class="text-neutral-400 text-xs leading-relaxed">
+              Scan the riverine woodland branches to catch sight of solitary, spotted leopards guarding fresh kills away from competing predators on the active valley floor.
+            </p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
 
   
 <!-- Final High-Conversion CTA Section: Artistic Untamed Wilderness Manifesto -->
@@ -672,9 +744,8 @@ Every itinerary is an intentionally composed narrative, carefully balancing the 
 
 </footer>
 
-
 <script>
-  document.addEventListener('DOMContentLoaded', () => {
+    document.addEventListener('DOMContentLoaded', () => {
     const navFrame = document.getElementById('master-navigation');
     const menuToggle = document.getElementById('menu-toggle');
     const mobileMenu = document.getElementById('mobile-menu');
@@ -725,7 +796,29 @@ Every itinerary is an intentionally composed narrative, carefully balancing the 
       });
     });
   });
-  </script>
+
+     document.addEventListener('DOMContentLoaded', () => {
+    const track = document.getElementById('carousel-track');
+    const prevBtn = document.getElementById('slide-prev');
+    const nextBtn = document.getElementById('slide-next');
+
+    if (track && prevBtn && nextBtn) {
+      // Calculate dynamic scrolling step size including grid gap widths
+      const getScrollAmount = () => {
+        const firstCard = track.firstElementChild;
+        return firstCard ? firstCard.offsetWidth + 24 : 340; 
+      };
+
+      nextBtn.addEventListener('click', () => {
+        track.scrollBy({ left: getScrollAmount(), behavior: 'smooth' });
+      });
+
+      prevBtn.addEventListener('click', () => {
+        track.scrollBy({ left: -getScrollAmount(), behavior: 'smooth' });
+      });
+    }
+  });
+</script>
 <script>/* ios hover */ document.addEventListener("touchstart", function() {}, true);</script>
 
 <script type="text/javascript">
@@ -741,3 +834,4 @@ s0.parentNode.insertBefore(s1,s0);
 </script>
 </body>
 </html>
+

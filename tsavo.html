@@ -114,6 +114,7 @@
        ========================================================================= -->
   <link rel="icon" href="https://arenaafricasafaris.com" type="image/x-icon"></head>
 <body class="bg-neutral-900 text-white font-sans selection:bg-blue-900 selection:text-white">
+
  <nav id="master-navigation" class="fixed top-6 inset-x-0 z-50 max-w-6xl mx-auto px-4 transition-all duration-500 ease-out">
   <!-- Container with Floating Capsule Design -->
   <div class="relative bg-neutral-950/40 backdrop-blur-xl border border-neutral-800/40 rounded-full px-4 py-5 flex items-center justify-between transition-all duration-500 group/nav hover:border-neutral-700/60 hover:bg-neutral-950/60">
@@ -211,154 +212,228 @@
 
 </nav>
 
-  <!-- ========================================== -->
-  <!-- 1. HERO SECTION                            -->
-  <!-- ========================================== -->
-  <header class="relative w-full h-screen flex items-center justify-center overflow-hidden border-b border-neutral-900">
-    <!-- Immersive Background Image Asset -->
-    <div class="absolute inset-0 z-0">
-      <div class="absolute inset-0 bg-gradient-to-t from-neutral-950 via-neutral-950/40 to-neutral-950/20 z-10"></div>
-      <img src="images/jinja.jpg" alt="Tanzania Wilderness" class="w-full h-full object-cover object-center brightness-50 scale-105" />
-     </div>
+ <!-- ========================================== -->
+<!-- 1. HERO HEADER SECTION                     -->
+<!-- ========================================== -->
+<header class="relative w-full h-screen flex items-center justify-center overflow-hidden border-b border-neutral-900">
+  <!-- Immersive Background Image Asset -->
+  <div class="absolute inset-0 z-0">
+    <div class="absolute inset-0 bg-gradient-to-t from-neutral-950 via-neutral-950/40 to-neutral-950/20 z-10"></div>
+    <img src="portraits/tsavo.jpg" alt="Dust-red elephants roaming the vast savannah landscapes of Tsavo" class="w-full h-full object-cover object-center brightness-50 scale-105" />
+  </div>
 
-    <!-- Hero Content Dynamic Box -->
-    <div class="relative z-20 max-w-5xl mx-auto px-6 text-center">
-    
-      <h1 class="text-6xl sm:text-8xl md:text-8xl font-black uppercase tracking-wider text-white mb-6 leading-none">
-        UGANDA
-      </h1>
-      <p class="text-white max-w-xl mx-auto text-xs sm:text-sm tracking-widest uppercase mb-8 leading-relaxed">
-     Discover the raw majesty of the Pearl of Africa’s ultimate primate and mist-shrouded alpine destination. 
+  <!-- Hero Content Dynamic Box -->
+  <div class="relative z-20 max-w-5xl mx-auto px-6 text-center">
+    <h1 class="text-6xl sm:text-8xl md:text-8xl font-black uppercase tracking-wider text-white mb-6 leading-none">
+      TSAVO WILDERNESS
+    </h1>
+    <p class="text-white max-w-xl mx-auto text-xs sm:text-sm tracking-widest uppercase mb-8 leading-relaxed">
+      Discover the raw majesty of East Africa's largest protected expanse and legendary realm of the dust-red elephants. 
     </p>
-      <a href="#destinations" class="inline-block bg-blue-950 hover:bg-blue-900 text-white font-bold text-[11px] tracking-[0.15em] uppercase px-8 py-3.5 rounded-sm border border-blue-900/40 transition-all duration-300 hover:shadow-[0_0_20px_rgba(30,58,138,0.3)]">
-        Explore Destinations
-      </a>
-    </div>
-  </header>
-
-
+    <a href="#overview" class="inline-block bg-blue-950 hover:bg-blue-900 text-white font-bold text-[11px] tracking-[0.15em] uppercase px-8 py-3.5 rounded-sm border border-blue-900/40 transition-all duration-300 hover:shadow-[0_0_20px_rgba(30,58,138,0.3)]">
+      Explore Destination
+    </a>
+  </div>
+</header>
 
   <!-- ========================================== -->
-  <!-- 3. DESTINATIONS GRID SECTION               -->
+  <!-- 2. DESTINATION OVERVIEW BRIEFING          -->
   <!-- ========================================== -->
-  <section id="destinations" class="max-w-7xl mx-auto px-6 py-24">
-    <div class="flex flex-col md:flex-row md:items-end justify-between mb-16 gap-4">
-      <div>
-       
-        <h2 class="text-5xl sm:text-8xl font-black uppercase tracking-wide text-white">
-          Our Featured <span class="text-blue-400">Destinations</span>
-        </h2>
-      </div>
+  <section id="overview" class="relative z-20 max-w-4xl mx-auto px-6 py-24 text-center border-b border-neutral-900">
+    <span class="text-[15px] tracking-[0.25em] text-blue-400 uppercase block mb-4">
+      The Wilderness Profile
+    </span>
+    <h2 class="text-5xl sm:text-7xl font-black uppercase tracking-wide text-white mb-6">
+      A Colossal Theatre
+    </h2>
+    <p class="text-neutral-400 text-sm sm:text-base leading-8 max-w-2xl mx-auto font-light">
+      Tsavo is a landscape of massive, primeval contrasts. Spanning across a vast and ancient semi-arid ecosystem, this titanic playground packs jagged volcanic lava flows, deep crystalline springs, and endless red-dust savannah plains into one breathtaking expanse. It offers visitors an intimate, raw encounter with unyielding wildlife networks inside one of the largest conservation sanctuaries on earth.
+    </p>
+  </section>
+
+ 
+
+  <!-- ========================================== -->
+  <!-- 3. ICONIC SIGHTS & GEOGRAPHY               -->
+  <!-- ========================================== -->
+  <section class="max-w-7xl mx-auto px-6 py-24 border-b border-neutral-900">
+    <div class="mb-16">
+      <span class="text-[15px] tracking-[0.25em] text-blue-400 uppercase block mb-2">
+        Geographic Wonders
+      </span>
+      <h2 class="text-5xl sm:text-7xl font-black uppercase tracking-wide text-white">
+        What You Will <span class="text-blue-400">Witness</span>
+      </h2>
     </div>
 
-    <!-- Multi-Block Flexible Responsive Grid Layout -->
+    <!-- Sights Grid (Using the 4:3 compact aspect ratio format) -->
     <div class="flex flex-wrap gap-6 justify-center">
       
-      <!-- Card 1: Kilimanjaro Marangu Route Climb (Your Shared Base) -->
-      <div class="w-full sm:w-[calc((100%-24px)/2)] lg:w-[calc((100%-48px)/3)] shrink-0 snap-start snap-always">
+      <!-- Sight 1: Mzima Springs -->
+      <div class="w-full sm:w-[calc((100%-24px)/2)] lg:w-[calc((100%-48px)/3)] shrink-0">
         <div class="group bg-neutral-950 border border-neutral-900 overflow-hidden rounded-sm transition-all duration-500 hover:border-blue-900/40 relative">
-          <div class="aspect-square relative overflow-hidden">
+          <div class="aspect-[4/3] relative overflow-hidden">
             <div class="absolute inset-0 bg-gradient-to-t from-neutral-950 via-neutral-950/30 to-transparent z-10"></div>
-            <img src="portraits/QENP.jpg" alt="Queen Elizabeth National Park" class="w-full h-full object-cover transform scale-105 group-hover:scale-100 transition-transform duration-700 ease-out" />
-             <div class="absolute top-4 left-4 z-20 bg-blue-950/80 backdrop-blur-md border border-blue-900/40 px-3 py-1 text-[9px] tracking-widest text-blue-400 uppercase">
-              01
+            <img src="photos/mzima.jpg" alt="Crystalline waters and underwater viewing chamber at Mzima Springs in Tsavo West" class="w-full h-full object-cover transform scale-105 group-hover:scale-100 transition-transform duration-700 ease-out" />
+            <div class="absolute top-4 left-4 z-20 bg-blue-950/80 backdrop-blur-md border border-blue-900/40 px-3 py-1 text-[9px] tracking-widest text-blue-400 uppercase">
+              OASIS
             </div>
           </div>
           <div class="p-6 relative z-20">
-           
-            <h3 class="text-4xl font-black uppercase tracking-wide text-white mb-3">
-              QUEEN ELIZABETH NATIONAL PARK
+            <span class="text-[10px] tracking-widest text-blue-400 uppercase block mb-1">
+              The Crystal Waters
+            </span>
+            <h3 class="text-2xl font-black uppercase tracking-wide text-white mb-3">
+              MZIMA SPRINGS
             </h3>
-            <div class="flex items-center justify-between border-t border-neutral-900 pt-4">
-              <a href="queen-elizabethNP.html" class="w-full text-center bg-blue-950 hover:bg-blue-900 text-white font-bold text-[10px] tracking-widest uppercase px-4 py-2.5 rounded-sm border border-blue-900/40 transition-colors duration-300">
-                View Route Details
-              </a>
-            </div>
+            <p class="text-neutral-400 text-xs leading-relaxed">
+              Peer through an underwater tank into a crystal-clear volcanic spring fed by Chyulu Hills. Filtering millions of gallons daily, it hosts massive pods of hippos and crocodiles.
+            </p>
           </div>
         </div>
       </div>
 
-       <!-- Card 1: Kilimanjaro Marangu Route Climb (Your Shared Base) -->
-      <div class="w-full sm:w-[calc((100%-24px)/2)] lg:w-[calc((100%-48px)/3)] shrink-0 snap-start snap-always">
+      <!-- Sight 2: Shetani Lava Flow -->
+      <div class="w-full sm:w-[calc((100%-24px)/2)] lg:w-[calc((100%-48px)/3)] shrink-0">
         <div class="group bg-neutral-950 border border-neutral-900 overflow-hidden rounded-sm transition-all duration-500 hover:border-blue-900/40 relative">
-          <div class="aspect-square relative overflow-hidden">
+          <div class="aspect-[4/3] relative overflow-hidden">
             <div class="absolute inset-0 bg-gradient-to-t from-neutral-950 via-neutral-950/30 to-transparent z-10"></div>
-            <img src="portraits/bwindi.jpg" alt="Bwindi Forest National Park" class="w-full h-full object-cover transform scale-105 group-hover:scale-100 transition-transform duration-700 ease-out" />
-             <div class="absolute top-4 left-4 z-20 bg-blue-950/80 backdrop-blur-md border border-blue-900/40 px-3 py-1 text-[9px] tracking-widest text-blue-400 uppercase">
-              02
+            <img src="photos/shetani.webp" alt="Massive jagged black volcanic rocks of the Shetani Lava Flow" class="w-full h-full object-cover transform scale-105 group-hover:scale-100 transition-transform duration-700 ease-out" />
+            <div class="absolute top-4 left-4 z-20 bg-blue-950/80 backdrop-blur-md border border-blue-900/40 px-3 py-1 text-[9px] tracking-widest text-blue-400 uppercase">
+              VOLCANIC
             </div>
           </div>
           <div class="p-6 relative z-20">
-           
-            <h3 class="text-4xl font-black uppercase tracking-wide text-white mb-3">
-              BWINDI FOREST NATIONAL PARK
+            <span class="text-[10px] tracking-widest text-blue-400 uppercase block mb-1">
+              The Devil's Carpet
+            </span>
+            <h3 class="text-2xl font-black uppercase tracking-wide text-white mb-3">
+              SHETANI LAVA FLOW
             </h3>
-            <div class="flex items-center justify-between border-t border-neutral-900 pt-4">
-              <a href="bwindi.html" class="w-full text-center bg-blue-950 hover:bg-blue-900 text-white font-bold text-[10px] tracking-widest uppercase px-4 py-2.5 rounded-sm border border-blue-900/40 transition-colors duration-300">
-                View Route Details
-              </a>
-            </div>
+            <p class="text-neutral-400 text-xs leading-relaxed">
+              Traverse a massive, 50-square-kilometer sea of jagged black volcanic rock. Formed just a few centuries ago, this stark landscape preserves deep lava caves and raw geological history.
+            </p>
           </div>
         </div>
       </div>
 
-       <!-- Card 1: Kilimanjaro Marangu Route Climb (Your Shared Base) -->
-      <div class="w-full sm:w-[calc((100%-24px)/2)] lg:w-[calc((100%-48px)/3)] shrink-0 snap-start snap-always">
+      <!-- Sight 3: Yatta Plateau -->
+      <div class="w-full sm:w-[calc((100%-24px)/2)] lg:w-[calc((100%-48px)/3)] shrink-0">
         <div class="group bg-neutral-950 border border-neutral-900 overflow-hidden rounded-sm transition-all duration-500 hover:border-blue-900/40 relative">
-          <div class="aspect-square relative overflow-hidden">
+          <div class="aspect-[4/3] relative overflow-hidden">
             <div class="absolute inset-0 bg-gradient-to-t from-neutral-950 via-neutral-950/30 to-transparent z-10"></div>
-            <img src="portraits/MFNP.jpg" alt="Murchison Falls National Park" class="w-full h-full object-cover transform scale-105 group-hover:scale-100 transition-transform duration-700 ease-out" />
-             <div class="absolute top-4 left-4 z-20 bg-blue-950/80 backdrop-blur-md border border-blue-900/40 px-3 py-1 text-[9px] tracking-widest text-blue-400 uppercase">
-              03
+            <img src="photos/Yatta.jpeg" alt="The massive length of the Yatta Plateau wall running along Tsavo East" class="w-full h-full object-cover transform scale-105 group-hover:scale-100 transition-transform duration-700 ease-out" />
+            <div class="absolute top-4 left-4 z-20 bg-blue-950/80 backdrop-blur-md border border-blue-900/40 px-3 py-1 text-[9px] tracking-widest text-blue-400 uppercase">
+              GEOLOGICAL
             </div>
           </div>
           <div class="p-6 relative z-20">
-           
-            <h3 class="text-4xl font-black uppercase tracking-wide text-white mb-3">
-              MURCHISON FALLS NATIONAL PARK
+            <span class="text-[10px] tracking-widest text-blue-400 uppercase block mb-1">
+              The World's Longest Flow
+            </span>
+            <h3 class="text-2xl font-black uppercase tracking-wide text-white mb-3">
+              THE YATTA PLATEAU
             </h3>
-            <div class="flex items-center justify-between border-t border-neutral-900 pt-4">
-              <a href="murchison.html" class="w-full text-center bg-blue-950 hover:bg-blue-900 text-white font-bold text-[10px] tracking-widest uppercase px-4 py-2.5 rounded-sm border border-blue-900/40 transition-colors duration-300">
-                View Route Details
-              </a>
-            </div>
+            <p class="text-neutral-400 text-xs leading-relaxed">
+              Gaze upon the world's longest ancient cooling lava ridge, tracing 290 kilometers across the horizon. This imposing geological wall guides major elephant migration patterns along the plains.
+            </p>
           </div>
         </div>
       </div>
-
-       <!-- Card 1: Kilimanjaro Marangu Route Climb (Your Shared Base) -->
-      <div class="w-full sm:w-[calc((100%-24px)/2)] lg:w-[calc((100%-48px)/3)] shrink-0 snap-start snap-always">
-        <div class="group bg-neutral-950 border border-neutral-900 overflow-hidden rounded-sm transition-all duration-500 hover:border-blue-900/40 relative">
-          <div class="aspect-square relative overflow-hidden">
-            <div class="absolute inset-0 bg-gradient-to-t from-neutral-950 via-neutral-950/30 to-transparent z-10"></div>
-            <img src="portraits/KFNP.jpg" alt="Kibale Forest National Park" class="w-full h-full object-cover transform scale-105 group-hover:scale-100 transition-transform duration-700 ease-out" />
-             <div class="absolute top-4 left-4 z-20 bg-blue-950/80 backdrop-blur-md border border-blue-900/40 px-3 py-1 text-[9px] tracking-widest text-blue-400 uppercase">
-              04
-            </div>
-          </div>
-          <div class="p-6 relative z-20">
-           
-            <h3 class="text-4xl font-black uppercase tracking-wide text-white mb-3">
-             KIBALE FOREST NATIONAL PARK
-            </h3>
-            <div class="flex items-center justify-between border-t border-neutral-900 pt-4">
-              <a href="kibale.html" class="w-full text-center bg-blue-950 hover:bg-blue-900 text-white font-bold text-[10px] tracking-widest uppercase px-4 py-2.5 rounded-sm border border-blue-900/40 transition-colors duration-300">
-                View Route Details
-              </a>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      
-
-
-
-
-     
 
     </div>
   </section>
+
+
+   <!-- ========================================== -->
+  <!-- 4. WILDLIFE PROFILE SECTION                -->
+  <!-- ========================================== -->
+  <section class="max-w-7xl mx-auto px-6 py-24">
+    <div class="mb-16 text-center sm:text-left">
+     
+      <h2 class="text-5xl sm:text-7xl font-black uppercase tracking-wide text-white">
+        The <span class="text-blue-400">Wildlife</span> Encounters
+      </h2>
+    </div>
+
+    <!-- Wildlife Cards Grid -->
+    <div class="flex flex-wrap gap-6 justify-center">
+      
+      <!-- Animal 1: Dust-Red Elephants -->
+      <div class="w-full sm:w-[calc((100%-24px)/2)] lg:w-[calc((100%-48px)/3)] shrink-0">
+        <div class="group bg-neutral-950 border border-neutral-900 overflow-hidden rounded-sm transition-all duration-500 hover:border-blue-900/40 relative">
+          <div class="aspect-[4/3] relative overflow-hidden">
+            <div class="absolute inset-0 bg-gradient-to-t from-neutral-950 via-neutral-950/30 to-transparent z-10"></div>
+            <img src="portraits/tsavo.jpg" alt="Famous dust-red elephants roaming the arid plains of Tsavo" class="w-full h-full object-cover transform scale-105 group-hover:scale-100 transition-transform duration-700 ease-out" />
+            <div class="absolute top-4 left-4 z-20 bg-blue-950/80 backdrop-blur-md border border-blue-900/40 px-3 py-1 text-[9px] tracking-widest text-blue-400 uppercase">
+              MEGAFAUNA
+            </div>
+          </div>
+          <div class="p-6 relative z-20">
+            <span class="text-[10px] tracking-widest text-blue-400 uppercase block mb-1">
+              The Terracotta Giants
+            </span>
+            <h3 class="text-2xl font-black uppercase tracking-wide text-white mb-3">
+              DUST-RED ELEPHANTS
+            </h3>
+            <p class="text-neutral-400 text-xs leading-relaxed">
+              Encounter Tsavo's world-famous giants, instantly recognizable by their distinct terracotta glow. They bathe in the park's vibrant, iron-rich volcanic dust to shield against the African sun.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Animal 2: Maneless Tsavo Lions -->
+      <div class="w-full sm:w-[calc((100%-24px)/2)] lg:w-[calc((100%-48px)/3)] shrink-0">
+        <div class="group bg-neutral-950 border border-neutral-900 overflow-hidden rounded-sm transition-all duration-500 hover:border-blue-900/40 relative">
+          <div class="aspect-[4/3] relative overflow-hidden">
+            <div class="absolute inset-0 bg-gradient-to-t from-neutral-950 via-neutral-950/30 to-transparent z-10"></div>
+            <img src="photos/maneless.png" alt="Maneless alpha male lions resting in the scrub terrain of Tsavo" class="w-full h-full object-cover transform scale-105 group-hover:scale-100 transition-transform duration-700 ease-out" />
+            <div class="absolute top-4 left-4 z-20 bg-blue-950/80 backdrop-blur-md border border-blue-900/40 px-3 py-1 text-[9px] tracking-widest text-blue-400 uppercase">
+              APEX PREDATORS
+            </div>
+          </div>
+          <div class="p-6 relative z-20">
+            <span class="text-[10px] tracking-widest text-blue-400 uppercase block mb-1">
+              Legendary Pride Monarchs
+            </span>
+            <h3 class="text-2xl font-black uppercase tracking-wide text-white mb-3">
+              MANELESS TSAVO LIONS
+            </h3>
+            <p class="text-neutral-400 text-xs leading-relaxed">
+              Track the park's powerful apex prides. Adapted to thick thorn bush and intense heat waves, the dominant alpha males here are famously known for having little to no neck manes.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Animal 3: Mzima Springs Hippos -->
+      <div class="w-full sm:w-[calc((100%-24px)/2)] lg:w-[calc((100%-48px)/3)] shrink-0">
+        <div class="group bg-neutral-950 border border-neutral-900 overflow-hidden rounded-sm transition-all duration-500 hover:border-blue-900/40 relative">
+          <div class="aspect-[4/3] relative overflow-hidden">
+            <div class="absolute inset-0 bg-gradient-to-t from-neutral-950 via-neutral-950/30 to-transparent z-10"></div>
+            <img src="photos/mzima.jpg" alt="Massive hippo pods resting under water in crystal clear spring pools" class="w-full h-full object-cover transform scale-105 group-hover:scale-100 transition-transform duration-700 ease-out" />
+            <div class="absolute top-4 left-4 z-20 bg-blue-950/80 backdrop-blur-md border border-blue-900/40 px-3 py-1 text-[9px] tracking-widest text-blue-400 uppercase">
+              AQUATIC GIANTS
+            </div>
+          </div>
+          <div class="p-6 relative z-20">
+            <span class="text-[10px] tracking-widest text-blue-400 uppercase block mb-1">
+              Springwater Aggregations
+            </span>
+            <h3 class="text-2xl font-black uppercase tracking-wide text-white mb-3">
+              MZIMA HIPPO PODS
+            </h3>
+            <p class="text-neutral-400 text-xs leading-relaxed">
+              Observe heavy populations of massive hippos swimming dynamically down crystal-clear subterranean streams, sharing their prime springwater biome with crocodiles and fish.
+            </p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
 
   
 <!-- Final High-Conversion CTA Section: Artistic Untamed Wilderness Manifesto -->
@@ -672,9 +747,8 @@ Every itinerary is an intentionally composed narrative, carefully balancing the 
 
 </footer>
 
-
 <script>
-  document.addEventListener('DOMContentLoaded', () => {
+    document.addEventListener('DOMContentLoaded', () => {
     const navFrame = document.getElementById('master-navigation');
     const menuToggle = document.getElementById('menu-toggle');
     const mobileMenu = document.getElementById('mobile-menu');
@@ -725,7 +799,29 @@ Every itinerary is an intentionally composed narrative, carefully balancing the 
       });
     });
   });
-  </script>
+
+     document.addEventListener('DOMContentLoaded', () => {
+    const track = document.getElementById('carousel-track');
+    const prevBtn = document.getElementById('slide-prev');
+    const nextBtn = document.getElementById('slide-next');
+
+    if (track && prevBtn && nextBtn) {
+      // Calculate dynamic scrolling step size including grid gap widths
+      const getScrollAmount = () => {
+        const firstCard = track.firstElementChild;
+        return firstCard ? firstCard.offsetWidth + 24 : 340; 
+      };
+
+      nextBtn.addEventListener('click', () => {
+        track.scrollBy({ left: getScrollAmount(), behavior: 'smooth' });
+      });
+
+      prevBtn.addEventListener('click', () => {
+        track.scrollBy({ left: -getScrollAmount(), behavior: 'smooth' });
+      });
+    }
+  });
+</script>
 <script>/* ios hover */ document.addEventListener("touchstart", function() {}, true);</script>
 
 <script type="text/javascript">
@@ -741,3 +837,4 @@ s0.parentNode.insertBefore(s1,s0);
 </script>
 </body>
 </html>
+
