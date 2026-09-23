@@ -22,10 +22,101 @@
       }
     }
   </script>
-</head>
-<body class="bg-neutral-950 text-white font-sans antialiased overflow-x-hidden selection:bg-blue-950 selection:text-blue-400">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+  <meta name="author" content="Arena Africa Safaris">
 
-   <nav id="master-navigation" class="fixed top-6 inset-x-0 z-50 max-w-6xl mx-auto px-4 transition-all duration-500 ease-out">
+  <!-- =========================================================================
+       CORE SEO METADATA & RE-INDEXING SAFESTATE 
+       ========================================================================= -->
+  <title>Our Tours | Arena Africa Safaris</title>
+  <meta name="description" content="Explore custom-tailored luxury safaris, Great Migration tracking across the Serengeti, and pristine beach getaways in Zanzibar.">
+  <link rel="canonical" href="https://arenaafricasafaris.com">
+
+  <!-- Open Graph / Facebook Social Protocol -->
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="en">
+  <meta property="og:site_name" content="Arena Africa Safaris">
+  <meta property="og:title" content="Our Tours | Arena Africa Safaris">
+  <meta property="og:description" content="Tanzania is a diverse country with incredible destinations to explore.">
+  <meta property="og:url" content="https://arenaafricasafaris.com">
+  <meta property="og:image" content="https://arenaafricasafaris.com">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+
+  <!-- Twitter Card Protocol -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Our Tours | Arena Africa Safaris">
+  <meta name="twitter:description" content="Tanzania is a diverse country with incredible destinations to explore.">
+  <meta name="twitter:image" content="https://arenaafricasafaris.com">
+
+  <!-- RSS Content Feeds -->
+  <link rel="alternate" type="application/rss+xml" href="https://arenaafricasafaris.com" title="Arena Africa Safaris Blog Feed">
+  <link rel="alternate" type="application/rss+xml" href="https://arenaafricasafaris.com" title="Arena Africa Safaris Safari Feed">
+
+  <!-- =========================================================================
+       CRITICAL DATA TRACKING & ANALYTICS PIPELINES
+       ========================================================================= -->
+  
+  <!-- 1. Google Analytics Engine (gtag.js) -->
+  <!-- IMPORTANT: Replace G-XXXXXXXXXX with your actual tracking ID -->
+  <script async src="https://googletagmanager.com"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-XXXXXXXXXX');
+  </script>
+
+  <!-- 2. Google Tag Manager Interface -->
+  <!-- IMPORTANT: Replace GTM-XXXXXX with your actual container ID -->
+  <script>
+    (function(w,d,s,l,i){
+      w[l]=w[l]||[];
+      w[l].push({'gtm.start': new Date().getTime(), event:'gtm.js'});
+      var f=d.getElementsByTagName(s)[0],
+          j=d.createElement(s), dl=l!='dataLayer'?'&l='+l:'';
+      j.async=true; j.src='https://googletagmanager.com/gtm.js?id='+i+dl;
+      f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-XXXXXX');
+  </script>
+
+  <!-- 3. Facebook Pixel Tracking Architecture -->
+  <!-- IMPORTANT: Replace 1234567890 with your actual pixel account ID number -->
+  <script>
+    !function(f,b,e,v,n,t,s)
+    {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+    n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+    if(!f._fbq)n.queue=[];t=b.createElement(e);t.async=!0;
+    t.src=v;s=b.getElementsByTagName(e)[0];
+    s.parentNode.insertBefore(t,s)}(window, document,'script',
+    'https://facebook.net');
+    fbq('init', '1234567890');
+    fbq('track', 'PageView');
+  </script>
+
+  <!-- 4. Hotjar Behaviour Analytics Engine -->
+  <!-- IMPORTANT: Replace 1732193 with your actual Hotjar ID if different -->
+  <script>
+    (function(h,o,t,j,a,r){
+        h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
+        h._hjSettings={hjid:1732193,hjsv:6};
+        a=o.getElementsByTagName('head')[0];
+        r=o.createElement('script');r.async=1;
+        r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
+        a.appendChild(r);
+    })(window,document,'https://hotjar.com');
+  </script>
+
+  <!-- =========================================================================
+       NEW SITE STRUCTURAL ASSETS (Add your Tailwind/CSS bundles below here)
+       ========================================================================= -->
+  <link rel="icon" href="https://arenaafricasafaris.com" type="image/x-icon"></head>
+<body class="bg-neutral-900 text-white font-sans selection:bg-blue-900 selection:text-white">
+
+
+  <nav id="master-navigation" class="fixed top-6 inset-x-0 z-50 max-w-6xl mx-auto px-4 transition-all duration-500 ease-out">
   <!-- Container with Floating Capsule Design -->
   <div class="relative bg-neutral-950/40 backdrop-blur-xl border border-neutral-800/40 rounded-full px-4 py-5 flex items-center justify-between transition-all duration-500 group/nav hover:border-neutral-700/60 hover:bg-neutral-950/60">
     
@@ -158,265 +249,200 @@
         <!-- Right Column: Premium High-Density Accordion Hub (7/12 Grid Span) -->
         <div class="lg:col-span-7 space-y-4 w-full">
           
-          <!-- FAQ Item 1 -->
-          <div class="faq-item group bg-neutral-950 border border-neutral-900 rounded-sm transition-all duration-300 hover:border-blue-900/40">
-            <button class="faq-trigger w-full text-left p-6 sm:p-8 flex justify-between items-center gap-6 cursor-pointer focus:outline-none">
-              <span class="text-sm sm:text-base uppercase tracking-wide text-white group-hover:text-blue-400 transition-colors duration-200">
-                01. <span class="font-black">How far in advance do we need to lock down an expedition?</span>
-              </span>
-              <span class="faq-icon text-neutral-500 group-hover:text-blue-400 transition-transform duration-300 shrink-0">
-                <svg class="w-4 h-4 transform rotate-0 transition-transform duration-300" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24">
-                  <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" />
-                </svg>
-              </span>
-            </button>
-            <div class="faq-content max-h-0 overflow-hidden transition-all duration-300 ease-in-out">
-              <div class="px-6 sm:px-8 pb-6 sm:pb-8 border-t border-neutral-900/60 pt-4 text-xs sm:text-sm text-neutral-400 font-light tracking-wide leading-relaxed">
-                Because our private safaris, specialized trekking configurations, and coastal enclaves feature strict conservation access limits and highly remote premium lodgings, we heavily recommend initiating your custom intake track at least <strong class="text-neutral-200 font-normal">6 to 8 months prior</strong> to your target departure window. Peak Great Migration and dry trail slots fill up with absolute velocity.
-              </div>
+                 <!-- FAQ Item 1 -->
+        <div class="faq-item group bg-neutral-950 border border-neutral-900 rounded-sm transition-all duration-300 hover:border-blue-900/40">
+          <button class="faq-trigger w-full text-left p-6 sm:p-8 flex justify-between items-center gap-6 cursor-pointer focus:outline-none">
+            <span class="text-sm sm:text-base uppercase tracking-wide text-white group-hover:text-blue-400 transition-colors duration-200">
+              01. <span class="font-black">Can I see the Big Five?</span>
+            </span>
+            <span class="faq-icon text-neutral-500 group-hover:text-blue-400 transition-transform duration-300 shrink-0">
+              <svg class="w-4 h-4 transform rotate-0 transition-transform duration-300" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" />
+              </svg>
+            </span>
+          </button>
+          <div class="faq-content max-h-0 overflow-hidden transition-all duration-300 ease-in-out">
+            <div class="px-6 sm:px-8 pb-6 sm:pb-8 border-t border-neutral-900/60 pt-4 text-xs sm:text-sm text-neutral-400 font-light tracking-wide leading-relaxed">
+              Absolutely. Tanzania offers some of the highest statistical probabilities on earth to encounter the complete Big Five—<strong class="text-neutral-200 font-normal">lions, leopards, elephants, buffaloes, and rhinos</strong>. While lions and buffaloes are highly prominent across the plains, our master tracking guides frequently pinpoint endangered black rhinos inside the protected volcanic sanctuary of the Ngorongoro Crater and elusive leopards nestled in the acacia canopy of the central Serengeti.
             </div>
           </div>
-
-          <!-- FAQ Item 2 -->
-          <div class="faq-item group bg-neutral-950 border border-neutral-900 rounded-sm transition-all duration-300 hover:border-blue-900/40">
-            <button class="faq-trigger w-full text-left p-6 sm:p-8 flex justify-between items-center gap-6 cursor-pointer focus:outline-none">
-              <span class="text-sm sm:text-base uppercase tracking-wide text-white group-hover:text-blue-400 transition-colors duration-200">
-                02. <span class="font-black">Can our trip layout mix safaris, hiking, and beach options?</span>
-              </span>
-              <span class="faq-icon text-neutral-500 group-hover:text-blue-400 transition-transform duration-300 shrink-0">
-                <svg class="w-4 h-4 transform rotate-0 transition-transform duration-300" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24">
-                  <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" />
-                </svg>
-              </span>
-            </button>
-            <div class="faq-content max-h-0 overflow-hidden transition-all duration-300 ease-in-out">
-              <div class="px-6 sm:px-8 pb-6 sm:pb-8 border-t border-neutral-900/60 pt-4 text-xs sm:text-sm text-neutral-400 font-light tracking-wide leading-relaxed">
-                Absolutely. Every single itinerary we assemble at Arena Africa Safaris is co-designed entirely from a clean slate. A massive volume of our elite private requests combine deep wilderness tracking inside the Serengeti crater fields with grueling altitude climbs on Mount Kilimanjaro, terminating in complete off-grid island buyout isolation along the Zanzibar archipelago.
-              </div>
-            </div>
-          </div>
-
-          <!-- FAQ Item 3 -->
-          <div class="faq-item group bg-neutral-950 border border-neutral-900 rounded-sm transition-all duration-300 hover:border-blue-900/40">
-            <button class="faq-trigger w-full text-left p-6 sm:p-8 flex justify-between items-center gap-6 cursor-pointer focus:outline-none">
-              <span class="text-sm sm:text-base uppercase tracking-wide text-white group-hover:text-blue-400 transition-colors duration-200">
-                03. <span class="font-black">What exact internal payment routes are certified secure?</span>
-              </span>
-              <span class="faq-icon text-neutral-500 group-hover:text-blue-400 transition-transform duration-300 shrink-0">
-                <svg class="w-4 h-4 transform rotate-0 transition-transform duration-300" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24">
-                  <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" />
-                </svg>
-              </span>
-            </button>
-            <div class="faq-content max-h-0 overflow-hidden transition-all duration-300 ease-in-out">
-              <div class="px-6 sm:px-8 pb-6 sm:pb-8 border-t border-neutral-900/60 pt-4 text-xs sm:text-sm text-neutral-400 font-light tracking-wide leading-relaxed">
-                We employ direct, bank-encrypted secure international transmission wire tunnels alongside high-fidelity integration nodes via <strong class="text-neutral-200 font-normal">Pesapal Gateway systems</strong>. This allows seamless deployment authorizations via global Visa cards, Mastercards, American Express networks, and major localized digital currencies safely directly into our Arusha corporate accounts.
-              </div>
-            </div>
-          </div>
-
-          <!-- FAQ Item 4 -->
-          <div class="faq-item group bg-neutral-950 border border-neutral-900 rounded-sm transition-all duration-300 hover:border-blue-900/40">
-            <button class="faq-trigger w-full text-left p-6 sm:p-8 flex justify-between items-center gap-6 cursor-pointer focus:outline-none">
-              <span class="text-sm sm:text-base uppercase tracking-wide text-white group-hover:text-blue-400 transition-colors duration-200">
-                04. <span class="font-black">How are local wildlife conservation initiatives structured in bookings?</span>
-              </span>
-              <span class="faq-icon text-neutral-500 group-hover:text-blue-400 transition-transform duration-300 shrink-0">
-                <svg class="w-4 h-4 transform rotate-0 transition-transform duration-300" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24">
-                  <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" />
-                </svg>
-              </span>
-            </button>
-            <div class="faq-content max-h-0 overflow-hidden transition-all duration-300 ease-in-out">
-              <div class="px-6 sm:px-8 pb-6 sm:pb-8 border-t border-neutral-900/60 pt-4 text-xs sm:text-sm text-neutral-400 font-light tracking-wide leading-relaxed">
-                Conscious land and biological tenure rights are structural foundation parameters of our mission footprint. A strict, transparent percentage tier mapped directly out of your master booking coordinates goes immediately into enforcing tactical counter-poaching units on active migration borders, funding indigenous community clean infrastructure grids, and preserving micro-ecosystems.
-              </div>
-            </div>
-          </div>
-
-            <!-- FAQ Item 5 -->
-          <div class="faq-item group bg-neutral-950 border border-neutral-900 rounded-sm transition-all duration-300 hover:border-blue-900/40">
-            <button class="faq-trigger w-full text-left p-6 sm:p-8 flex justify-between items-center gap-6 cursor-pointer focus:outline-none">
-              <span class="text-sm sm:text-base uppercase tracking-wide text-white group-hover:text-blue-400 transition-colors duration-200">
-                05. <span class="font-black">Can I combine a safari with a visit to Zanzibar for a beach holiday?</span>
-              </span>
-              <span class="faq-icon text-neutral-500 group-hover:text-blue-400 transition-transform duration-300 shrink-0">
-                <svg class="w-4 h-4 transform rotate-0 transition-transform duration-300" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24">
-                  <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" />
-                </svg>
-              </span>
-            </button>
-            <div class="faq-content max-h-0 overflow-hidden transition-all duration-300 ease-in-out">
-              <div class="px-6 sm:px-8 pb-6 sm:pb-8 border-t border-neutral-900/60 pt-4 text-xs sm:text-sm text-neutral-400 font-light tracking-wide leading-relaxed">
-              Yes, many tourists combine a mainland safari with a visit to Zanzibar to enjoy the beautiful beaches and cultural experiences on the island. </div>
-            </div>
-          </div>
-
-          <!-- FAQ Item 6 -->
-          <div class="faq-item group bg-neutral-950 border border-neutral-900 rounded-sm transition-all duration-300 hover:border-blue-900/40">
-            <button class="faq-trigger w-full text-left p-6 sm:p-8 flex justify-between items-center gap-6 cursor-pointer focus:outline-none">
-              <span class="text-sm sm:text-base uppercase tracking-wide text-white group-hover:text-blue-400 transition-colors duration-200">
-                06. <span class="font-black">Do I need a visa to visit Tanzania?</span>
-              </span>
-              <span class="faq-icon text-neutral-500 group-hover:text-blue-400 transition-transform duration-300 shrink-0">
-                <svg class="w-4 h-4 transform rotate-0 transition-transform duration-300" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24">
-                  <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" />
-                </svg>
-              </span>
-            </button>
-            <div class="faq-content max-h-0 overflow-hidden transition-all duration-300 ease-in-out">
-              <div class="px-6 sm:px-8 pb-6 sm:pb-8 border-t border-neutral-900/60 pt-4 text-xs sm:text-sm text-neutral-400 font-light tracking-wide leading-relaxed">
-             Most travelers to Tanzania require a visa, which can be obtained upon arrival at the airport or in advance from a Tanzanian embassy or consulate.  </div>
-            </div>
-          </div>
-
-          <!-- FAQ Item 7 -->
-          <div class="faq-item group bg-neutral-950 border border-neutral-900 rounded-sm transition-all duration-300 hover:border-blue-900/40">
-            <button class="faq-trigger w-full text-left p-6 sm:p-8 flex justify-between items-center gap-6 cursor-pointer focus:outline-none">
-              <span class="text-sm sm:text-base uppercase tracking-wide text-white group-hover:text-blue-400 transition-colors duration-200">
-                07. <span class="font-black">How long should I plan for a safari in Tanzania?</span>
-              </span>
-              <span class="faq-icon text-neutral-500 group-hover:text-blue-400 transition-transform duration-300 shrink-0">
-                <svg class="w-4 h-4 transform rotate-0 transition-transform duration-300" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24">
-                  <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" />
-                </svg>
-              </span>
-            </button>
-            <div class="faq-content max-h-0 overflow-hidden transition-all duration-300 ease-in-out">
-              <div class="px-6 sm:px-8 pb-6 sm:pb-8 border-t border-neutral-900/60 pt-4 text-xs sm:text-sm text-neutral-400 font-light tracking-wide leading-relaxed">
-               A typical safari in Tanzania can range from 3 to 10 days or more, depending on your interests and the destinations you want to visit. </div>
-            </div>
-          </div>
-
-          <!-- FAQ Item 8 -->
-          <div class="faq-item group bg-neutral-950 border border-neutral-900 rounded-sm transition-all duration-300 hover:border-blue-900/40">
-            <button class="faq-trigger w-full text-left p-6 sm:p-8 flex justify-between items-center gap-6 cursor-pointer focus:outline-none">
-              <span class="text-sm sm:text-base uppercase tracking-wide text-white group-hover:text-blue-400 transition-colors duration-200">
-                08. <span class="font-black">Is it safe to go on a safari in Tanzania?</span>
-              </span>
-              <span class="faq-icon text-neutral-500 group-hover:text-blue-400 transition-transform duration-300 shrink-0">
-                <svg class="w-4 h-4 transform rotate-0 transition-transform duration-300" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24">
-                  <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" />
-                </svg>
-              </span>
-            </button>
-            <div class="faq-content max-h-0 overflow-hidden transition-all duration-300 ease-in-out">
-              <div class="px-6 sm:px-8 pb-6 sm:pb-8 border-t border-neutral-900/60 pt-4 text-xs sm:text-sm text-neutral-400 font-light tracking-wide leading-relaxed">
-               Tanzania is generally considered safe for tourists, including safari-goers. However, it's essential to follow local advice and safety guidelines provided by your tour operator. </div>
-            </div>
-          </div>
-
-           <!-- FAQ Item 9 -->
-          <div class="faq-item group bg-neutral-950 border border-neutral-900 rounded-sm transition-all duration-300 hover:border-blue-900/40">
-            <button class="faq-trigger w-full text-left p-6 sm:p-8 flex justify-between items-center gap-6 cursor-pointer focus:outline-none">
-              <span class="text-sm sm:text-base uppercase tracking-wide text-white group-hover:text-blue-400 transition-colors duration-200">
-                09. <span class="font-black">What animals can I expect to see on a Tanzanian safari?</span>
-              </span>
-              <span class="faq-icon text-neutral-500 group-hover:text-blue-400 transition-transform duration-300 shrink-0">
-                <svg class="w-4 h-4 transform rotate-0 transition-transform duration-300" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24">
-                  <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" />
-                </svg>
-              </span>
-            </button>
-            <div class="faq-content max-h-0 overflow-hidden transition-all duration-300 ease-in-out">
-              <div class="px-6 sm:px-8 pb-6 sm:pb-8 border-t border-neutral-900/60 pt-4 text-xs sm:text-sm text-neutral-400 font-light tracking-wide leading-relaxed">
-               Tanzania is home to the Big Five (lion, elephant, buffalo, leopard, and rhinoceros), as well as cheetahs, zebras, giraffes, hippos, crocodiles, and a wide variety of bird species. </div>
-            </div>
-          </div>
-
-          <!-- FAQ Item 10 -->
-          <div class="faq-item group bg-neutral-950 border border-neutral-900 rounded-sm transition-all duration-300 hover:border-blue-900/40">
-            <button class="faq-trigger w-full text-left p-6 sm:p-8 flex justify-between items-center gap-6 cursor-pointer focus:outline-none">
-              <span class="text-sm sm:text-base uppercase tracking-wide text-white group-hover:text-blue-400 transition-colors duration-200">
-                10. <span class="font-black">What are the top national parks and wildlife reserves in Tanzania?</span>
-              </span>
-              <span class="faq-icon text-neutral-500 group-hover:text-blue-400 transition-transform duration-300 shrink-0">
-                <svg class="w-4 h-4 transform rotate-0 transition-transform duration-300" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24">
-                  <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" />
-                </svg>
-              </span>
-            </button>
-            <div class="faq-content max-h-0 overflow-hidden transition-all duration-300 ease-in-out">
-              <div class="px-6 sm:px-8 pb-6 sm:pb-8 border-t border-neutral-900/60 pt-4 text-xs sm:text-sm text-neutral-400 font-light tracking-wide leading-relaxed">
-               Some of the top parks and reserves include the Serengeti National Park, Ngorongoro Conservation Area, Tarangire National Park, Lake Manyara National Park, and Selous Game Reserve. </div>
-            </div>
-          </div>
-
-          <!-- FAQ Item 11 -->
-          <div class="faq-item group bg-neutral-950 border border-neutral-900 rounded-sm transition-all duration-300 hover:border-blue-900/40">
-            <button class="faq-trigger w-full text-left p-6 sm:p-8 flex justify-between items-center gap-6 cursor-pointer focus:outline-none">
-              <span class="text-sm sm:text-base uppercase tracking-wide text-white group-hover:text-blue-400 transition-colors duration-200">
-                11. <span class="font-black">What is the Great Migration, and when does it occur in Tanzania?</span>
-              </span>
-              <span class="faq-icon text-neutral-500 group-hover:text-blue-400 transition-transform duration-300 shrink-0">
-                <svg class="w-4 h-4 transform rotate-0 transition-transform duration-300" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24">
-                  <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" />
-                </svg>
-              </span>
-            </button>
-            <div class="faq-content max-h-0 overflow-hidden transition-all duration-300 ease-in-out">
-              <div class="px-6 sm:px-8 pb-6 sm:pb-8 border-t border-neutral-900/60 pt-4 text-xs sm:text-sm text-neutral-400 font-light tracking-wide leading-relaxed">
-              The Great Migration is the annual movement of millions of wildebeests and zebras between Tanzania's Serengeti and Kenya's Maasai Mara. It typically occurs from July to October in the Serengeti. </div>
-            </div>
-          </div>
-
-          <!-- FAQ Item 12 -->
-          <div class="faq-item group bg-neutral-950 border border-neutral-900 rounded-sm transition-all duration-300 hover:border-blue-900/40">
-            <button class="faq-trigger w-full text-left p-6 sm:p-8 flex justify-between items-center gap-6 cursor-pointer focus:outline-none">
-              <span class="text-sm sm:text-base uppercase tracking-wide text-white group-hover:text-blue-400 transition-colors duration-200">
-                12. <span class="font-black">What should I pack for a safari in Tanzania?</span>
-              </span>
-              <span class="faq-icon text-neutral-500 group-hover:text-blue-400 transition-transform duration-300 shrink-0">
-                <svg class="w-4 h-4 transform rotate-0 transition-transform duration-300" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24">
-                  <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" />
-                </svg>
-              </span>
-            </button>
-            <div class="faq-content max-h-0 overflow-hidden transition-all duration-300 ease-in-out">
-              <div class="px-6 sm:px-8 pb-6 sm:pb-8 border-t border-neutral-900/60 pt-4 text-xs sm:text-sm text-neutral-400 font-light tracking-wide leading-relaxed">
-             Essentials include lightweight, neutral-colored clothing, a hat, sunscreen, insect repellent, comfortable walking shoes, and a good pair of binoculars for wildlife viewing.  </div>
-            </div>
-          </div>
-
-            <!-- FAQ Item 13 -->
-          <div class="faq-item group bg-neutral-950 border border-neutral-900 rounded-sm transition-all duration-300 hover:border-blue-900/40">
-            <button class="faq-trigger w-full text-left p-6 sm:p-8 flex justify-between items-center gap-6 cursor-pointer focus:outline-none">
-              <span class="text-sm sm:text-base uppercase tracking-wide text-white group-hover:text-blue-400 transition-colors duration-200">
-                13. <span class="font-black">What type of accommodations are available on Tanzanian safaris?</span>
-              </span>
-              <span class="faq-icon text-neutral-500 group-hover:text-blue-400 transition-transform duration-300 shrink-0">
-                <svg class="w-4 h-4 transform rotate-0 transition-transform duration-300" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24">
-                  <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" />
-                </svg>
-              </span>
-            </button>
-            <div class="faq-content max-h-0 overflow-hidden transition-all duration-300 ease-in-out">
-              <div class="px-6 sm:px-8 pb-6 sm:pb-8 border-t border-neutral-900/60 pt-4 text-xs sm:text-sm text-neutral-400 font-light tracking-wide leading-relaxed">
-            Accommodation options vary from luxury lodges and tented camps to budget-friendly campsites. You can choose accommodations from us that suit your budget and preferences. </div>
-          </div>
-          </div>
-
-          <!-- FAQ Item 14 -->
-          <div class="faq-item group bg-neutral-950 border border-neutral-900 rounded-sm transition-all duration-300 hover:border-blue-900/40">
-            <button class="faq-trigger w-full text-left p-6 sm:p-8 flex justify-between items-center gap-6 cursor-pointer focus:outline-none">
-              <span class="text-sm sm:text-base uppercase tracking-wide text-white group-hover:text-blue-400 transition-colors duration-200">
-                14. <span class="font-black">When is the best time to go on a safari in Tanzania?</span>
-              </span>
-              <span class="faq-icon text-neutral-500 group-hover:text-blue-400 transition-transform duration-300 shrink-0">
-                <svg class="w-4 h-4 transform rotate-0 transition-transform duration-300" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24">
-                  <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" />
-                </svg>
-              </span>
-            </button>
-            <div class="faq-content max-h-0 overflow-hidden transition-all duration-300 ease-in-out">
-              <div class="px-6 sm:px-8 pb-6 sm:pb-8 border-t border-neutral-900/60 pt-4 text-xs sm:text-sm text-neutral-400 font-light tracking-wide leading-relaxed">
-            The best time for safaris in Tanzania is during the dry season, from June to October. This is when wildlife congregates around water sources, making it easier to spot animals. </div>
-          </div>
-
-
         </div>
 
-      </div>
+        <!-- FAQ Item 2 -->
+        <div class="faq-item group bg-neutral-950 border border-neutral-900 rounded-sm transition-all duration-300 hover:border-blue-900/40">
+          <button class="faq-trigger w-full text-left p-6 sm:p-8 flex justify-between items-center gap-6 cursor-pointer focus:outline-none">
+            <span class="text-sm sm:text-base uppercase tracking-wide text-white group-hover:text-blue-400 transition-colors duration-200">
+              02. <span class="font-black">Is Tanzania safe for tourists?</span>
+            </span>
+            <span class="faq-icon text-neutral-500 group-hover:text-blue-400 transition-transform duration-300 shrink-0">
+              <svg class="w-4 h-4 transform rotate-0 transition-transform duration-300" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" />
+              </svg>
+            </span>
+          </button>
+          <div class="faq-content max-h-0 overflow-hidden transition-all duration-300 ease-in-out">
+            <div class="px-6 sm:px-8 pb-6 sm:pb-8 border-t border-neutral-900/60 pt-4 text-xs sm:text-sm text-neutral-400 font-light tracking-wide leading-relaxed">
+              Tanzania stands proudly as one of East Africa’s most stable and welcoming nations. Your personal safety is integrated directly into our operations from the moment you pass through airport arrivals. Our clients travel in <strong class="text-neutral-200 font-normal">private customized 4x4 vehicles</strong> alongside dedicated professional guides, staying in tightly secured premium eco-lodges and luxury wilderness camps throughout the entire expedition.
+            </div>
+          </div>
+        </div>
+
+        <!-- FAQ Item 3 -->
+        <div class="faq-item group bg-neutral-950 border border-neutral-900 rounded-sm transition-all duration-300 hover:border-blue-900/40">
+          <button class="faq-trigger w-full text-left p-6 sm:p-8 flex justify-between items-center gap-6 cursor-pointer focus:outline-none">
+            <span class="text-sm sm:text-base uppercase tracking-wide text-white group-hover:text-blue-400 transition-colors duration-200">
+              03. <span class="font-black">Which is better: Serengeti or Ngorongoro?</span>
+            </span>
+            <span class="faq-icon text-neutral-500 group-hover:text-blue-400 transition-transform duration-300 shrink-0">
+              <svg class="w-4 h-4 transform rotate-0 transition-transform duration-300" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" />
+              </svg>
+            </span>
+          </button>
+          <div class="faq-content max-h-0 overflow-hidden transition-all duration-300 ease-in-out">
+            <div class="px-6 sm:px-8 pb-6 sm:pb-8 border-t border-neutral-900/60 pt-4 text-xs sm:text-sm text-neutral-400 font-light tracking-wide leading-relaxed">
+              Neither is inherently better; rather, they serve as perfect geographical compliments. The <strong class="text-neutral-200 font-normal">Serengeti</strong> offers vast, boundless horizons and plays host to the endless kinetic motion of the Great Migration. Conversely, the <strong class="text-neutral-200 font-normal">Ngorongoro Crater</strong> provides an enclosed, high-density volcanic arena teeming with year-round resident populations. We heavily recommend combining both within a single seamless layout.
+            </div>
+          </div>
+        </div>
+
+        <!-- FAQ Item 4 -->
+        <div class="faq-item group bg-neutral-950 border border-neutral-900 rounded-sm transition-all duration-300 hover:border-blue-900/40">
+          <button class="faq-trigger w-full text-left p-6 sm:p-8 flex justify-between items-center gap-6 cursor-pointer focus:outline-none">
+            <span class="text-sm sm:text-base uppercase tracking-wide text-white group-hover:text-blue-400 transition-colors duration-200">
+              04. <span class="font-black">Can I combine Tanzania safari with Zanzibar?</span>
+            </span>
+            <span class="faq-icon text-neutral-500 group-hover:text-blue-400 transition-transform duration-300 shrink-0">
+              <svg class="w-4 h-4 transform rotate-0 transition-transform duration-300" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" />
+              </svg>
+            </span>
+          </button>
+          <div class="faq-content max-h-0 overflow-hidden transition-all duration-300 ease-in-out">
+            <div class="px-6 sm:px-8 pb-6 sm:pb-8 border-t border-neutral-900/60 pt-4 text-xs sm:text-sm text-neutral-400 font-light tracking-wide leading-relaxed">
+              This is our absolute specialty. Shifting from raw bush tracks to isolated Indian Ocean coral shores is completely effortless. We manage high-fidelity logistics transitions utilizing private regional flights that fly you straight out of bush airstrips inside the Serengeti directly into <strong class="text-neutral-200 font-normal">Zanzibar International Airport</strong>, blending grueling savannah treks with pure beach relaxation.
+            </div>
+          </div>
+        </div>
+
+        <!-- FAQ Item 5 -->
+        <div class="faq-item group bg-neutral-950 border border-neutral-900 rounded-sm transition-all duration-300 hover:border-blue-900/40">
+          <button class="faq-trigger w-full text-left p-6 sm:p-8 flex justify-between items-center gap-6 cursor-pointer focus:outline-none">
+            <span class="text-sm sm:text-base uppercase tracking-wide text-white group-hover:text-blue-400 transition-colors duration-200">
+              05. <span class="font-black">What is included in my safari package?</span>
+            </span>
+            <span class="faq-icon text-neutral-500 group-hover:text-blue-400 transition-transform duration-300 shrink-0">
+              <svg class="w-4 h-4 transform rotate-0 transition-transform duration-300" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" />
+              </svg>
+            </span>
+          </button>
+          <div class="faq-content max-h-0 overflow-hidden transition-all duration-300 ease-in-out">
+            <div class="px-6 sm:px-8 pb-6 sm:pb-8 border-t border-neutral-900/60 pt-4 text-xs sm:text-sm text-neutral-400 font-light tracking-wide leading-relaxed">
+              Our master custom packages feature complete end-to-end provisions. Your layout includes all premium luxury accommodations, full-board dietary menu configurations, private 4x4 land cruisers equipped with charging docks and refrigerators, dedicated professional tracking guides, <strong class="text-neutral-200 font-normal">all national conservation park entry fees</strong>, internal airport transfers, and unlimited bottled mineral water throughout your bush tracks.
+            </div>
+          </div>
+        </div>
+
+        <!-- FAQ Item 6 -->
+        <div class="faq-item group bg-neutral-950 border border-neutral-900 rounded-sm transition-all duration-300 hover:border-blue-900/40">
+          <button class="faq-trigger w-full text-left p-6 sm:p-8 flex justify-between items-center gap-6 cursor-pointer focus:outline-none">
+            <span class="text-sm sm:text-base uppercase tracking-wide text-white group-hover:text-blue-400 transition-colors duration-200">
+              06. <span class="font-black">Can you create a private/custom safari for me?</span>
+            </span>
+            <span class="faq-icon text-neutral-500 group-hover:text-blue-400 transition-transform duration-300 shrink-0">
+              <svg class="w-4 h-4 transform rotate-0 transition-transform duration-300" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" />
+              </svg>
+            </span>
+          </button>
+                    <div class="faq-content max-h-0 overflow-hidden transition-all duration-300 ease-in-out">
+            <div class="px-6 sm:px-8 pb-6 sm:pb-8 border-t border-neutral-900/60 pt-4 text-xs sm:text-sm text-neutral-400 font-light tracking-wide leading-relaxed">
+              Every single booking configuration we finalize is built entirely from a blank canvas. We do not run generic group departures. Your vehicle, tracking pace, and choice of daily horizons are <strong class="text-neutral-200 font-normal">100% exclusive to your personal party</strong>. Our expert intake specialists coordinate directly with you to craft layouts around your precise pacing preferences, dietary needs, and luxury tier selections.
+            </div>
+          </div>
+        </div>
+
+                <!-- FAQ Item 7 -->
+        <div class="faq-item group bg-neutral-950 border border-neutral-900 rounded-sm transition-all duration-300 hover:border-blue-900/40">
+          <button class="faq-trigger w-full text-left p-6 sm:p-8 flex justify-between items-center gap-6 cursor-pointer focus:outline-none">
+            <span class="text-sm sm:text-base uppercase tracking-wide text-white group-hover:text-blue-400 transition-colors duration-200">
+              07. <span class="font-black">Why should I book my safari with a local Tanzanian tour operator?</span>
+            </span>
+            <span class="faq-icon text-neutral-500 group-hover:text-blue-400 transition-transform duration-300 shrink-0">
+              <svg class="w-4 h-4 transform rotate-0 transition-transform duration-300" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" />
+              </svg>
+            </span>
+          </button>
+          <div class="faq-content max-h-0 overflow-hidden transition-all duration-300 ease-in-out">
+            <div class="px-6 sm:px-8 pb-6 sm:pb-8 border-t border-neutral-900/60 pt-4 text-xs sm:text-sm text-neutral-400 font-light tracking-wide leading-relaxed">
+              Booking natively with an Arusha-headquartered team like Arena Africa Safaris strips away expensive international travel broker markup and yields ground-level execution precision. More importantly, it guarantees that your travel capital <strong class="text-neutral-200 font-normal">stays directly inside Tanzania</strong>—funding native conservation frameworks, providing competitive wages to our elite local tracking experts, and building sustainable infrastructure in indigenous communities.
+            </div>
+          </div>
+        </div>
+
+
+        <!-- FAQ Item 5 -->
+        <div class="faq-item group bg-neutral-950 border border-neutral-900 rounded-sm transition-all duration-300 hover:border-blue-900/40">
+          <button class="faq-trigger w-full text-left p-6 sm:p-8 flex justify-between items-center gap-6 cursor-pointer focus:outline-none">
+            <span class="text-sm sm:text-base uppercase tracking-wide text-white group-hover:text-blue-400 transition-colors duration-200">
+              08. <span class="font-black">How close can we get to wild animals?</span>
+            </span>
+            <span class="faq-icon text-neutral-500 group-hover:text-blue-400 transition-transform duration-300 shrink-0">
+              <svg class="w-4 h-4 transform rotate-0 transition-transform duration-300" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" />
+              </svg>
+            </span>
+          </button>
+          <div class="faq-content max-h-0 overflow-hidden transition-all duration-300 ease-in-out">
+            <div class="px-6 sm:px-8 pb-6 sm:pb-8 border-t border-neutral-900/60 pt-4 text-xs sm:text-sm text-neutral-400 font-light tracking-wide leading-relaxed">
+              Thanks to the deep familiarity Tanzanian wildlife has with our custom vehicles, animals often move remarkably close—sometimes passing <strong class="text-neutral-200 font-normal">within just a few meters</strong> of your window. While we maintain strict conservation distances to respect their natural behavior, our seasoned spotters possess the tactical tracking expertise to position you perfectly for unparalleled, clear photography without ever disrupting the ecosystem.
+            </div>
+          </div>
+        </div>
+
+        <!-- FAQ Item 6 -->
+        <div class="faq-item group bg-neutral-950 border border-neutral-900 rounded-sm transition-all duration-300 hover:border-blue-900/40">
+          <button class="faq-trigger w-full text-left p-6 sm:p-8 flex justify-between items-center gap-6 cursor-pointer focus:outline-none">
+            <span class="text-sm sm:text-base uppercase tracking-wide text-white group-hover:text-blue-400 transition-colors duration-200">
+              09. <span class="font-black">What food is served during a safari?</span>
+            </span>
+            <span class="faq-icon text-neutral-500 group-hover:text-blue-400 transition-transform duration-300 shrink-0">
+              <svg class="w-4 h-4 transform rotate-0 transition-transform duration-300" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" />
+              </svg>
+            </span>
+          </button>
+          <div class="faq-content max-h-0 overflow-hidden transition-all duration-300 ease-in-out">
+            <div class="px-6 sm:px-8 pb-6 sm:pb-8 border-t border-neutral-900/60 pt-4 text-xs sm:text-sm text-neutral-400 font-light tracking-wide leading-relaxed">
+              Our culinary offerings seamlessly blend gourmet international cuisine with authentic, local Tanzanian flavors. You will enjoy hot, multi-course dinners at our luxury lodges, fresh bush breakfasts out on the open plains, and meticulously prepared picnic lunches during full-day tracking tracks. We cater seamlessly to all dietary configurations, including <strong class="text-neutral-200 font-normal">vegan, vegetarian, gluten-free, and halal requirements</strong>.
+            </div>
+          </div>
+        </div>
+
+        <!-- FAQ Item 7 -->
+        <div class="faq-item group bg-neutral-950 border border-neutral-900 rounded-sm transition-all duration-300 hover:border-blue-900/40">
+          <button class="faq-trigger w-full text-left p-6 sm:p-8 flex justify-between items-center gap-6 cursor-pointer focus:outline-none">
+            <span class="text-sm sm:text-base uppercase tracking-wide text-white group-hover:text-blue-400 transition-colors duration-200">
+              10. <span class="font-black">How many people are normally in a safari vehicle?</span>
+            </span>
+            <span class="faq-icon text-neutral-500 group-hover:text-blue-400 transition-transform duration-300 shrink-0">
+              <svg class="w-4 h-4 transform rotate-0 transition-transform duration-300" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" />
+              </svg>
+            </span>
+          </button>
+          <div class="faq-content max-h-0 overflow-hidden transition-all duration-300 ease-in-out">
+            <div class="px-6 sm:px-8 pb-6 sm:pb-8 border-t border-neutral-900/60 pt-4 text-xs sm:text-sm text-neutral-400 font-light tracking-wide leading-relaxed">
+              Because we focus exclusively on private, bespoke expeditions, your custom 4x4 Land Cruiser is <strong class="text-neutral-200 font-normal">100% dedicated to your personal party</strong>—there are zero strangers mixed into your booking. Our extended cruisers feature 6 to 7 individual window seats, guaranteeing uninhibited, 360-degree visibility and optimal photographic angles for every single person in your group.
+            </div>
+          </div>
+        </div>
+
+          
+
+         
     </div>
   </section>
 
@@ -800,5 +826,17 @@ Every itinerary is an intentionally composed narrative, carefully balancing the 
     });
   </script>
 <script>/* ios hover */ document.addEventListener("touchstart", function() {}, true);</script>
+
+<script type="text/javascript">
+var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+(function(){
+var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+s1.async=true;
+s1.src='https://embed.tawk.to/6a37305247d57f1d4d48714b/1jrjp9gvb';
+s1.charset='UTF-8';
+s1.setAttribute('crossorigin','*');
+s0.parentNode.insertBefore(s1,s0);
+})();
+</script>
 </body>
 </html>

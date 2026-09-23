@@ -22,10 +22,101 @@
       }
     }
   </script>
-</head>
-<body class="bg-neutral-900 text-white font-sans antialiased overflow-x-hidden selection:bg-blue-950 selection:text-blue-400">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+  <meta name="author" content="Arena Africa Safaris">
 
- <nav id="master-navigation" class="fixed top-6 inset-x-0 z-50 max-w-6xl mx-auto px-4 transition-all duration-500 ease-out">
+  <!-- =========================================================================
+       CORE SEO METADATA & RE-INDEXING SAFESTATE 
+       ========================================================================= -->
+  <title>Our Tours | Arena Africa Safaris</title>
+  <meta name="description" content="Explore custom-tailored luxury safaris, Great Migration tracking across the Serengeti, and pristine beach getaways in Zanzibar.">
+  <link rel="canonical" href="https://arenaafricasafaris.com">
+
+  <!-- Open Graph / Facebook Social Protocol -->
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="en">
+  <meta property="og:site_name" content="Arena Africa Safaris">
+  <meta property="og:title" content="Our Tours | Arena Africa Safaris">
+  <meta property="og:description" content="Tanzania is a diverse country with incredible destinations to explore.">
+  <meta property="og:url" content="https://arenaafricasafaris.com">
+  <meta property="og:image" content="https://arenaafricasafaris.com">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+
+  <!-- Twitter Card Protocol -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Our Tours | Arena Africa Safaris">
+  <meta name="twitter:description" content="Tanzania is a diverse country with incredible destinations to explore.">
+  <meta name="twitter:image" content="https://arenaafricasafaris.com">
+
+  <!-- RSS Content Feeds -->
+  <link rel="alternate" type="application/rss+xml" href="https://arenaafricasafaris.com" title="Arena Africa Safaris Blog Feed">
+  <link rel="alternate" type="application/rss+xml" href="https://arenaafricasafaris.com" title="Arena Africa Safaris Safari Feed">
+
+  <!-- =========================================================================
+       CRITICAL DATA TRACKING & ANALYTICS PIPELINES
+       ========================================================================= -->
+  
+  <!-- 1. Google Analytics Engine (gtag.js) -->
+  <!-- IMPORTANT: Replace G-XXXXXXXXXX with your actual tracking ID -->
+  <script async src="https://googletagmanager.com"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-XXXXXXXXXX');
+  </script>
+
+  <!-- 2. Google Tag Manager Interface -->
+  <!-- IMPORTANT: Replace GTM-XXXXXX with your actual container ID -->
+  <script>
+    (function(w,d,s,l,i){
+      w[l]=w[l]||[];
+      w[l].push({'gtm.start': new Date().getTime(), event:'gtm.js'});
+      var f=d.getElementsByTagName(s)[0],
+          j=d.createElement(s), dl=l!='dataLayer'?'&l='+l:'';
+      j.async=true; j.src='https://googletagmanager.com/gtm.js?id='+i+dl;
+      f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-XXXXXX');
+  </script>
+
+  <!-- 3. Facebook Pixel Tracking Architecture -->
+  <!-- IMPORTANT: Replace 1234567890 with your actual pixel account ID number -->
+  <script>
+    !function(f,b,e,v,n,t,s)
+    {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+    n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+    if(!f._fbq)n.queue=[];t=b.createElement(e);t.async=!0;
+    t.src=v;s=b.getElementsByTagName(e)[0];
+    s.parentNode.insertBefore(t,s)}(window, document,'script',
+    'https://facebook.net');
+    fbq('init', '1234567890');
+    fbq('track', 'PageView');
+  </script>
+
+  <!-- 4. Hotjar Behaviour Analytics Engine -->
+  <!-- IMPORTANT: Replace 1732193 with your actual Hotjar ID if different -->
+  <script>
+    (function(h,o,t,j,a,r){
+        h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
+        h._hjSettings={hjid:1732193,hjsv:6};
+        a=o.getElementsByTagName('head')[0];
+        r=o.createElement('script');r.async=1;
+        r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
+        a.appendChild(r);
+    })(window,document,'https://hotjar.com');
+  </script>
+
+  <!-- =========================================================================
+       NEW SITE STRUCTURAL ASSETS (Add your Tailwind/CSS bundles below here)
+       ========================================================================= -->
+  <link rel="icon" href="https://arenaafricasafaris.com" type="image/x-icon"></head>
+<body class="bg-neutral-900 text-white font-sans selection:bg-blue-900 selection:text-white">
+
+
+  <nav id="master-navigation" class="fixed top-6 inset-x-0 z-50 max-w-6xl mx-auto px-4 transition-all duration-500 ease-out">
   <!-- Container with Floating Capsule Design -->
   <div class="relative bg-neutral-950/40 backdrop-blur-xl border border-neutral-800/40 rounded-full px-4 py-5 flex items-center justify-between transition-all duration-500 group/nav hover:border-neutral-700/60 hover:bg-neutral-950/60">
     
@@ -128,17 +219,20 @@
       <div class="flex flex-col lg:flex-row lg:items-end justify-between gap-8">
         <div class="max-w-xl">
           <span class="text-[20px] tracking-[0.2em] text-blue-500 uppercase inline-block mb-3">WILDLIFE INTELLIGENCE</span>
-          <h1 class="text-6xl sm:text-6xl font-black tracking-tight uppercase leading-[0.95] text-white">
-            FIELD JOURNAL & <br>WILDERNESS INSIGHTS
-          </h1>
+           <h2 class="text-7xl sm:text-8xl font-black tracking-tight uppercase leading-none">
+          WILDLIFE <span class="text-transparent bg-clip-text bg-blue-400">INSIGHTS</span> & <span class="text-transparent bg-clip-text bg-blue-400">JOURNAL</span>
+        </h2>
         </div>
        
+
+
+
       </div>
     </div>
   </header>
 
   <!-- High-Density Journal Archive Matrix Frame -->
-  <section id="insights-archive" class="relative bg-neutral-950 py-24 px-6 overflow-hidden">
+  <section id="insights-archive" class="relative bg-neutral-900 py-24 px-6 overflow-hidden">
     
     <!-- Subtle Backing Deep Night Glow Element -->
     <div class="absolute bottom-0 right-1/4 w-96 h-96 bg-blue-950/10 rounded-full blur-[140px] pointer-events-none mix-blend-screen"></div>
@@ -209,8 +303,6 @@
   <div class="flex flex-col justify-between flex-1 min-w-0 h-full">
     <div>
       <div class="flex items-center space-x-2 text-[9px] font-mono text-blue-400 mb-1.5">
-        <span>•</span>
-        <span class="text-neutral-500">8 MIN READ</span>
       </div>
       <h3 class="text-base sm:text-lg font-black uppercase tracking-wide text-white mb-2 line-clamp-2 group-hover:text-blue-400 transition-colors duration-200">
         Life Above the Clouds: Surviving Kilimanjaro's Extreme Afro-Alpine Zones
@@ -237,8 +329,6 @@
   <div class="flex flex-col justify-between flex-1 min-w-0 h-full">
     <div>
       <div class="flex items-center space-x-2 text-[9px] font-mono text-blue-400 mb-1.5">
-        <span>•</span>
-        <span class="text-neutral-500">6 MIN READ</span>
       </div>
       <h3 class="text-base sm:text-lg font-black uppercase tracking-wide text-white mb-2 line-clamp-2 group-hover:text-blue-400 transition-colors duration-200">
         The Mkata Crucible: How Infrastructure Corridors Pressure Mikumi's Wilderness
@@ -265,8 +355,6 @@
   <div class="flex flex-col justify-between flex-1 min-w-0 h-full">
     <div>
       <div class="flex items-center space-x-2 text-[9px] font-mono text-blue-400 mb-1.5">
-        <span>•</span>
-        <span class="text-neutral-500">8 MIN READ</span>
       </div>
       <h3 class="text-base sm:text-lg font-black uppercase tracking-wide text-white mb-2 line-clamp-2 group-hover:text-blue-400 transition-colors duration-200">
         Fortress of the Fringe: Inside Mkomazi’s Radical Rhino Repopulation Strategy
@@ -293,8 +381,6 @@
   <div class="flex flex-col justify-between flex-1 min-w-0 h-full">
     <div>
       <div class="flex items-center space-x-2 text-[9px] font-mono text-blue-400 mb-1.5">
-        <span>•</span>
-        <span class="text-neutral-500">7 MIN READ</span>
       </div>
       <h3 class="text-base sm:text-lg font-black uppercase tracking-wide text-white mb-2 line-clamp-2 group-hover:text-blue-400 transition-colors duration-200">
         The Mnemba Sanctuary: Assessing Pelagic Megafauna Recovery in Protected Waters
@@ -321,8 +407,6 @@
   <div class="flex flex-col justify-between flex-1 min-w-0 h-full">
     <div>
       <div class="flex items-center space-x-2 text-[9px] font-mono text-blue-400 mb-1.5">
-        <span>•</span>
-        <span class="text-neutral-500">9 MIN READ</span>
       </div>
       <h3 class="text-base sm:text-lg font-black uppercase tracking-wide text-white mb-2 line-clamp-2 group-hover:text-blue-400 transition-colors duration-200">
         Navigating the Mara Crossing: The Evolutionary Pressures of Migration Fatalities
@@ -701,5 +785,17 @@ Every itinerary is an intentionally composed narrative, carefully balancing the 
     });
   </script>
 <script>/* ios hover */ document.addEventListener("touchstart", function() {}, true);</script>
+
+<script type="text/javascript">
+var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+(function(){
+var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+s1.async=true;
+s1.src='https://embed.tawk.to/6a37305247d57f1d4d48714b/1jrjp9gvb';
+s1.charset='UTF-8';
+s1.setAttribute('crossorigin','*');
+s0.parentNode.insertBefore(s1,s0);
+})();
+</script>
 </body>
 </html>
